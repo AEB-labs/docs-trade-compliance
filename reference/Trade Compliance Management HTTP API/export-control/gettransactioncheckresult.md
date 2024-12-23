@@ -16,10 +16,6 @@ metadata:
 next:
   description: ''
 ---
-[block:callout]
-{
-  "type": "info",
-  "body": "Currently the response body of this request cannot be shown correctly via readme.io, so please use the response description [here] (https://rz3.aeb.de/test4ce/swagger/#/Export%20Control/getTransactionCheckResult).",
-  "title": "Response Body"
-}
-[/block]
+> 📘 Response Body
+>
+> Currently the response body of this request cannot be shown correctly via readme.io, so please use the response description \[here] ([https://rz3.aeb.de/test4ce/swagger/#/Export%20Control/getTransactionCheckResult](https://rz3.aeb.de/test4ce/swagger/#/Export%20Control/getTransactionCheckResult)).
