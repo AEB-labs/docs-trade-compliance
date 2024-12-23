@@ -59,7 +59,7 @@ Depending on the technology (REST or SOAP) different authentication methods coul
 With this method, authentication data must be provided for every API call. It works for REST and SOAP.\
 It is expected as HTTP authentication (HTTP Basic Authentication according to RFC 2617).
 
-The user and client login data is transmitted in the format <strong><user>@<client>:<password></strong>. The login data must be base 64–encoded.  Before the conversion, the login data should use ISO-8859-1 character coding. If no umlauts or other diacritics are included, this corresponds to ASCII coding. It is also possible to use Windows character coding (CP-1252) if no euro sign is included. 
+The user and client login data is transmitted in the format <strong>user@client:password</strong>. The login data must be base 64–encoded.  Before the conversion, the login data should use ISO-8859-1 character coding. If no umlauts or other diacritics are included, this corresponds to ASCII coding. It is also possible to use Windows character coding (CP-1252) if no euro sign is included. 
 
 Base 64 encoding is no encryption in cryptographic terms, but still plain text. This is why we require using HTTPS encryption so the data cannot be intercepted by unauthorized parties.
 
