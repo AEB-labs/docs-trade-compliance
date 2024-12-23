@@ -16,6 +16,6 @@ A transaction is uniquely identified by a **client identification code** (API: c
 
 **Transaction types** (API: transactionType) are particularly important if you run checks for the US ITAR [jurisdiction](doc:jurisdictions) . You can distinguish the type of movement (company > customer, etc.) and whether identities of the goods should be created and checked.
 
-> 📘 
-> 
+> 📘
+>
 > US ITAR jurisdiction might not be configured/licensed for your client.
