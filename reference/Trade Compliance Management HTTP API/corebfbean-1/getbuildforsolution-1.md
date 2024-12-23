@@ -1,0 +1,17 @@
+---
+title: /CoreBFBean/getBuildForSolution
+excerpt: >-
+  Return the build information of a solution that is deployed in the product on
+  this server. The RFC name of this function is \"/AEB/XNSG_IF_BLDSOL\".
+api:
+  file: trade-compliance-management-http-api.json
+  operationId: getBuildForSolution
+deprecated: false
+hidden: true
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
