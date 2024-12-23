@@ -13,5 +13,6 @@ next:
 With the application facades (AF) (see also [Business Facades and Application Facades](doc:business-facades-and-application-facades)), it is possible to embed the GUI of Risk Assessment in your own software.
 
 The following requests for application facades exist:
-+ **searchQuestionnaires**: opens the list of questionnaires in the Risk Assessment web application with predefined filter fields.
-+ **questionnaire**: opens a questionnaire in the Risk Assessment web application.
+
+* **searchQuestionnaires**: opens the list of questionnaires in the Risk Assessment web application with predefined filter fields.
+* **questionnaire**: opens a questionnaire in the Risk Assessment web application.
