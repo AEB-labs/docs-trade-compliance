@@ -12,24 +12,41 @@ next:
 ---
 Returns statistic data such as number of address matches, address matches processed, address matches via file checks, or Good Guys defined. You can filter by client system, client, client group, and time frame, but the time frame may not exceed three months.
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Technology",
-    "h-1": "Link to documentation",
-    "0-0": "REST",
-    "0-1": "[screeningStatisticData](https://trade-compliance.docs.developers.aeb.com/reference/screeningstatisticdata)",
-    "1-0": "SOAP",
-    "1-1": "<a href=\"https://rz3.aeb.de/test4ce/servlet/bf/RexBF?WSDL\" target=\"_blank\">RexBF (WSDL)</a>  \n<a href=\"https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#protocolClientSystemEvent-de.aeb.xnsg.rex.bf.ClientSystemComplianceEventDTO-\" target=\"_blank\">getScreeningStatisticData (JavaDoc)</a>"
-  },
-  "cols": 2,
-  "rows": 2,
-  "align": [
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th style={{ textAlign: "left" }}>
+        Technology
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Link to documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        REST
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [screeningStatisticData](https://trade-compliance.docs.developers.aeb.com/reference/screeningstatisticdata)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        SOAP
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        <a href="https://rz3.aeb.de/test4ce/servlet/bf/RexBF?WSDL" target="_blank">RexBF (WSDL)</a>\ <a href="https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#protocolClientSystemEvent-de.aeb.xnsg.rex.bf.ClientSystemComplianceEventDTO-" target="_blank">getScreeningStatisticData (JavaDoc)</a>
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ```json
 {
