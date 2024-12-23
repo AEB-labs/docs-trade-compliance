@@ -2,3 +2,4 @@
 - checktransaction
 - createquestionnairefortransaction
 - deletetransaction
+- getchangedtransactions
