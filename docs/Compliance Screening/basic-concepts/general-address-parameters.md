@@ -86,11 +86,11 @@ An additional ID-only check can be configured in the compliance profile (if ID c
 </soapenv:Envelope>
 ```
 
-> 📘 ADDRESS_TYPE_VERSION
-> 
-> The field "addressTypeVersion" determines the address types that can be used in an address check. The current standard is ADDRESS_TYPE_VERSION_1. This version corresponds to the typical qualification of sanction list addresses and should always be used.
-> 
-> ADDRESS_TYPE_VERSION_0 is currently only supported to ensure backward compatibility.
+> 📘 ADDRESS\_TYPE\_VERSION
+>
+> The field "addressTypeVersion" determines the address types that can be used in an address check. The current standard is ADDRESS\_TYPE\_VERSION\_1. This version corresponds to the typical qualification of sanction list addresses and should always be used.
+>
+> ADDRESS\_TYPE\_VERSION\_0 is currently only supported to ensure backward compatibility.
 
 ## Additional Address Fields
 
