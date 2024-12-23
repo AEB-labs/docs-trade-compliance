@@ -3,3 +3,4 @@
 - createquestionnairefortransaction
 - deletetransaction
 - getchangedtransactions
+- gettransactioncheckresult
