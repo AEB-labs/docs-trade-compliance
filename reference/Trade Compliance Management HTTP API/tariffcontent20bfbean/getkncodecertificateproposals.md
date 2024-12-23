@@ -11,7 +11,7 @@ api:
   file: trade-compliance-management-http-api.json
   operationId: getKnCodeCertificateProposals
 deprecated: true
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

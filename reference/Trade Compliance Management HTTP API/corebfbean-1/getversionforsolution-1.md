@@ -7,7 +7,7 @@ api:
   file: trade-compliance-management-http-api.json
   operationId: getVersionForSolution
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

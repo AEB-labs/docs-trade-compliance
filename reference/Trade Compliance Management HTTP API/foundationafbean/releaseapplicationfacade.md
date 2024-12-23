@@ -12,7 +12,7 @@ api:
   file: trade-compliance-management-http-api.json
   operationId: releaseApplicationFacade
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

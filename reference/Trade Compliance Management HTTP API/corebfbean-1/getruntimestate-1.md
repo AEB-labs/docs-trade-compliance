@@ -9,7 +9,7 @@ api:
   file: trade-compliance-management-http-api.json
   operationId: getRuntimeState
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''

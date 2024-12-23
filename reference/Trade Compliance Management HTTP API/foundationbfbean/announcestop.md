@@ -5,7 +5,7 @@ api:
   file: trade-compliance-management-http-api.json
   operationId: announceStop
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
