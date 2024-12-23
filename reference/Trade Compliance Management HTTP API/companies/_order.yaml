@@ -2,3 +2,4 @@
 - createorupdatecompany
 - deletecompany
 - searchcompanies
+- getcompanyroles
