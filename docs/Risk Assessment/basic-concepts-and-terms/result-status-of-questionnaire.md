@@ -20,4 +20,4 @@ If the questionnaire generation is integrated in the Export Controls check, the 
 
 As the questionnaire might be answered asynchronously in the Risk Assessment web application, therefore to get updated results you have to synchronize the questionnaires data back to your system. For details see [Sync Events For Questionnaires](https://trade-compliance.docs.developers.aeb.com/docs/sync-events-for-questionnaires)
 
-Alternatively the method "[RiskAssessmentBF - getQuestionnaireSummary](https://rz3.aeb.de/test4ce/servlet/bf/doc/RiskAssessmentBF/de/aeb/xnsg/riskasmt/bf/IRiskAssessmentBF.html#getQuestionnaireSummary(de.aeb.xnsg.riskasmt.bf.QuestionnaireSummaryRequestDTO))​" can be used.
+Alternatively the method "[RiskAssessmentBF - getQuestionnaireSummary](https://rz3.aeb.de/test4ce/servlet/bf/doc/RiskAssessmentBF/de/aeb/xnsg/riskasmt/bf/IRiskAssessmentBF.html#getQuestionnaireSummary\(de.aeb.xnsg.riskasmt.bf.QuestionnaireSummaryRequestDTO\))​" can be used.
