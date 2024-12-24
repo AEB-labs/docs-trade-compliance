@@ -4,3 +4,9 @@
 - deletetransaction
 - getchangedtransactions
 - gettransactioncheckresult
+- acknowledgegetchangedtransactions-1
+- checktransaction-1
+- createquestionnairefortransaction-1
+- deletetransaction-1
+- getchangedtransactions-1
+- gettransactioncheckresult-1

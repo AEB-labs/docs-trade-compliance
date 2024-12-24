@@ -3,3 +3,8 @@
 - deletecompany
 - searchcompanies
 - getcompanyroles
+- getcompany-1
+- createorupdatecompany-1
+- deletecompany-1
+- searchcompanies-1
+- getcompanyroles-1

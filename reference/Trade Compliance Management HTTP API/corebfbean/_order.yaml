@@ -1,0 +1,12 @@
+- checkbffunctionexists
+- echo
+- echouppercase-1
+- getallmonitoringvalues
+- getbuildforsolution
+- getmonitoringvalue
+- getproductinfo
+- getruntimeinfo
+- getruntimestate
+- getthreaddump-1
+- getversionforsolution
+- restartrfcserver
