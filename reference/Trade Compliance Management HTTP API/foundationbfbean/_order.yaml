@@ -32,7 +32,6 @@
 - announcestop-1
 - cancelannouncestop-1
 - changeadminpassword-1
-- getallclients-1
 - createclient-1
 - downloadfile-1
 - generateclientidentcode-1
@@ -58,3 +57,4 @@
 - starttableupdate-1
 - systemsearch-1
 - uploadfilemultipart-1
+- queryclients
