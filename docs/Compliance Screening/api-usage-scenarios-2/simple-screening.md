@@ -17,4 +17,4 @@ In this scenario, a user starts by providing all relevant information to their p
 
 ### Step 2
 
-The user will then evaluate all address matches in AEB Compliance Screening. For address matches that are found to be false positives, a “Good Guy” can be created, which can be the case for a user's business partners, that have similar names to restricted parties. For actual address matches, the user will have to proceed according to their internally defined actions for dealing with restricted parties.
+The user will then evaluate all address matches in AEB Compliance Screening GUI. For address matches that are found to be false positives, a “Good Guy” can be created, which can be the case for a user's business partners, that have similar names to restricted parties. For actual address matches, the user will have to proceed according to their internally defined actions for dealing with restricted parties.
