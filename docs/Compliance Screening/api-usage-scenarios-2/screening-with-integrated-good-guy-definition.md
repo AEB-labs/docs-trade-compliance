@@ -11,7 +11,7 @@ Lastly, in this less common use case, all steps of the screening process and the
 
 ### Step 1
 
-In this scenario, a user starts by providing all relevant information to their partner system. Once finalised, the user can trigger an API call to AEB Compliance Screening (either using the screenAddresses or the batchMatch endpoint). This will trigger the address screening algorithm and check all supplied addresses against licensed restricted party lists with the results being logged automatically. The partner system will show whether a potential address match has been found or not.
+In this scenario, a user starts by providing all relevant information to their partner system. Once finalised, the user can trigger an API call to AEB Compliance Screening (either using the screenAddresses ([REST](https://trade-compliance.docs.developers.aeb.com/v4.1/update/reference/screenaddresses#/)) or the batchMatch ([SOAP](https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#batchMatch-de.aeb.xnsg.rex.bf.AddressPatternDTO:A-de.aeb.xnsg.rex.bf.MatchParametersDTO-)) endpoint). This will trigger the address screening algorithm and check all supplied addresses against licensed restricted party lists with the results being logged automatically. The partner system will show whether a potential address match has been found or not.
 
 ### Step 2
 
