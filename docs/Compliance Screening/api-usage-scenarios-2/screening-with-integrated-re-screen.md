@@ -11,7 +11,7 @@ Next up is the most common integration, which consists of two individual calls t
 
 ### Step 1
 
-In this scenario, a user starts by providing all relevant information to their partner system and triggers an API call to AEB Compliance Screening (either using the screenAddresses or the batchMatch endpoint). This will trigger AEBs address screening algorithm and check all supplied addresses. The partner system will receive a response with the information which addresses resulted in potential address matches, which in turn should block any associated transaction or business partner and further processing of such transaction.
+In this scenario, a user starts by providing all relevant information to their partner system and triggers an API call to AEB Compliance Screening (either using the screenAddresses [REST](https://trade-compliance.docs.developers.aeb.com/v4.1/update/reference#/)  or the batchMatch [SOAP](https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#batchMatch-de.aeb.xnsg.rex.bf.AddressPatternDTO:A-de.aeb.xnsg.rex.bf.MatchParametersDTO-) endpoint . This will trigger AEBs address screening algorithm and check all supplied addresses. The partner system will receive a response with the information which addresses resulted in potential matches, which in turn should block any associated transaction or business partner and further processing of such transactions.
 
 ### Step 2
 
