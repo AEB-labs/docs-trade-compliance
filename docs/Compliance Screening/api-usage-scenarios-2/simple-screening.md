@@ -5,4 +5,4 @@ hidden: false
 metadata:
   robots: index
 ---
-<Image align="center" src="https://files.readme.io/f8f72ef49e574cdce7a235e3364af52a7648bdb455867b8f53be6c7b771c5b3d-Slide1.SVG" />
+<Image align="center" width="123% " src="https://files.readme.io/f7241cfa2650ddac7da0bd16b706738c777d8a1573c4ab4319868f55c7a908f3-Slide1.JPG" />
