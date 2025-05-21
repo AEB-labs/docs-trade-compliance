@@ -1,5 +1,5 @@
 ---
-title: Simple Screening Integration
+title: Simple integrated screening
 deprecated: false
 hidden: false
 metadata:
