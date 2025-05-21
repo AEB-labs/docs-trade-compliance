@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-Let's start with a simple use case for running compliance screenings, in which a partner system calls AEBs Compliance Screening API once and the result is evaluated and acted upon by a *Compliance Officer*.
+Let's start with a simple use case for running compliance screenings, in which a partner system calls AEBs Compliance Screening API once and the result is typically evaluated and acted upon by a *Compliance Officer*.
 
 <Image align="center" width="123% " src="https://files.readme.io/f7241cfa2650ddac7da0bd16b706738c777d8a1573c4ab4319868f55c7a908f3-Slide1.JPG" />
 
