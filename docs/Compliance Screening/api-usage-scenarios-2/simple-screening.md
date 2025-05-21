@@ -11,7 +11,10 @@ Let's start with a simple use case for running compliance screenings, in which a
 
 ![](https://files.readme.io/1aa447fbe2d22dba8245ac7312914486591f8bfc63cd53c63e17c9e0575da5f5-image.png)
 
-In this scenario, a user starts by providing all relevant information to their partner system. Once finalised, the user can trigger an API call to AEB Compliance Screening (either using the screenAddresses or the batchMatch endpoint).\
-This will trigger the address screening algorithm and check all supplied addresses against licensed restricted party lists with the results being logged automatically. The partner system will show whether a potential address match has been found or not.
+### Step 1
 
-After the user has evaluated all relevant information, they can either define “Good Guys” for false positive address matches or take internally defined actions on restricted business partners. “Good Guys” can be defined through API calls using the goodGuy endpoint, which will create “Good Guys” and log their creation. Once any potential match has been handled accordingly, the partner system triggers another API call to re-screen any blocked address, which returns with no further address matches found and therefore blocked transactions may proceed.
+In this scenario, a user starts by providing all relevant information to their partner system. Once finalised, the user can trigger an API call to AEB Compliance Screening (either using the batchMatch or the screenAddresses endpoint). This will trigger AEB´s address screening algorithm and check all supplied addresses against licensed restricted party lists. The results of this screening are logged automatically. The response back to the partner system will show whether a potential address match has been found or not. Most users will also configure an automatic e-mail notification, should an address match arise.
+
+### Step 2
+
+The user will then evaluate all address matches in AEB Compliance Screening. For address matches that are found to be false positives, a “Good Guy” can be created, which can be the case for a user's business partners, that have similar names to restricted parties. For actual address matches, the user will have to proceed according to their internally defined actions for dealing with restricted parties.
