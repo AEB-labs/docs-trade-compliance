@@ -1,5 +1,5 @@
 ---
-title: About Risk Assessment
+title: Getting Started
 excerpt: ''
 deprecated: false
 hidden: false
