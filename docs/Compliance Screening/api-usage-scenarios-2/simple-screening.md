@@ -13,7 +13,7 @@ Let's start with a simple use case for running compliance screenings, in which a
 
 ### Step 1
 
-In this scenario, a user starts by providing all relevant information to their partner system. Once finalised, the user can trigger an API call to AEB Compliance Screening (either using the batchMatch or the screenAddresses endpoint). This will trigger AEB´s address screening algorithm and check all supplied addresses against licensed restricted party lists. The results of this screening are logged automatically. The response back to the partner system will show whether a potential address match has been found or not. Most users will also configure an automatic e-mail notification, should an address match arise.
+In this scenario, a user starts by providing all relevant information to their partner system. Once finalised, the user can trigger an API call to AEB Compliance Screening (either using the screenAddresses ([REST](https://trade-compliance.docs.developers.aeb.com/v4.1/update/reference#/)) or the batchMatch (SOAP) endpoint). This will trigger AEB´s address screening algorithm and check all supplied addresses against licensed restricted party lists. The results of this screening are logged automatically. The response back to the partner system will show whether a potential address match has been found or not. Most users will also configure an automatic e-mail notification, should an address match arise.
 
 ### Step 2
 
