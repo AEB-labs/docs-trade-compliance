@@ -25,6 +25,7 @@ We have prepared descriptions for three use cases:
 
 <ul>
   <li>Simple integrated screening</li>
+  <p>A simple integration which runs AEBs Compliance Screening on one or more addresses you would like to screen. The response may be processed by your partner system or you may be notified via e-mail. </p>
   <li>Screening with integrated re-screen</li>
   <li>Screening with integrated good guy definition</li>
 </ul>
