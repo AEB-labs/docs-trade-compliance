@@ -15,11 +15,11 @@ In this scenario, a user starts by providing all relevant information to their p
 
 ### Step 2
 
-For a detailed evaluation of any potential address match, the user then triggers a call to the findMatchingAddresses (REST) or getMatchingAddresses (SOAP) endpoint. The responses of these endpoints contains more detailed information on every individual address and should only be called on addresses that have been found to be potential matches via screenAddresses/batchMatch.
+For a detailed evaluation of any potential address match, the user then triggers a call to the findMatchingAddresses ([REST](https://trade-compliance.docs.developers.aeb.com/v4.1/update/reference/findmatchingaddresses#/)) or getMatchingAddresses ([SOAP](https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#getMatchingAddresses\(de.aeb.xnsg.rex.bf.AddressPatternDTO,de.aeb.xnsg.rex.bf.MatchParametersDTO\))) endpoint. The responses of these endpoints contains more detailed information on every individual address and should only be called on addresses that have been found to be potential matches via screenAddresses/batchMatch.
 
 ### Step 3
 
-After the user has evaluated all relevant information, they can either define “Good Guys” for false positive address matches or take internally defined actions on restricted business partners. “Good Guys” can be defined through API calls using the goodGuy endpoint, which will create “Good Guys” and log their creation.
+After the user has evaluated all relevant information, they can either define “Good Guys” for false positive address matches or take internally defined actions on restricted business partners. “Good Guys” can be defined through API calls using either the goodGuy ([REST](https://trade-compliance.docs.developers.aeb.com/v4.1/update/reference/goodguy-1#/)) or the defineGoodGuyWithResult ([SOAP]() ) endpoint, which will create “Good Guys” and log their creation.
 
 ### Step 4
 
