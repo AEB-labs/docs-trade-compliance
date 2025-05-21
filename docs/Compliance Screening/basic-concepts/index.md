@@ -1,5 +1,5 @@
 ---
-title: Basic Concepts
+title: Basic Concepts and Terms
 excerpt: ''
 deprecated: false
 hidden: false
