@@ -1,5 +1,5 @@
 ---
-title: About Export Controls
+title: Getting Started
 excerpt: ''
 deprecated: false
 hidden: false
