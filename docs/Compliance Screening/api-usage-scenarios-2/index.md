@@ -34,6 +34,6 @@ We have prepared descriptions for three use cases:
 
 ### In case you missed it
 
-AEBs Compliance Screening API offers two interfaces: [SOAP]()  and [REST](https://trade-compliance.docs.developers.aeb.com/v4.1/update/reference#/) . The equivalent endpoints for both interfaces are mentioned in the following pages.\
+AEBs Compliance Screening API offers two interfaces: [REST](https://trade-compliance.docs.developers.aeb.com/v4.1/update/reference#/) and [SOAP]() . The equivalent endpoints for both interfaces are mentioned in the following pages. The REST-specific endpoints are mentioned first.\
 Depending on the number of addresses you want to screen and the information that is required for the partner system to run appropriate processes, we recommend you read [Bulk vs. Single Address Screening](doc:bulk-vs-single-address-screening).
 When a screened address results in a potential match, action is required, which is referred to as [Match Handling and Good Guys](doc:restricted-party-lists).
