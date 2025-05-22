@@ -21,7 +21,7 @@ In the following pages, we demonstrate typical scenarios of how the Compliance S
 
 API calls to AEBs Compliance Screening require log in credentials. We have prepared a test system, which you can use for testing purposes for free. You can find more information on the required credentials under [The First Address Screening](https://trade-compliance.docs.developers.aeb.com/v4.1/update/docs/the-first-screening-of-an-address#/) .
 
-We have prepared descriptions for three use cases:
+These are the three most common use cases:
 
 <ul>
   <li>Simple integrated screening</li>
