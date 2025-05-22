@@ -25,7 +25,7 @@ These are the three most common use cases:
 
 <ul>
   <li>Simple integrated screening</li>
-  <p>A simple integration which runs AEBs Compliance Screening on one or more addresses you would like to screen. The response may be processed by your partner system or you may be notified via e-mail. This lightweight integration use case would require subsequent action by a natural person through AEBs Compliance Screening GUI. </p>
+  <p>A simple integration which runs AEBs Compliance Screening on one or more addresses you would like to screen. The response is typically processed by your partner system and you may configure a notification via e-mail. This lightweight integration use case would require subsequent action by a natural person through AEBs Compliance Screening GUI. </p>
   <li>Screening with integrated re-screen</li>
   <p>A standard integration which runs AEBs Compliance Screening. The response would be handled by the partner system, followed by subsequent action by a natural person through AEBs Compliance Screening GUI and a second screening triggered by the partner system to re-evaluate the screened addresses once more.</p>
   <li>Screening with integrated good guy definition</li>
