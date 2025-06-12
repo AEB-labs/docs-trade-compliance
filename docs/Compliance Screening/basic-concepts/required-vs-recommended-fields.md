@@ -1,5 +1,5 @@
 ---
-title: Required vs. recommended fields
+title: Required vs. Recommended Fields
 deprecated: false
 hidden: false
 metadata:
