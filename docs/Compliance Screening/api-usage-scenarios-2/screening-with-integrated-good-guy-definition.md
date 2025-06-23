@@ -19,7 +19,7 @@ For a detailed evaluation of any potential address match, the user then triggers
 
 ### Step 3
 
-After the user has evaluated all relevant information, they can either define “Good Guys” for false positive address matches or take internally defined actions on restricted business partners. “Good Guys” can be defined through API calls using either the goodGuy ([REST](https://trade-compliance.docs.developers.aeb.com/v4.1/update/reference/goodguy-1#/)) or the defineGoodGuyWithResult ([SOAP]() ) endpoint, which will create “Good Guys” and log their creation.
+After the user has evaluated all relevant information, they can either define “Good Guys” for false positive address matches or take internally defined actions on restricted business partners. “Good Guys” can be defined through API calls using either the goodGuy ([REST](https://trade-compliance.docs.developers.aeb.com/v4.1/update/reference/goodguy-1#/)) or the defineGoodGuyWithResult ([SOAP](https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#defineGoodGuyWithResult\(de.aeb.xnsg.rex.bf.GoodGuyAddressDTO\))) endpoint, which will create “Good Guys” and log their creation.
 
 ### Step 4
 
