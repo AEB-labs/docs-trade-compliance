@@ -1,5 +1,5 @@
 ---
-title: Screening with integrated status syncronization
+title: Screening with integrated status synchronization
 deprecated: false
 hidden: false
 metadata:
