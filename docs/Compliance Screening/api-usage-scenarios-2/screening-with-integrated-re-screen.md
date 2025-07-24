@@ -7,7 +7,7 @@ metadata:
 ---
 Next up is the most common integration, which consists of two individual calls to AEBs Compliance Screening API. The results from the initial screening call is typically evaluated and acted upon by a *Compliance Officer*.
 
-<Image align="center" src="https://files.readme.io/ba8888d03fe22972c75d16705d9d5e1eeb1556439540745cfec0c21c08995a41-Slide4.JPG" />
+<Image align="center" src="https://files.readme.io/54f4d7fc5b1449c7e035c4463a85c97895d021dc3e4dea0dc704f28fa2fca6f3-Scenario_2.png" />
 
 ### Step 1
 
