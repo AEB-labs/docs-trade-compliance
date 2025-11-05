@@ -5,9 +5,9 @@ hidden: false
 metadata:
   robots: index
 ---
-Next up is the most common integration, which consists of two individual calls to AEBs Compliance Screening API. The results from the initial screening call is typically evaluated and acted upon by a *Compliance Officer*.
+Next up is the most common integration, which consists of two individual calls to AEBs Compliance Screening API. The results from the initial screening call is typically evaluated and acted upon by a _Compliance Officer_.
 
-<Image align="center" src="https://files.readme.io/54f4d7fc5b1449c7e035c4463a85c97895d021dc3e4dea0dc704f28fa2fca6f3-Scenario_2.png" />
+<Image align="center" border={false} src="https://files.readme.io/e7e8876e42b5a216a3a4421e07265ec78445c3c6b29f7fcde974ad44622f106b-Slide4.JPG" />
 
 ### Step 1
 
