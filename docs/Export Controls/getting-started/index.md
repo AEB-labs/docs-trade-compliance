@@ -18,7 +18,7 @@ The Export Control check covers the jurisdictions you have licensed and any manu
 
 ## API
 
-The Export Controls API allows you to check export transactions from your ERP or other host systems using [REST](ref:) or <a href="https://rz3.aeb.de/test4ce/servlet/bf?lang=en" target="_blank">SOAP</a> webservices.
+The Export Controls API allows you to check export transactions from your ERP or other partner systems using [REST](ref:) or <a href="https://rz3.aeb.de/test4ce/servlet/bf?lang=en" target="_blank">SOAP</a> webservices.
 
 > 📘 Export Controls currently has two API versions. Only the SOAP interface supports both versions. The REST interface only supports the latest version (v2). Therefore only the v2 version is documented in the following guides.
 

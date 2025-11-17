@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-Returns statistic data such as number of address matches, address matches processed, address matches via file checks, or Good Guys defined. You can filter by client system, client, client group, and time frame, but the time frame may not exceed three months.
+Returns statistic data such as number of address matches, address matches processed, address matches via file checks, or Good Guys defined. You can filter by partner system, client, client group, and time frame, but the time frame may not exceed three months.
 
 <Table align={["left","left"]}>
   <thead>
