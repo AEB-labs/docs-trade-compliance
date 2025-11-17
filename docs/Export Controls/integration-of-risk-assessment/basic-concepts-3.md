@@ -24,7 +24,7 @@ There are 3 basic conditions (gates) to be met for Risk Assessment integration:
 
 During an Export Control check with enabled Risk Assessment integration (API method [checkTransaction()](ref:checktransaction)), a Risk Assessment questionnaire is created for a checked business transaction (e.g., order) if it is needed according to the configuration and does not yet exist (see [Reference Data](doc:reference-data)). This leads to a restriction for the Risk Assessment jurisdiction in the check result. If the questionnaire already exists, its result is evaluated and considered in the check result. 
 
-> 📘 At any moment at most one questionnaire can exist for a single business transaction from a host system (the newest one is always the relevant one).
+> 📘 At any moment at most one questionnaire can exist for a single business transaction from a partner system (the newest one is always the relevant one).
 
 The following check results are available for the Risk Assessment jurisdiction:
 
@@ -102,7 +102,7 @@ The following check results are available for the Risk Assessment jurisdiction:
       <td style={{ textAlign: "left" }}>
         The questionnaire needs to be completed or an export control officer could clear this result with an approval.
 
-        In the business transaction in the host system all necessary data for questionnaire creation should be filled.
+        In the business transaction in the partner system all necessary data for questionnaire creation should be filled.
       </td>
     </tr>
 

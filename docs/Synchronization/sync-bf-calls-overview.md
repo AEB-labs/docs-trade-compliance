@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-To subscribe/unsubscribe a host system to/from synchronization events the following API methods are used:
+To subscribe/unsubscribe a partner system to/from synchronization events the following API methods are used:
 
 * [subscribePartnerSystem()](ref:subscribepartnersystem)
 * [unsubscribePartnerSystem()](ref:unsubscribepartnersystem)
