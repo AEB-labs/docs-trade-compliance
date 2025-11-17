@@ -12,7 +12,7 @@ next:
 ---
 Returns the date on which a restricted party list has last been updated. A date that lies some days in the past may indicate that the automated update of the data service in Trade Compliance Management is not configured properly.
 
-This API call is typically used for technical monitoring, and may only be relevant if the AEB application is running on premise. It helps to identify situations where e.g. the automatic download of updates for restricted party lists from the data service is not working anymore because someone has blocked access to AEB in the firewall.
+This API method is typically used for technical monitoring, and may only be relevant if the AEB application is running on premise. It helps to identify situations where e.g. the automatic download of updates for restricted party lists from the data service is not working anymore because someone has blocked access to AEB in the firewall.
 
 <Table align={["left","left"]}>
   <thead>

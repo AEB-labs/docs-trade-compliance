@@ -28,7 +28,7 @@ The API is available via [REST](ref:) or <a href="https://rz3.aeb.de/test4ce/ser
 
 ### Customer-specific credentials
 
-In case you have a dedicated client for your TCM web service, you should use a client-specific API-user that should either be created by AEB or by your TCM administrator.
+In case you have a dedicated client for your TCM solution, you should use a client-specific API-user that should either be created by AEB or by your TCM administrator.
 
 > 🚧
 >

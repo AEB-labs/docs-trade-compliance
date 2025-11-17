@@ -1,5 +1,5 @@
 ---
-title: Business Facade Calls Overview
+title: API Methods Overview
 excerpt: ''
 deprecated: false
 hidden: false
@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-To subscribe/unsubscribe a host system to/from synchronization events the following API calls are used:
+To subscribe/unsubscribe a host system to/from synchronization events the following API methods are used:
 
 * [subscribePartnerSystem()](ref:subscribepartnersystem)
 * [unsubscribePartnerSystem()](ref:unsubscribepartnersystem)

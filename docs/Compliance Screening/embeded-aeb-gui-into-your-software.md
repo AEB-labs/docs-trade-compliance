@@ -12,7 +12,7 @@ next:
 ---
 ## General information about Compliance Screening applications
 
-Besides business facades (BF), which allow the use of Compliance Screening functionality in your own program code, the AEB Compliance Screening API also offers application facades (AF) to embed the GUI of Compliance Screening in your own software.
+The AEB Compliance Screening API allows the use of Compliance Screening functionality not only in your own program code, but also to embed the GUI of Compliance Screening in your own software via UI APIs.
 
 <Table align={["left","left"]}>
   <thead>
@@ -50,6 +50,6 @@ Besides business facades (BF), which allow the use of Compliance Screening funct
   </tbody>
 </Table>
 
-An application facade call is technically a normal business facade call - the authentication process is the same, request parameters are transmitted as HTTP body. But an application facade returns a link in the response, which the caller of the application facade can open in a new browser window or in an embedded frame of the web application, so the desired application of Compliance Screening opens for the user.
+A call to a UI API is technically a standard API call - the authentication process is the same, request parameters are transmitted as HTTP body. However, a UI API returns a link in the response, which the caller can open in a new browser window or in an embedded frame of the web application, allowing the user to access the desired Compliance Screening application.
 
-More details on application facade requests can be found in [REST](ref:compliance-screening-applications-1) or <a href="https://rz3.aeb.de/test4ce/servlet/bf?lang=en" target="_blank">SOAP</a> documentation.
+More details on UI API requests can be found in [REST](ref:compliance-screening-applications-1) or <a href="https://rz3.aeb.de/test4ce/servlet/bf?lang=en" target="_blank">SOAP</a> documentation.
