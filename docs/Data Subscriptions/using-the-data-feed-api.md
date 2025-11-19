@@ -14,7 +14,7 @@ This page describes how to retrieve data subscription files from the Trade Compl
 The Data Feed API provides three endpoints that you need to implement in your client:
 
 * [getPublishedDataFeedParts()](ref:getpublisheddatafeedparts): Poll for newly published data feed parts
-* [dataFeedParts/{client}/{id}](ref:getdatafeedpartcontentforrest): Download the content of data feed parts
+* [dataFeedParts()](ref:getdatafeedpartcontentforrest): Download the content of data feed parts
 * [acknowledgePublishedDataFeedParts()](ref:acknowledgepublisheddatafeedparts): Acknowledge the successful processing of data feed parts
 
 > 📘 The Data Feed API is also available as [SOAP-API](https://rz3.aeb.de/test4ce/servlet/bf/doc/DataFeedBF/de/aeb/xnsg/foundation/bf/IDataFeedBF.html).
@@ -37,7 +37,7 @@ Furthermore, the response includes a `syncId` field that is used to acknowledge 
 
 ### Step 2: Download data feed part content
 
-For each data feed part metadata object received in Step 1, use the API method [dataFeedParts/{client}/{id}](ref:getdatafeedpartcontentforrest)
+For each data feed part metadata object received in Step 1, use the API method [dataFeedParts()](ref:getdatafeedpartcontentforrest)
 to download the actual content of the data feed part. 
 Use the ID of your client as the `{client}` and the `dataFeedPartId` field of the data feed part metadata object as the `{id}` path parameter.
 The response contains the content of the data feed part file in the format specified in the data extract definition (CSV, JSON, or XML).
