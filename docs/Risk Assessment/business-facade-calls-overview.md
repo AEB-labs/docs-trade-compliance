@@ -1,5 +1,5 @@
 ---
-title: API methods Overview
+title: API Methods Overview
 excerpt: ''
 deprecated: false
 hidden: false
