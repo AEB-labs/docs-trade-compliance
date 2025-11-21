@@ -1,12 +1,1 @@
-- checkbffunctionexists-1
-- echo-1
-- echouppercase
-- getallmonitoringvalues-1
-- getbuildforsolution-1
-- getmonitoringvalue-1
-- getproductinfo-1
-- getruntimeinfo-1
-- getruntimestate-1
-- getthreaddump
-- getversionforsolution-1
-- restartrfcserver-1
+[]

@@ -1,9 +1,3 @@
-- acknowledgeevents
-- getnotacknowledgedevents
-- getpartnersystemsubscriptions
-- subscribepartnersystem
-- synchronizeevents
-- unsubscribepartnersystem
 - acknowledgeevents-1
 - getnotacknowledgedevents-1
 - getpartnersystemsubscriptions-1
