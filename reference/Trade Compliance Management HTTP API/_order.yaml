@@ -10,7 +10,6 @@
 - remoteadminbfbean
 - syncbfbean
 - companies
-- compliance-screening-internal
 - risk-assessment-applications
 - risk-assessment
 - workstationserviceagent
@@ -19,6 +18,7 @@
 - genericafbean
 - corebfbean
 - compliance-screening-applications
+- compliance-screening-internal
 - compliance-screening
 - datafeedbfbean
 - license-management
