@@ -16,45 +16,14 @@ next:
 ---
 The main request of Compliance Screening API is bulk address screening. This works for single addresses and for larger amounts of addresses as well. See also the chapter [Bulk vs single address screening](doc:bulk-vs-single-address-screening).
 
-<Table align={["left","left"]}>
-  <thead>
-    <tr>
-      <th style={{ textAlign: "left" }}>
-        Technology
-      </th>
-
-      <th style={{ textAlign: "left" }}>
-        Link to documentation
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        REST
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        [screenAddresses](ref:screenaddresses)
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        SOAP
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        <a href="https://rz3.aeb.de/test4ce/servlet/bf/RexBF?WSDL" target="_blank">RexBF (WSDL)</a>\ <a href="https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#batchMatch-de.aeb.xnsg.rex.bf.AddressPatternDTO:A-de.aeb.xnsg.rex.bf.MatchParametersDTO-" target="_blank">batchMatch (JavaDoc)</a>
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Technology | Link to documentation                                                                                                                                                                                                                                                                                                   |
+| :--------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| REST       | [screenAddresses](ref:screenaddresses-1)                                                                                                                                                                                                                                                                                |
+| SOAP       | <a href="https://rz3.aeb.de/test4ce/servlet/bf/RexBF?WSDL" target="_blank">RexBF (WSDL)</a>\ <a href="https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#batchMatch-de.aeb.xnsg.rex.bf.AddressPatternDTO:A-de.aeb.xnsg.rex.bf.MatchParametersDTO-" target="_blank">batchMatch (JavaDoc)</a> |
 
 ## Screening of addresses from master data
 
-Usually, it is necessary to periodically screen all addresses which are part of the master data (e.g. customers, suppliers, or employees), e.g. once every night or once a week. You may have several thousand of such addresses, so performance is important. For this reason, there is a bulk screening request which allows you to screen multiple addresses with one call. 
+Usually, it is necessary to periodically screen all addresses which are part of the master data (e.g. customers, suppliers, or employees), e.g. once every night or once a week. You may have several thousand of such addresses, so performance is important. For this reason, there is a bulk screening request which allows you to screen multiple addresses with one call.
 
 Processing too large amounts of addresses with one call can lead to timeouts, depending on the server and system configuration. A typical batch size could be 100 addresses. However, if you plan to use very big restricted party lists (e.g. from Dow Jones), it may be neccessary to choose smaller block sizes to get acceptable response times.
 
@@ -62,7 +31,7 @@ Processing too large amounts of addresses with one call can lead to timeouts, de
 
 The response of a bulk address screening request contains the overall result of the address check for each address (if there were any matches found or not). Address checks also create log entries in Trade Compliance Management which can be accessed there. Logs include further details about matches like all the matching restricted party addresses found. The logs are also used for the match handling of address matches in Trade Compliance Management, i.e. definition of good guys, etc.
 
-> 📘 If *suppressLogging* is set to 'true', no logs will be created and match handling in Trade Compliance Management will not be possible.
+> 📘 If _suppressLogging_ is set to 'true', no logs will be created and match handling in Trade Compliance Management will not be possible.
 
 ## Screening of transaction data
 

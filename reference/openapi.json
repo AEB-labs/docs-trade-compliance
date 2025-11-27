@@ -10826,10 +10826,10 @@
       },
       "CommandInfo": {
         "properties": {
-          "commandClass": {
+          "commandName": {
             "type": "string"
           },
-          "commandName": {
+          "commandClass": {
             "type": "string"
           }
         }
@@ -10849,25 +10849,24 @@
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
           },
+          "name": {
+            "type": "string"
+          },
+          "inputStream": {},
+          "content": {},
           "contentType": {
             "type": "string"
           },
           "outputStream": {},
-          "commandMap": {
-            "$ref": "#/components/schemas/CommandMap",
-            "writeOnly": true
-          },
           "allCommands": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/CommandInfo"
             }
           },
-          "preferredCommands": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CommandInfo"
-            }
+          "commandMap": {
+            "$ref": "#/components/schemas/CommandMap",
+            "writeOnly": true
           },
           "transferDataFlavors": {
             "type": "array",
@@ -10875,23 +10874,24 @@
               "$ref": "#/components/schemas/ActivationDataFlavor"
             }
           },
-          "name": {
-            "type": "string"
-          },
-          "inputStream": {},
-          "content": {}
+          "preferredCommands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommandInfo"
+            }
+          }
         }
       },
       "DataSource": {
         "properties": {
-          "contentType": {
-            "type": "string"
-          },
-          "outputStream": {},
           "name": {
             "type": "string"
           },
-          "inputStream": {}
+          "inputStream": {},
+          "contentType": {
+            "type": "string"
+          },
+          "outputStream": {}
         }
       },
       "DownloadFileResponseDTO": {

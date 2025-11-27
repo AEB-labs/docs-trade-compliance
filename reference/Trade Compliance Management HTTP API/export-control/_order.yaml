@@ -1,9 +1,3 @@
-- acknowledgegetchangedtransactions
-- checktransaction
-- createquestionnairefortransaction
-- deletetransaction
-- getchangedtransactions
-- gettransactioncheckresult
 - acknowledgegetchangedtransactions-1
 - checktransaction-1
 - createquestionnairefortransaction-1
