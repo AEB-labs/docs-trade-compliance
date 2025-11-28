@@ -28,11 +28,11 @@ The API is available via [REST](ref:) or <a href="https://rz3.aeb.de/test4ce/ser
 
 ### Customer-specific credentials
 
-In case you have a dedicated client for your TCM solution, you should use a client-specific API-user that should either be created by AEB or by your TCM administrator.
+In case you have a dedicated client for your TCM solution, you should use a client-specific API user that should either be created by AEB or by your TCM administrator.
 
 > 🚧
 >
-> Please make sure, that the API-user has the role  **I\_BUSINESSFACADE** and that the option "Dialog user" is not checked.
+> Please make sure, that the API user has the role  **I\_BUSINESSFACADE** and that the option "Dialog user" is not checked.
 
 ## Base URL
 

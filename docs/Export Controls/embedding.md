@@ -12,7 +12,7 @@ next:
 ---
 With the UI API methods (see also [Types of API methods](doc:business-facades-and-application-facades), it is possible to embed the GUI of Export Controls in your own software.
 
-The following requests for UI API apps exist:
+The following UI API functions exist:
 
 * **commerceControlList**: Opens the list of US EAR commerce control list numbers in the Export Controls web application.
 * **euExportControlList**: Opens the list of EU export control numbers in the Export Controls web application.
