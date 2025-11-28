@@ -27,7 +27,7 @@ The following steps guide you through the process:
 
 ### Step 1: Configure a partner system subscription
 
-Before you can recieve data from data subscriptions via API, you need to configure a partner system subscription.
+Before you can receive data from data subscriptions via API, you need to configure a partner system subscription.
 Navigate to *Office* – *Administration* – *Synchronisation* – *Partner system subscriptions* and create a new entry
 for your partner system. 
 Here, an ID of the partner system must be specified, which has to match the ID used in the API calls to retrieve the exported data files.
