@@ -18,7 +18,7 @@ This API method is typically used for technical monitoring, and may only be rele
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
-        Technology
+        API Variant
       </th>
 
       <th style={{ textAlign: "left" }}>

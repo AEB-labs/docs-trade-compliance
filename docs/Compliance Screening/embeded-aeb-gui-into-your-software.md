@@ -18,7 +18,7 @@ The AEB Compliance Screening API allows the use of Compliance Screening function
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
-        Technology
+        API Variant
       </th>
 
       <th style={{ textAlign: "left" }}>

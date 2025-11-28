@@ -20,7 +20,7 @@ If the [Match handling and Good Guy definition](doc:restricted-party-lists) is d
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
-        Technology
+        API Variant
       </th>
 
       <th style={{ textAlign: "left" }}>

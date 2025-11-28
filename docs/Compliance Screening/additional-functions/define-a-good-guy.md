@@ -22,7 +22,7 @@ See also the chapter [Match handling and Good Guys](doc:restricted-party-lists).
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
-        Technology
+        API Variant
       </th>
 
       <th style={{ textAlign: "left" }}>
