@@ -15,19 +15,19 @@ next:
       title: Retrieving Data Subscription Files via API
 ---
 
-*Data subscriptions* allow you to retrieve a set of defined data from the Compliance Engine on a regular basis.
+*Data subscriptions* allow you to retrieve a set of defined data from the Trade Compliance Management system on a regular basis.
 This can be useful, for example, to store log entries from Compliance Screening in your own systems for further analysis or reporting.
-While data subscription files can be retrieved via the Trade Compliance web application, this documentation covers the setup and retrieval via API.
+While data subscription files can be retrieved via the Trade Compliance Management web application, this documentation covers the setup and retrieval via API.
 If you wish to retrieve data subscription files via SFTP, please contact [AEB Support](https://service.aeb.com/hc/en-us/requests/new).
 
-> 📘 Currently, data subscriptions are available for **Compliance log entries for address and Good Guy checks** and **Non-match log entries from non-match files**.
+> 📘 Currently, data subscriptions are available for compliance log entries for address and Good Guy checks as well as for non-match log entries from non-match files.
 
 The configuration of data subscriptions is done in the Trade Compliance Management web application.
 The following steps guide you through the process:
 
 ### Step 1: Configure a partner system subscription
 
-Before you can create data subscriptions, you need to configure a partner system subscription.
+Before you can recieve data from data subscriptions via API, you need to configure a partner system subscription.
 Navigate to *Office* – *Administration* – *Synchronisation* – *Partner system subscriptions* and create a new entry
 for your partner system. 
 Here, an ID of the partner system must be specified, which has to match the ID used in the API calls to retrieve the exported data files.

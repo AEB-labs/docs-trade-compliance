@@ -11,7 +11,7 @@ next:
   description: ''
 ---
 This page describes how to retrieve data subscription files from the Trade Compliance Management API.
-The Data Feed API provides three endpoints that you need to implement in your client:
+The Data Feed API provides three API functions that you need to invoke in your system:
 
 * [getPublishedDataFeedParts()](ref:getpublisheddatafeedparts): Poll for newly published data feed parts
 * [dataFeedParts()](ref:getdatafeedpartcontentforrest): Download the content of data feed parts
@@ -21,12 +21,12 @@ The Data Feed API provides three endpoints that you need to implement in your cl
 
 ### Prerequisites
 
-To use the Data Feed API, you need to have configured data subscriptions and a partner system subscription in the Trade Compliance Management web application.,
-see [Getting Started](doc:getting-started) for more information.
+To use the Data Feed API, you need to have configured data subscriptions and a partner system subscription in the Trade Compliance Management web application.
+See [Getting Started](doc:getting-started) for more information.
 
 ### Step 1: Poll for published data feed parts
 
-Use the API method [getPublishedDataFeedParts()](ref:getpublisheddatafeedparts) to poll metadata about the next published data feed parts.
+Use the API function [getPublishedDataFeedParts()](ref:getpublisheddatafeedparts) to poll metadata about the next published data feed parts.
 The response always contains the retrieval information for up to the next 10 published data feed files.
 
 > 🚧 Make sure to use the correct partner system ID (`clientSystemId` field) in the request, as configured in the partner system subscription.
@@ -44,7 +44,7 @@ The response contains the content of the data feed part file in the format speci
 
 ### Step 3: Acknowledge processed data feed parts
 
-After successfully processing the downloaded data feed parts, use the API method [acknowledgePublishedDataFeedParts()](ref:acknowledgepublisheddatafeedparts)
+After successfully processing the downloaded data feed parts, use the API function [acknowledgePublishedDataFeedParts()](ref:acknowledgepublisheddatafeedparts)
 to acknowledge their successful processing.
 This will prevent the same data feed parts from being returned again in future calls to `getPublishedDataFeedParts()`.
 In the request body, provide the `syncId` received in Step 1.
