@@ -16,7 +16,8 @@ To enable the synchronization for changes in Export Controls *check transactions
 
 ![1285](https://files.readme.io/c88a30b-ecWithSync.png "ecWithSync.png")
 
-A user (order processor) of the partner system creates or updates a business transaction (e.g., an order). The partner system then calls, if all mandatory data was entered, [checkTransaction()](ref:checktransaction) with a host-system-generated transactionId using the Export Controls API.
+A user (order processor) of the partner system creates or updates a business transaction (e.g., an order). 
+The partner system then calls, if all mandatory data was entered, [checkTransaction()](ref:checktransaction) with a partner system-generated transactionId using the Export Controls API.
 
 Export Controls performs all configured checks and creates a log entry. If a restriction was detected, a *check transaction* is generated and stored in Export Controls (if it does not yet exist, otherwise the existing check transaction will be updated und rechecked). A response is sent back to the partner system. The partner system uses the response results to store the results along with the order. If the response suggested an export restriction, the partner system blocks the order. Additionally, the order processor may be informed about the blocked order.
 
