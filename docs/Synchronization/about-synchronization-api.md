@@ -16,7 +16,7 @@ The synchronization API is a cross-product API and is available via [REST](ref:s
 
 ## Basic concepts
 
-In Trade Compliance Management. synchronization is available for the following business objects:
+In Trade Compliance Management synchronization is available for the following business objects:
 
 * Export Controls check transactions (businessObjectType = “ECTransactionSync”)
 * Risk Assessment questionnaires (businessObjectType = “RAQUEST”)
