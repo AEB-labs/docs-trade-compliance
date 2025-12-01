@@ -7,7 +7,7 @@ metadata:
 ---
 This section is relevant to you, if you are planning to maintain your business partners' data and handle at least some matches directly in AEB Compliance Screening Web Application. When handling screening matches in our Web Application, your partner system is not automatically notified on the actions that you take (e.g. creating a Good Guy). We therefore recommend the implementation of regular **status synchronization with Compliance Screening**.
 
-To do so, your partner system can send an additional API call to a specific [screening endpoint](https://trade-compliance.docs.developers.aeb.com/reference/screenaddresses-1#/)  for the addresses in question, which will respond with the statuses of your business partners after you have evaluated them.
+To do so, your partner system can send an additional API call to a specific [screening API function](https://trade-compliance.docs.developers.aeb.com/reference/screenaddresses-1#/)  for the addresses in question, which will respond with the statuses of your business partners after you have evaluated them.
 
 To make this synchronization as smooth as possible, we recommend you implement a field representing the compliance status of a business partner (e.g. checked/blocked/released - partner has been checked/a match has been found/match has been released) and a field for additional comments (e.g. why a business partner has been blocked).
 

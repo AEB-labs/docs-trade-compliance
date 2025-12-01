@@ -14,7 +14,7 @@ Returns all alias addresses of a restricted party list address.
 
 In some restricted party lists, there are multiple names or addresses provided for the same person or company. To allow the user to see all relevant info for one found match, it is important to also present all alias entries.
 
-If the [Match handling and Good Guy definition](doc:restricted-party-lists) is done in Trade Compliance Management and not supported in your partner system, this API call is not relevant.
+If the [Match handling and Good Guy definition](doc:restricted-party-lists) is done in Trade Compliance Management and not supported in your partner system, this API function is not relevant.
 
 <Table align={["left","left"]}>
   <thead>

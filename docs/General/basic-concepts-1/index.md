@@ -15,7 +15,7 @@ next:
       title: General parameters
     - type: basic
       slug: business-facades-and-application-facades
-      title: Types of API methods
+      title: Types of API functions
     - type: basic
       slug: setting-up-your-environment-1
       title: Setting up your environment

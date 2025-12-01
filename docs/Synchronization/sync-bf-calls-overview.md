@@ -1,5 +1,5 @@
 ---
-title: API Methods Overview
+title: API Functions Overview
 excerpt: ''
 deprecated: false
 hidden: false
@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-To subscribe/unsubscribe a partner system to/from synchronization events the following API methods are used:
+To subscribe/unsubscribe a partner system to/from synchronization events the following API functions are used:
 
 * [subscribePartnerSystem()](ref:subscribepartnersystem)
 * [unsubscribePartnerSystem()](ref:unsubscribepartnersystem)

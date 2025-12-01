@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-With the UI API methods (see also [Types of API methods](doc:business-facades-and-application-facades), it is possible to embed the GUI of Export Controls in your own software.
+With the UI API (see also [Types of API Functions](doc:business-facades-and-application-facades), it is possible to embed the GUI of Export Controls in your own software.
 
 The following UI API functions exist:
 

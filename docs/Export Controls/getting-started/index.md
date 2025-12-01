@@ -14,7 +14,8 @@ Thank you for your interest in our Export Controls API. Please feel free to cont
 
 Export Controls is about checking exports against export regulations and embargos in order to comply with national and international laws.
 
-The Export Control check covers the jurisdictions you have licensed and any manual restrictions you have defined. The result of the check is returned in the API call. Depending on how you want to make the check result visible in your system, you might want to simply ignore the result, or you might want to show the user a popup with the result info, or you might want to set a block in the transaction, until the critical status is resolved by an export control officer (ECO).  
+The Export Control check covers the jurisdictions you have licensed and any manual restrictions you have defined. The API function returns the result of the check.
+Depending on how you want to make the check result visible in your system, you might want to simply ignore the result, or you might want to show the user a popup with the result info, or you might want to set a block in the transaction, until the critical status is resolved by an export control officer (ECO).  
 
 ## API
 

@@ -10,19 +10,19 @@ metadata:
 next:
   description: ''
 ---
-Risk Assessment is integrated into Export Control checks (API method [checkTransaction()](ref:checktransaction)) as a separate jurisdiction.
+Risk Assessment is integrated into Export Control checks (API function [checkTransaction()](ref:checktransaction)) as a separate jurisdiction.
 
 > 📘 Jurisdiction “Risk Assessment” is available for configuration in the compliance profile (in a separate sheet) if Export Controls and Risk Assessment are licensed for the client.
 
 There are 3 basic conditions (gates) to be met for Risk Assessment integration:
 
 **Gate 1**: Risk Assessment integration must be activated in the compliance profile used for the Export Control checks. If this is not the case, the Risk Assessment jurisdiction is not included in the check result of the Export Control check.\
-**Gate 2**: Risk Assessment integration must be requested in API method [checkTransaction()](ref:checktransaction). If this is not the case, the Risk Assessment jurisdiction is included in the check result, but only with the information that Risk Assessment integration was not requested.\
+**Gate 2**: Risk Assessment integration must be requested in API function [checkTransaction()](ref:checktransaction). If this is not the case, the Risk Assessment jurisdiction is included in the check result, but only with the information that Risk Assessment integration was not requested.\
 **Gate 3**: In the compliance profile used for Export Control checks it is possible to define manual restrictions for the Risk Assessment integration to limit for which business transactions the integration should be performed. If manual restrictions are in place, the Risk Assessment integration will only be considered as relevant if at least one of these manual restrictions is applicable to a business transaction (at least for one of its items). If this is not the case, the Risk Assessment jurisdiction is included in the check result, but only with the information that Risk Assessment integration is not relevant for the transaction. If no restrictions are listed in the compliance profile, the Risk Assessment integration will always be considered as relevant.
 
 ## What happens when Risk Assessment integration is enabled for an Export Control check?
 
-During an Export Control check with enabled Risk Assessment integration (API method [checkTransaction()](ref:checktransaction)), a Risk Assessment questionnaire is created for a checked business transaction (e.g., order) if it is needed according to the configuration and does not yet exist (see [Reference Data](doc:reference-data)). This leads to a restriction for the Risk Assessment jurisdiction in the check result. If the questionnaire already exists, its result is evaluated and considered in the check result. 
+During an Export Control check with enabled Risk Assessment integration (API function [checkTransaction()](ref:checktransaction)), a Risk Assessment questionnaire is created for a checked business transaction (e.g., order) if it is needed according to the configuration and does not yet exist (see [Reference Data](doc:reference-data)). This leads to a restriction for the Risk Assessment jurisdiction in the check result. If the questionnaire already exists, its result is evaluated and considered in the check result. 
 
 > 📘 At any moment at most one questionnaire can exist for a single business transaction from a partner system (the newest one is always the relevant one).
 

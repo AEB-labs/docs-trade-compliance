@@ -18,6 +18,6 @@ next:
       title: API Usage Scenarios
     - type: basic
       slug: additional-business-facade-calls-test
-      title: Additional API Methods
+      title: Additional API Functions
 ---
 The functionality of [Risk Assessment](doc:about-risk-assessment) can be integrated into Export Control checks. Risk Assessment questionnaires can be used, for example, to collect additional information about export transactions or to integrate certain checklists in Export Control checks.

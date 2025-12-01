@@ -29,11 +29,12 @@ These are the three most common use cases:
   <li>Screening with integrated status syncronization</li>
   <p>The most common integration that runs AEB's Compliance Screening. The applications screening response is handled by a partner system, followed by subsequent action by a natural person through AEB's web GUI. This integration is more suited to you, if you are planning on maintaining your business partners in your partner system. In this case, you would typically set up a second API call to syncronize all statuses between AEB's Compliance Screening and your partner system. </p>
   <li>Screening with integrated good guy definition</li>
-  <p>A complex integration which runs AEB's Compliance Screening and allows to handle the response entirely through a partner system. This includes multiple individual API calls to different endpoints and therefor requires integration of different responses into a partner system.</p>
+  <p>A complex integration which runs AEB's Compliance Screening and allows to handle the response entirely through a partner system. This includes multiple individual API calls to different API functions and therefor requires integration of different responses into a partner system.</p>
 </ul>
 
 ### In case you missed it
 
-AEB's Compliance Screening API offers two interfaces: [REST](https://trade-compliance.docs.developers.aeb.com/v4.1/update/reference#/) and [SOAP]() . The equivalent endpoints for both interfaces are mentioned in the following pages.  
+AEB's Compliance Screening API offers two API variants: [REST](ref:aliasaddresses) and [SOAP](https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html).
+The equivalent API functions for both API variants are mentioned in the following pages.  
 Depending on the number of addresses you want to screen and the information that is required for the partner system to run appropriate processes, we recommend you read [Bulk vs. Single Address Screening](doc:bulk-vs-single-address-screening).
 When a screened address results in a potential match, action is required, which is referred to as "Match Handling" and is explained here [Match Handling and Good Guys](doc:restricted-party-lists).
