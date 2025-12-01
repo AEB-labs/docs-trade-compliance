@@ -16,7 +16,7 @@ Returns all Compliance profiles of a client.
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
-        API Variant
+        API variant
       </th>
 
       <th style={{ textAlign: "left" }}>

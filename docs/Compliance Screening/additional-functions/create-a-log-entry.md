@@ -20,7 +20,7 @@ Check results of address screening are typically logged there by the AEB applica
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
-        API Variant
+        API variant
       </th>
 
       <th style={{ textAlign: "left" }}>

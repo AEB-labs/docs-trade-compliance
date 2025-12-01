@@ -18,7 +18,7 @@ This API function is typically used for technical monitoring, and may only be re
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
-        API Variant
+        API variant
       </th>
 
       <th style={{ textAlign: "left" }}>

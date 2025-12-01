@@ -38,7 +38,7 @@ In case you have a dedicated client for your TCM solution, you should use a clie
 
 To access the REST or SOAP webservices, you will need a base URL as an entry point to the AEB Compliance Screening API. Your company will be assigned a base URL when signing a contract with AEB. For our API test environment, the base URL is as follows:
 
-| API Variant | Base URL                                                                               |
+| API variant | Base URL                                                                               |
 | :---------- | :------------------------------------------------------------------------------------- |
 | REST        | [https://rz3.aeb.de/test4ce/rest](https://rz3.aeb.de/test4ce/rest)                     |
 | SOAP        | [https://rz3.aeb.de:443/test4ce/servlet/bf](https://rz3.aeb.de:443/test4ce/servlet/bf) |

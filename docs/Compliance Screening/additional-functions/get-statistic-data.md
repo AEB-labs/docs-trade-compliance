@@ -16,7 +16,7 @@ Returns statistic data such as number of address matches, address matches proces
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
-        API Variant
+        API variant
       </th>
 
       <th style={{ textAlign: "left" }}>
