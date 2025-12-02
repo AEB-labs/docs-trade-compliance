@@ -18,7 +18,7 @@ This will trigger the address screening algorithm and check all supplied address
 ### Step 2
 
 For a detailed evaluation of any potential address match, the user then triggers a call to the findMatchingAddresses ([REST](ref:findmatchingaddresses)) or getMatchingAddresses ([SOAP](https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#getMatchingAddresses\(de.aeb.xnsg.rex.bf.AddressPatternDTO,de.aeb.xnsg.rex.bf.MatchParametersDTO\))) API function. 
-The responses of these API functions contains more detailed information on every individual address and should only be called on addresses that have been found to be potential matches via screenAddresses/batchMatch.
+The responses of these API functions contain more detailed information on every individual address and should only be called on addresses that have been found to be potential matches via screenAddresses/batchMatch.
 
 ### Step 3
 
