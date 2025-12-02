@@ -1,5 +1,5 @@
 ---
-title: 'Retrieving Data Subscription Files via API'
+title: Retrieving Data Subscription Files via API
 excerpt: ''
 deprecated: false
 hidden: false
@@ -31,14 +31,14 @@ The response always contains the retrieval information for up to the next 10 pub
 
 > 🚧 Make sure to use the correct partner system ID (`clientSystemId` field) in the request, as configured in the partner system subscription.
 
-The response contains, among other data, an array of data feed part metadata objects, each containing a unique ID (`dataFeedPartId` field) that 
+The response contains, among other data, an array of data feed part metadata objects, each containing a unique ID (`dataFeedPartId` field) that
 you will need to download the actual data feed part content in the next step.
 Furthermore, the response includes a `syncId` field that is used to acknowledge the successful processing of the data feed parts in Step 3.
 
 ### Step 2: Download data feed part content
 
-For each data feed part metadata object received in Step 1, use the API method [dataFeedParts()](ref:getdatafeedpartcontentforrest)
-to download the actual content of the data feed part. 
+For each data feed part metadata object received in Step 1, use the API function [dataFeedParts()](ref:getdatafeedpartcontentforrest)
+to download the actual content of the data feed part.
 Use the ID of your client as the `{client}` and the `dataFeedPartId` field of the data feed part metadata object as the `{id}` path parameter.
 The response contains the content of the data feed part file in the format specified in the data extract definition (CSV, JSON, or XML).
 
