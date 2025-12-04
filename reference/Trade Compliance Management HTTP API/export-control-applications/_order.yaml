@@ -1,6 +1,6 @@
-- getcommercecontrollist-1
-- getectransaction-1
-- geteuexportcontrollist-1
-- getexpctrllogs-1
-- getgoodsattributevalueslist-1
-- getquickcheck-1
+- getcommercecontrollist
+- getectransaction
+- geteuexportcontrollist
+- getexpctrllogs
+- getgoodsattributevalueslist
+- getquickcheck

@@ -1,6 +1,6 @@
-- acknowledgeevents-1
-- getnotacknowledgedevents-1
-- getpartnersystemsubscriptions-1
-- subscribepartnersystem-1
-- synchronizeevents-1
-- unsubscribepartnersystem-1
+- acknowledgeevents
+- getnotacknowledgedevents
+- getpartnersystemsubscriptions
+- subscribepartnersystem
+- synchronizeevents
+- unsubscribepartnersystem

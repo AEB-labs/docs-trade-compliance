@@ -1,6 +1,6 @@
-- acknowledgegetchangedtransactions-1
-- checktransaction-1
-- createquestionnairefortransaction-1
-- deletetransaction-1
-- getchangedtransactions-1
-- gettransactioncheckresult-1
+- acknowledgegetchangedtransactions
+- checktransaction
+- createquestionnairefortransaction
+- deletetransaction
+- getchangedtransactions
+- gettransactioncheckresult
