@@ -32,7 +32,7 @@ Returns statistic data such as number of address matches, address matches proces
       </td>
 
       <td style={{ textAlign: "left" }}>
-        [screeningStatisticData](https://trade-compliance.docs.developers.aeb.com/reference/screeningstatisticdata)
+        [screeningStatisticData](ref:screeningstatisticdata)
       </td>
     </tr>
 

@@ -18,6 +18,6 @@ Result statuses can be managed in the master data in the Risk Assessment web app
 
 If the questionnaire generation is integrated in the Export Controls check, the result status will be part of the response to the [ExportControl40V2BF - checkTransaction​](https://rz3.aeb.de/test4ce/servlet/bf/doc/ExportControl40V2BF/de/aeb/xnsg/expctrl/bf/v40/checktransaction/CheckTransactionRAParmsDTO.html) call as a result in the jurisdiction "RiskAssessment"
 
-As the questionnaire might be answered asynchronously in the Risk Assessment web application, therefore to get updated results you have to synchronize the questionnaires data back to your system. For details see [Sync Events For Questionnaires](https://trade-compliance.docs.developers.aeb.com/docs/sync-events-for-questionnaires)
+As the questionnaire might be answered asynchronously in the Risk Assessment web application, therefore to get updated results you have to synchronize the questionnaires data back to your system. For details see [Sync Events For Questionnaires](doc:sync-events-for-questionnaires)
 
 Alternatively the API function "[RiskAssessmentBF - getQuestionnaireSummary](https://rz3.aeb.de/test4ce/servlet/bf/doc/RiskAssessmentBF/de/aeb/xnsg/riskasmt/bf/IRiskAssessmentBF.html#getQuestionnaireSummary\(de.aeb.xnsg.riskasmt.bf.QuestionnaireSummaryRequestDTO\))​" can be used.

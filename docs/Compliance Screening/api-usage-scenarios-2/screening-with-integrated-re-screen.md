@@ -5,7 +5,8 @@ hidden: false
 metadata:
   robots: index
 ---
-Next up is the most common integration, which consists of two individual calls to AEBs Compliance Screening API. The results from the initial screening call is typically evaluated and acted upon by a _Compliance Officer_. You can find more details on what the status syncronization is [here](https://trade-compliance.docs.developers.aeb.com/v4.1/update/docs/status-syncronization#/).
+Next up is the most common integration, which consists of two individual calls to AEBs Compliance Screening API. The results from the initial screening call is typically evaluated and acted upon by a _Compliance Officer_. 
+You can find more details on what the status syncronization is [here](doc:status-syncronization).
 
 <Image align="center" border={false} src="https://files.readme.io/e7e8876e42b5a216a3a4421e07265ec78445c3c6b29f7fcde974ad44622f106b-Slide4.JPG" />
 

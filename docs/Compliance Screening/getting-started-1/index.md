@@ -22,4 +22,4 @@ To avoid any misunderstandings, it’s important to clarify that the transaction
 
 The Compliance Screening API allows you to screen addresses from your ERP or other partner systems using [REST](ref:) or <a href="https://rz3.aeb.de/test4ce/servlet/bf?lang=en" target="_blank">SOAP</a> webservices.
 
-You can find typical workflows in the section [API Usage Scenarios](https://trade-compliance.docs.developers.aeb.com/v4.1/update/docs/api-usage-scenarios-2#/). Of course, other workflows for address screening are also possible.
+You can find typical workflows in the section [API Usage Scenarios](doc:api-usage-scenarios-2). Of course, other workflows for address screening are also possible.
