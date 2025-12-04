@@ -14,13 +14,13 @@ Creates a new log entry in Compliance Screening logs.
 
 This allows you to use AEB Trade Compliance Management as a central storage for logging data to have one central application that serves as an audit trail. 
 
-Check results of address screening are typically logged there by the AEB application. It could make sense to write additional logs about processes in the host system like blocking or unblocking of checked business partners or orders.
+Check results of address screening are typically logged there by the AEB application. It could make sense to write additional logs about processes in the partner system like blocking or unblocking of checked business partners or orders.
 
 <Table align={["left","left"]}>
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
-        Technology
+        API variant
       </th>
 
       <th style={{ textAlign: "left" }}>

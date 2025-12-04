@@ -28,20 +28,20 @@ The API is available via [REST](ref:) or <a href="https://rz3.aeb.de/test4ce/ser
 
 ### Customer-specific credentials
 
-In case you have a dedicated client for your TCM web service, you should use a client-specific API-user that should either be created by AEB or by your TCM administrator.
+In case you have a dedicated client for your TCM solution, you should use a client-specific API user that should either be created by AEB or by your TCM administrator.
 
 > 🚧
 >
-> Please make sure, that the API-user has the role  **I\_BUSINESSFACADE** and that the option "Dialog user" is not checked.
+> Please make sure, that the API user has the role  **I\_BUSINESSFACADE** and that the option "Dialog user" is not checked.
 
 ## Base URL
 
 To access the REST or SOAP webservices, you will need a base URL as an entry point to the AEB Compliance Screening API. Your company will be assigned a base URL when signing a contract with AEB. For our API test environment, the base URL is as follows:
 
-| Technology | Base URL                                                                               |
-| :--------- | :------------------------------------------------------------------------------------- |
-| REST       | [https://rz3.aeb.de/test4ce/rest](https://rz3.aeb.de/test4ce/rest)                     |
-| SOAP       | [https://rz3.aeb.de:443/test4ce/servlet/bf](https://rz3.aeb.de:443/test4ce/servlet/bf) |
+| API variant | Base URL                                                                               |
+| :---------- | :------------------------------------------------------------------------------------- |
+| REST        | [https://rz3.aeb.de/test4ce/rest](https://rz3.aeb.de/test4ce/rest)                     |
+| SOAP        | [https://rz3.aeb.de:443/test4ce/servlet/bf](https://rz3.aeb.de:443/test4ce/servlet/bf) |
 
 > 📘
 >
@@ -49,7 +49,7 @@ To access the REST or SOAP webservices, you will need a base URL as an entry poi
 
 ## Authentication
 
-Depending on the technology (REST or SOAP) different authentication methods could be used:
+Depending on the API variant (REST or SOAP) different authentication methods could be used:
 
 * **HTTP Basic Authentication**: This can be used with REST and SOAP and requires authentication data to be provided with each call.
 * **Token Authentication**: This can only be used with REST and requires an additional call to request a token, that can then be used for subsequent calls for a limited time.

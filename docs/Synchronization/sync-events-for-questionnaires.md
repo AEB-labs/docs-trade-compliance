@@ -14,9 +14,9 @@ The [RAQuestionnaireSyncParameterDTO](https://rz3.aeb.de/test4ce/servlet/bf/doc/
 
 **Which changes in a Risk Assessment questionnaire trigger a synchronization event?**
 
-* The deletion of the most recent questionnaire for a transaction, if the questionnaire was still valid and the transaction belongs to a subscribed host system.
-* The invalidation of the most recent questionnaire for a transaction,  if the transaction belongs to a subscribed host system.
-* The completion of the most recent questionnaire for a transaction, if the transaction belongs to a subscribed host system.
+* The deletion of the most recent questionnaire for a transaction, if the questionnaire was still valid and the transaction belongs to a subscribed partner system.
+* The invalidation of the most recent questionnaire for a transaction,  if the transaction belongs to a subscribed partner system.
+* The completion of the most recent questionnaire for a transaction, if the transaction belongs to a subscribed partner system.
 
 **Parameters of SyncEventDTO in response of request for new synchronization events:**
 

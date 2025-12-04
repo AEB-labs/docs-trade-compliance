@@ -24,7 +24,7 @@ See also the chapters [Bulk vs single address screening](doc:bulk-vs-single-addr
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
-        Technology
+        API variant
       </th>
 
       <th style={{ textAlign: "left" }}>

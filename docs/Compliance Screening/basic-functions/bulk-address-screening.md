@@ -16,10 +16,10 @@ next:
 ---
 The main request of Compliance Screening API is bulk address screening. This works for single addresses and for larger amounts of addresses as well. See also the chapter [Bulk vs single address screening](doc:bulk-vs-single-address-screening).
 
-| Technology | Link to documentation                                                                                                                                                                                                                                                                                                   |
-| :--------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| REST       | [screenAddresses](ref:screenaddresses-1)                                                                                                                                                                                                                                                                                |
-| SOAP       | <a href="https://rz3.aeb.de/test4ce/servlet/bf/RexBF?WSDL" target="_blank">RexBF (WSDL)</a>\ <a href="https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#batchMatch-de.aeb.xnsg.rex.bf.AddressPatternDTO:A-de.aeb.xnsg.rex.bf.MatchParametersDTO-" target="_blank">batchMatch (JavaDoc)</a> |
+| API variant | Link to documentation                                                                                                                                                                                                                                                                                                   |
+| :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| REST        | [screenAddresses](ref:screenaddresses-1)                                                                                                                                                                                                                                                                                |
+| SOAP        | <a href="https://rz3.aeb.de/test4ce/servlet/bf/RexBF?WSDL" target="_blank">RexBF (WSDL)</a>\ <a href="https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#batchMatch-de.aeb.xnsg.rex.bf.AddressPatternDTO:A-de.aeb.xnsg.rex.bf.MatchParametersDTO-" target="_blank">batchMatch (JavaDoc)</a> |
 
 ## Screening of addresses from master data
 

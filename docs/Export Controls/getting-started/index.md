@@ -14,11 +14,12 @@ Thank you for your interest in our Export Controls API. Please feel free to cont
 
 Export Controls is about checking exports against export regulations and embargos in order to comply with national and international laws.
 
-The Export Control check covers the jurisdictions you have licensed and any manual restrictions you have defined. The result of the check is returned in the API call. Depending on how you want to make the check result visible in your system, you might want to simply ignore the result, or you might want to show the user a popup with the result info, or you might want to set a block in the transaction, until the critical status is resolved by an export control officer (ECO).  
+The Export Control check covers the jurisdictions you have licensed and any manual restrictions you have defined. The API function returns the result of the check.
+Depending on how you want to make the check result visible in your system, you might want to simply ignore the result, or you might want to show the user a popup with the result info, or you might want to set a block in the transaction, until the critical status is resolved by an export control officer (ECO).  
 
 ## API
 
-The Export Controls API allows you to check export transactions from your ERP or other host systems using [REST](ref:) or <a href="https://rz3.aeb.de/test4ce/servlet/bf?lang=en" target="_blank">SOAP</a> webservices.
+The Export Controls API allows you to check export transactions from your ERP or other partner systems using [REST](ref:) or <a href="https://rz3.aeb.de/test4ce/servlet/bf?lang=en" target="_blank">SOAP</a> webservices.
 
 > 📘 Export Controls currently has two API versions. Only the SOAP interface supports both versions. The REST interface only supports the latest version (v2). Therefore only the v2 version is documented in the following guides.
 

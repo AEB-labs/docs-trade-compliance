@@ -96,4 +96,4 @@ An additional ID-only check can be configured in the compliance profile (if ID c
 
 In addition to the address fields described above, which are relevant for the address comparison, you will also find fields that are purely informative. These include the fields "title", "surname", "prenames", "telNo", "district", "email", "position", "info" and "free1" to "free7". These parameters are not relevant for the address comparison itself, but can provide useful meta-information for your users when analysing an address match or defining a good guy.
 
-The field "referenceId" is intended for internal, technical use. It can be used to to build references between the compliance protocols and the client system.
+The field "referenceId" is intended for internal, technical use. It can be used to to build references between the compliance protocols and the partner system.

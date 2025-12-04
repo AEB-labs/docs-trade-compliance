@@ -10,9 +10,9 @@ metadata:
 next:
   description: ''
 ---
-With the application facades (AF) (see also [Business Facades and Application Facades](doc:business-facades-and-application-facades), it is possible to embed the GUI of Export Controls in your own software.
+With the UI API (see also [Types of API Functions](doc:business-facades-and-application-facades), it is possible to embed the GUI of Export Controls in your own software.
 
-The following requests for application facades exist:
+The following UI API functions exist:
 
 * **commerceControlList**: Opens the list of US EAR commerce control list numbers in the Export Controls web application.
 * **euExportControlList**: Opens the list of EU export control numbers in the Export Controls web application.

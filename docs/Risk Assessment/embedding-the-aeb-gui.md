@@ -10,9 +10,9 @@ metadata:
 next:
   description: ''
 ---
-With the application facades (AF) (see also [Business Facades and Application Facades](doc:business-facades-and-application-facades)), it is possible to embed the GUI of Risk Assessment in your own software.
+With the UI API (see also [Types of API Functions](doc:business-facades-and-application-facades)), it is possible to embed the GUI of Risk Assessment in your own software.
 
-The following requests for application facades exist:
+The following UI API functions exist:
 
 * **searchQuestionnaires**: opens the list of questionnaires in the Risk Assessment web application with predefined filter fields.
 * **questionnaire**: opens a questionnaire in the Risk Assessment web application.
