@@ -36,7 +36,7 @@ If the [Match handling and Good Guy definition](doc:restricted-party-lists) is d
       </td>
 
       <td style={{ textAlign: "left" }}>
-        [aliasAddresses](ref:aliasaddresses-1)
+        [aliasAddresses](ref:aliasaddresses)
       </td>
     </tr>
 

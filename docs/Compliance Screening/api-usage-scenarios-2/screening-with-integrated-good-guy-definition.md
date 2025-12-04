@@ -23,7 +23,7 @@ The responses of these API functions contain more detailed information on every 
 ### Step 3
 
 After the user has evaluated all relevant information, they can either define “Good Guys” for false positive address matches or take internally defined actions on restricted business partners. 
-“Good Guys” can be defined through API calls using either the goodGuy ([REST](ref:goodguy-1)) or the defineGoodGuyWithResult ([SOAP](https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#defineGoodGuyWithResult\(de.aeb.xnsg.rex.bf.GoodGuyAddressDTO\))) API function, which will create “Good Guys” and log their creation.
+“Good Guys” can be defined through API calls using either the goodGuy ([REST](ref:goodguy)) or the defineGoodGuyWithResult ([SOAP](https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#defineGoodGuyWithResult\(de.aeb.xnsg.rex.bf.GoodGuyAddressDTO\))) API function, which will create “Good Guys” and log their creation.
 
 ### Step 4
 

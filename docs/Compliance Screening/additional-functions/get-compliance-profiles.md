@@ -32,7 +32,7 @@ Returns all Compliance profiles of a client.
       </td>
 
       <td style={{ textAlign: "left" }}>
-        [profiles](ref:profiles-1)
+        [profiles](ref:profiles)
       </td>
     </tr>
 

@@ -34,7 +34,7 @@ The AEB Compliance Screening API allows the use of Compliance Screening function
       </td>
 
       <td style={{ textAlign: "left" }}>
-        [Compliance Screening Applications](ref:compliance-screening-applications-1)
+        [Compliance Screening Applications](ref:compliance-screening-applications)
       </td>
     </tr>
 
@@ -52,4 +52,4 @@ The AEB Compliance Screening API allows the use of Compliance Screening function
 
 A call to a UI API is technically a standard API call - the authentication process is the same, request parameters are transmitted as HTTP body. However, a UI API returns a link in the response, which the caller can open in a new browser window or in an embedded frame of the web application, allowing the user to access the desired Compliance Screening application.
 
-More details on UI API requests can be found in [REST](ref:compliance-screening-applications-1) or <a href="https://rz3.aeb.de/test4ce/servlet/bf?lang=en" target="_blank">SOAP</a> documentation.
+More details on UI API requests can be found in [REST](ref:compliance-screening-applications) or <a href="https://rz3.aeb.de/test4ce/servlet/bf?lang=en" target="_blank">SOAP</a> documentation.
