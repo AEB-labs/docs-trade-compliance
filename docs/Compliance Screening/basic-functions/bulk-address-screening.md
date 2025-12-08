@@ -18,7 +18,7 @@ The main request of Compliance Screening API is bulk address screening. This wor
 
 | API variant | Link to documentation                                                                                                                                                                                                                                                                                                   |
 | :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| REST        | [screenAddresses](ref:screenaddresses-1)                                                                                                                                                                                                                                                                                |
+| REST        | [screenAddresses](ref:screenaddresses)                                                                                                                                                                                                                                                                                |
 | SOAP        | <a href="https://rz3.aeb.de/test4ce/servlet/bf/RexBF?WSDL" target="_blank">RexBF (WSDL)</a>\ <a href="https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/IRexBF.html#batchMatch-de.aeb.xnsg.rex.bf.AddressPatternDTO:A-de.aeb.xnsg.rex.bf.MatchParametersDTO-" target="_blank">batchMatch (JavaDoc)</a> |
 
 ## Screening of addresses from master data

@@ -38,7 +38,7 @@ See also the chapter [Match handling and Good Guys](doc:restricted-party-lists).
       </td>
 
       <td style={{ textAlign: "left" }}>
-        [goodGuy](ref:goodguy-1)
+        [goodGuy](ref:goodguy)
       </td>
     </tr>
 

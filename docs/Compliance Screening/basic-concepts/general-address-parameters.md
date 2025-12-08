@@ -14,7 +14,8 @@ next:
 
 An address check request should at least contain a name. The compliance profile used determines for which name or names an address check is performed. First, a so-called name block is checked, which can either be the name explicitly passed in the field "name", or a combination of any of the fields "name1" to "name4", as configured in the compliance profile. If the configured combination of "name1" to "name4" is empty, the field "name" will still be checked as a fallback. 
 
-In addition to the check of the name block, an additional separate check for each of the fields "name1" to "name4" can also be configured in the compliance profile. For further details, please refer to the help for your compliance profile setting in the web application and [Basic concepts](https://dash.readme.com/project/trade-compliance/v4.0/docs/basic-concepts-1).
+In addition to the check of the name block, an additional separate check for each of the fields "name1" to "name4" can also be configured in the compliance profile. 
+For further details, please refer to the help for your compliance profile setting in the web application and [Basic concepts](doc:basic-concepts-1).
 
 The fields "addressType", "street", "pc", "postbox", "city" and "country" are optional, but contribute to the accuracy of the check. It is recommended to always fill these fields - if the data is available - to make the check more precise.
 

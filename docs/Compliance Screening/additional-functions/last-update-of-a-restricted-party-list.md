@@ -34,7 +34,7 @@ This API function is typically used for technical monitoring, and may only be re
       </td>
 
       <td style={{ textAlign: "left" }}>
-        [lastRestrictedPartyListUpdate](ref:lastrestrictedpartylistupdate-1)
+        [lastRestrictedPartyListUpdate](ref:lastrestrictedpartylistupdate)
       </td>
     </tr>
 
