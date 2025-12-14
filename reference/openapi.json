@@ -21,7 +21,7 @@
   "tags": [
     {
       "name": "Compliance Foundation",
-      "description": "BF for the compliance foundation."
+      "description": "API for the compliance foundation."
     },
     {
       "name": "CoreBFBean",
@@ -6447,16 +6447,12 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "items": {
-                    "$ref": "#/components/schemas/GetScreeningStatisticDataRequestDTO"
-                  }
+                  "$ref": "#/components/schemas/GetScreeningStatisticDataResponseDTO"
                 }
               },
               "application/xml": {
                 "schema": {
-                  "items": {
-                    "$ref": "#/components/schemas/GetScreeningStatisticDataRequestDTO"
-                  }
+                  "$ref": "#/components/schemas/GetScreeningStatisticDataResponseDTO"
                 }
               }
             }
@@ -10826,10 +10822,10 @@
       },
       "CommandInfo": {
         "properties": {
-          "commandName": {
+          "commandClass": {
             "type": "string"
           },
-          "commandClass": {
+          "commandName": {
             "type": "string"
           }
         }
@@ -10849,25 +10845,10 @@
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
           },
-          "name": {
-            "type": "string"
-          },
-          "inputStream": {},
-          "content": {},
           "contentType": {
             "type": "string"
           },
           "outputStream": {},
-          "allCommands": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CommandInfo"
-            }
-          },
-          "commandMap": {
-            "$ref": "#/components/schemas/CommandMap",
-            "writeOnly": true
-          },
           "transferDataFlavors": {
             "type": "array",
             "items": {
@@ -10879,19 +10860,34 @@
             "items": {
               "$ref": "#/components/schemas/CommandInfo"
             }
-          }
-        }
-      },
-      "DataSource": {
-        "properties": {
+          },
+          "commandMap": {
+            "$ref": "#/components/schemas/CommandMap",
+            "writeOnly": true
+          },
+          "allCommands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommandInfo"
+            }
+          },
           "name": {
             "type": "string"
           },
           "inputStream": {},
+          "content": {}
+        }
+      },
+      "DataSource": {
+        "properties": {
           "contentType": {
             "type": "string"
           },
-          "outputStream": {}
+          "outputStream": {},
+          "name": {
+            "type": "string"
+          },
+          "inputStream": {}
         }
       },
       "DownloadFileResponseDTO": {
@@ -14072,64 +14068,39 @@
           }
         }
       },
-      "GetScreeningStatisticDataRequestDTO": {
-        "description": "Data transfer object for requesting statistic data in Compliance Screening.",
+      "GetScreeningStatisticDataResponseDTO": {
+        "description": "Data transfer object for statistic data in Compliance Screening.",
         "properties": {
-          "clientSystemId": {
-            "type": "string",
-            "description": "<p>Id of the sending client system.</p><p>e.g. Installation ID of the sending host or ERP system.</p><p>Maximum length: 20</p>",
-            "example": "TEST_ID"
+          "hasErrors": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>An error usually means that the request could not be performed.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": false
           },
-          "clientIdentCode": {
-            "type": "string",
-            "description": "<p>Client identification code.</p><p>Maximum length: 10</p>",
-            "example": "APITEST"
+          "hasOnlyRetryableErrors": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": true
           },
-          "userName": {
-            "type": "string",
-            "description": "<p>User who initiated the request from the client system.</p><p>If the user is found either in the system's user management or in a connected LDAP directory, the request runs under this user's roles.</p><p>If the user is not found, the request is only granted the basic 'I_EVERYONE' role. The user name may be used for logging purposes in this case.</p><p>Actual authentication is handled separately via the request's headers, so no password is required in the request's data.</p>",
-            "example": "API_TEST"
+          "hasWarnings": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": true
           },
-          "resultLanguageIsoCodes": {
+          "messages": {
             "type": "array",
-            "description": "<p>2-letter ISO codes of the languages in which texts will be returned.</p><p>English ('en') and German ('de') are typically supported by default. Other languages may be supported.</p><p>Translations will be looked up in the order of the provided language codes. If a translation is not available in one language, the next language is used instead.</p>",
-            "example": [
-              "en",
-              "de"
-            ],
+            "description": "<p>Error or warning messages at the request level.</p><p>There may be additional messages[] arrays at lower data levels as specified in the documentation.</p>",
             "items": {
-              "type": "string"
+              "$ref": "#/components/schemas/ResponseMessageDTO"
             }
           },
-          "clientIdentCodeToGet": {
-            "type": "string",
-            "description": "Client identification code of the client to get the statistic data from. When no client to get is given, we either consider the whole client group or only the client. When both client and client to get are given, they either need to be in the same client group or be the same clients.",
-            "example": "APITEST",
-            "maxLength": 10
-          },
-          "dateFrom": {
-            "type": "string",
-            "format": "yyyy-MM-dd",
-            "description": "The date of the first day to get statistic data from.",
-            "example": "2016-09-21"
-          },
-          "dateTo": {
-            "type": "string",
-            "format": "yyyy-MM-dd",
-            "description": "The date of the last day to get statistic data from.",
-            "example": "2016-09-21"
-          },
-          "getDataOfAllClientSystems": {
-            "type": "boolean",
-            "default": "false",
-            "description": "If <code>true</code>, statistic data will be returned for each client system.",
-            "example": true
+          "statisticDataRecords": {
+            "type": "array",
+            "description": "Entries of statistic data.",
+            "items": {
+              "$ref": "#/components/schemas/ScreeningStatisticDataDTO"
+            }
           }
-        },
-        "required": [
-          "dateFrom",
-          "dateTo"
-        ]
+        }
       },
       "ScreeningStatisticDataDTO": {
         "description": "Data transfer object for statistic data in Compliance Screening.",
@@ -14235,6 +14206,65 @@
             "description": "Number of address file checks with errors. This number does not take into account if the errors from the file checks have already been corrected."
           }
         }
+      },
+      "GetScreeningStatisticDataRequestDTO": {
+        "description": "Data transfer object for requesting statistic data in Compliance Screening.",
+        "properties": {
+          "clientSystemId": {
+            "type": "string",
+            "description": "<p>Id of the sending client system.</p><p>e.g. Installation ID of the sending host or ERP system.</p><p>Maximum length: 20</p>",
+            "example": "TEST_ID"
+          },
+          "clientIdentCode": {
+            "type": "string",
+            "description": "<p>Client identification code.</p><p>Maximum length: 10</p>",
+            "example": "APITEST"
+          },
+          "userName": {
+            "type": "string",
+            "description": "<p>User who initiated the request from the client system.</p><p>If the user is found either in the system's user management or in a connected LDAP directory, the request runs under this user's roles.</p><p>If the user is not found, the request is only granted the basic 'I_EVERYONE' role. The user name may be used for logging purposes in this case.</p><p>Actual authentication is handled separately via the request's headers, so no password is required in the request's data.</p>",
+            "example": "API_TEST"
+          },
+          "resultLanguageIsoCodes": {
+            "type": "array",
+            "description": "<p>2-letter ISO codes of the languages in which texts will be returned.</p><p>English ('en') and German ('de') are typically supported by default. Other languages may be supported.</p><p>Translations will be looked up in the order of the provided language codes. If a translation is not available in one language, the next language is used instead.</p>",
+            "example": [
+              "en",
+              "de"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "clientIdentCodeToGet": {
+            "type": "string",
+            "description": "Client identification code of the client to get the statistic data from. When no client to get is given, we either consider the whole client group or only the client. When both client and client to get are given, they either need to be in the same client group or be the same clients.",
+            "example": "APITEST",
+            "maxLength": 10
+          },
+          "dateFrom": {
+            "type": "string",
+            "format": "yyyy-MM-dd",
+            "description": "The date of the first day to get statistic data from.",
+            "example": "2016-09-21"
+          },
+          "dateTo": {
+            "type": "string",
+            "format": "yyyy-MM-dd",
+            "description": "The date of the last day to get statistic data from.",
+            "example": "2016-09-21"
+          },
+          "getDataOfAllClientSystems": {
+            "type": "boolean",
+            "default": "false",
+            "description": "If <code>true</code>, statistic data will be returned for each client system.",
+            "example": true
+          }
+        },
+        "required": [
+          "dateFrom",
+          "dateTo"
+        ]
       },
       "QuestionnaireParmsDTO": {
         "description": "Passing the parameters to identify the questionnaire.<br>The fields <code>questTemplId</code>, <code>clientSystemId</code>, and <code>referenceIdHost</code> are mandatory.",
