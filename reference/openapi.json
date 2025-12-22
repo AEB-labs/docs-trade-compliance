@@ -10845,20 +10845,16 @@
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
           },
-          "contentType": {
-            "type": "string"
-          },
-          "outputStream": {},
-          "transferDataFlavors": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ActivationDataFlavor"
-            }
-          },
           "preferredCommands": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/CommandInfo"
+            }
+          },
+          "transferDataFlavors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ActivationDataFlavor"
             }
           },
           "commandMap": {
@@ -10875,19 +10871,23 @@
             "type": "string"
           },
           "inputStream": {},
-          "content": {}
+          "content": {},
+          "outputStream": {},
+          "contentType": {
+            "type": "string"
+          }
         }
       },
       "DataSource": {
         "properties": {
-          "contentType": {
-            "type": "string"
-          },
-          "outputStream": {},
           "name": {
             "type": "string"
           },
-          "inputStream": {}
+          "inputStream": {},
+          "outputStream": {},
+          "contentType": {
+            "type": "string"
+          }
         }
       },
       "DownloadFileResponseDTO": {
