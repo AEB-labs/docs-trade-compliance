@@ -1,14 +1,13 @@
 ---
 title: Referencing Data
-excerpt: ''
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: noindex
-next:
-  description: ''
 ---
 Further common parameters are the **reference ID** and **reference comment**, which specify a context and reference for a transaction from a partner system and which help identifying a transaction in Trade Compliance Management.
 
