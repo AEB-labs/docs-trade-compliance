@@ -5,6 +5,8 @@ hidden: false
 metadata:
   robots: index
 ---
+Fully accessing and utilizing AEBs Compliance Screening REST services requires you to register with AEB and licence one or multiple of our products. However, if you would like to simply try our functionalities, check out our REST description (link down below).
+
 If you are interested in integrating your partner system to AEBs Compliance Screening API you should check out the following pages:
 
 **Basic Concepts and Terms** - Important information on how the APIs are intended to be used and what data is required for each of our products/APIs
