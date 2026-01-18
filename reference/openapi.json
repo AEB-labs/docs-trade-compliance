@@ -10822,10 +10822,10 @@
       },
       "CommandInfo": {
         "properties": {
-          "commandClass": {
+          "commandName": {
             "type": "string"
           },
-          "commandName": {
+          "commandClass": {
             "type": "string"
           }
         }
@@ -10845,21 +10845,26 @@
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
           },
-          "preferredCommands": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CommandInfo"
-            }
+          "name": {
+            "type": "string"
           },
+          "inputStream": {},
+          "content": {},
+          "contentType": {
+            "type": "string"
+          },
+          "outputStream": {},
           "transferDataFlavors": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ActivationDataFlavor"
             }
           },
-          "commandMap": {
-            "$ref": "#/components/schemas/CommandMap",
-            "writeOnly": true
+          "preferredCommands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommandInfo"
+            }
           },
           "allCommands": {
             "type": "array",
@@ -10867,14 +10872,9 @@
               "$ref": "#/components/schemas/CommandInfo"
             }
           },
-          "name": {
-            "type": "string"
-          },
-          "inputStream": {},
-          "content": {},
-          "outputStream": {},
-          "contentType": {
-            "type": "string"
+          "commandMap": {
+            "$ref": "#/components/schemas/CommandMap",
+            "writeOnly": true
           }
         }
       },
@@ -10884,10 +10884,10 @@
             "type": "string"
           },
           "inputStream": {},
-          "outputStream": {},
           "contentType": {
             "type": "string"
-          }
+          },
+          "outputStream": {}
         }
       },
       "DownloadFileResponseDTO": {
