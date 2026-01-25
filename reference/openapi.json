@@ -10822,10 +10822,10 @@
       },
       "CommandInfo": {
         "properties": {
-          "commandName": {
+          "commandClass": {
             "type": "string"
           },
-          "commandClass": {
+          "commandName": {
             "type": "string"
           }
         }
