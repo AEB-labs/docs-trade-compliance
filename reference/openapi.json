@@ -151,6 +151,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -212,7 +227,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -332,6 +347,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/MonitoringDataProviderDTO"
                   }
@@ -589,6 +605,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -650,7 +681,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -705,6 +736,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -766,7 +812,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -821,6 +867,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -882,7 +943,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -937,6 +998,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -998,7 +1074,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -1053,6 +1129,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -1114,7 +1205,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -1169,6 +1260,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -1230,7 +1336,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -1285,6 +1391,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -1346,7 +1467,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -1401,6 +1522,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -1462,7 +1598,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -1517,6 +1653,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -1578,7 +1729,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -1633,6 +1784,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -1694,7 +1860,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -1749,6 +1915,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -1810,7 +1991,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -1865,6 +2046,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -1926,7 +2122,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -1981,6 +2177,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -2042,7 +2253,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -2522,6 +2733,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/ClientDTO"
                   }
@@ -2626,6 +2838,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/ClientDTO"
                   }
@@ -2649,6 +2862,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/MonitoringDataProviderDTO"
                   }
@@ -2964,6 +3178,36 @@
         }
       }
     },
+    "/FoundationBFBean/publishUserMessage": {
+      "post": {
+        "tags": [
+          "FoundationBFBean"
+        ],
+        "description": "creates a user message, in several languages if required",
+        "operationId": "publishUserMessage",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PublishMessageRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "The operation result.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublishMessageResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/FoundationBFBean/roles": {
       "get": {
         "tags": [
@@ -2977,6 +3221,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/RoleInfoDTO"
                   }
@@ -3011,6 +3256,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/RoleInfoDTO"
                   }
@@ -3170,6 +3416,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/SystemSearchResultDTO"
                   }
@@ -3491,6 +3738,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -3552,7 +3814,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -4242,6 +4504,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -4303,7 +4580,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -4358,6 +4635,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -4419,7 +4711,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -4474,6 +4766,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -4535,7 +4842,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -4590,6 +4897,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -4651,7 +4973,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -4706,6 +5028,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -4767,7 +5104,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -4822,6 +5159,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -4883,7 +5235,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -4938,6 +5290,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -4999,7 +5366,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -5054,6 +5421,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -5115,7 +5497,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -5171,6 +5553,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -5232,7 +5629,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -5287,6 +5684,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -5348,7 +5760,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -5403,6 +5815,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -5464,7 +5891,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -5518,6 +5945,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/RestrictedPartyAddressDTO"
                   }
@@ -5525,9 +5953,39 @@
               },
               "application/xml": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/RestrictedPartyAddressDTO"
                   }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
                 }
               }
             }
@@ -5593,7 +6051,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -5648,6 +6106,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -5709,7 +6182,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -5754,6 +6227,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/RestrictedPartyAddressDTO"
                   }
@@ -5761,9 +6235,39 @@
               },
               "application/xml": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/RestrictedPartyAddressDTO"
                   }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
                 }
               }
             }
@@ -5829,7 +6333,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -5884,6 +6388,35 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -5945,7 +6478,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -6002,6 +6535,35 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -6063,7 +6625,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -6105,6 +6667,35 @@
         "responses": {
           "204": {
             "description": "No Content. The log entry was created."
+          },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
+                }
+              }
+            }
           },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
@@ -6167,7 +6758,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -6189,7 +6780,7 @@
         "tags": [
           "Compliance Screening"
         ],
-        "summary": "A Compliance Profil",
+        "summary": "Get the Compliance profiles of a client",
         "description": "Get the Compliance profiles of a client.",
         "operationId": "profiles",
         "parameters": [
@@ -6207,6 +6798,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/ProfileDTO"
                   }
@@ -6214,9 +6806,39 @@
               },
               "application/xml": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/ProfileDTO"
                   }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
                 }
               }
             }
@@ -6282,7 +6904,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -6327,6 +6949,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/AddressScreeningResultDTO"
                   }
@@ -6334,9 +6957,39 @@
               },
               "application/xml": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/AddressScreeningResultDTO"
                   }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AebProblem"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ErrorData"
+                    }
+                  ]
                 }
               }
             }
@@ -6402,7 +7055,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -6457,6 +7110,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -6518,7 +7186,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -6574,6 +7242,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -6635,7 +7318,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -6691,6 +7374,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -6752,7 +7450,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -6807,6 +7505,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -6868,7 +7581,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -6923,6 +7636,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -6984,7 +7712,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -7039,6 +7767,21 @@
               }
             }
           },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
           "401": {
             "description": "Unauthorized. Missing or invalid authorization token.",
             "content": {
@@ -7100,7 +7843,7 @@
             }
           },
           "500": {
-            "description": "Other errors, like a malformed request or internal server error. See errorMessage for details.",
+            "description": "Internal server error. See errorMessage for details.",
             "content": {
               "application/json": {
                 "schema": {
@@ -8179,6 +8922,7 @@
   "components": {
     "schemas": {
       "GetMasterdataIdentifiersResponseDTO": {
+        "type": "object",
         "description": "Response object for <code>/ComplianceFoundation/getMasterdataIdentifiers</code>",
         "properties": {
           "hasErrors": {
@@ -8213,6 +8957,7 @@
         }
       },
       "MasterdataIdentifierDTO": {
+        "type": "object",
         "description": "Represents a master data identifier.",
         "properties": {
           "identCode": {
@@ -8231,6 +8976,7 @@
         }
       },
       "ResponseMessageDTO": {
+        "type": "object",
         "description": "Result messages like errors or warnings.",
         "properties": {
           "messageType": {
@@ -8259,6 +9005,7 @@
         }
       },
       "TextInLanguageDTO": {
+        "type": "object",
         "description": "A translated text in one of the specified languages.",
         "properties": {
           "languageISOCode": {
@@ -8274,6 +9021,7 @@
         }
       },
       "ErrorData": {
+        "type": "object",
         "properties": {
           "errorMessage": {
             "type": "string"
@@ -8284,6 +9032,7 @@
         }
       },
       "GetMasterdataIdentifiersRequestDTO": {
+        "type": "object",
         "description": "Request object for <code>/ComplianceFoundation/getMasterdataIdentifiers</code>",
         "properties": {
           "clientSystemId": {
@@ -8323,6 +9072,7 @@
         ]
       },
       "BFFunctionExistsDTO": {
+        "type": "object",
         "description": "Result DTO for the checkBusinessFacadeFunctionExists function",
         "properties": {
           "facadeExists": {
@@ -8336,6 +9086,7 @@
         }
       },
       "BFFunctionDTO": {
+        "type": "object",
         "description": "Describe a API to be called.",
         "properties": {
           "businessFacade": {
@@ -8349,6 +9100,7 @@
         }
       },
       "MonitoringDataProviderDTO": {
+        "type": "object",
         "description": "Data Transfer Object for monitoring provider",
         "properties": {
           "groupName": {
@@ -8366,6 +9118,7 @@
         }
       },
       "ProductInfoDTO": {
+        "type": "object",
         "description": "This class holds various information items of the server which serves this request.",
         "properties": {
           "productName": {
@@ -8390,6 +9143,7 @@
         }
       },
       "VersionInfoDTO": {
+        "type": "object",
         "description": "This class holds version information about a solution or product in a server.",
         "properties": {
           "version": {
@@ -8407,6 +9161,7 @@
         }
       },
       "RuntimeInfoDTO": {
+        "type": "object",
         "description": "This class holds various runtime information items of the server which serves this request.",
         "properties": {
           "hostName": {
@@ -8481,6 +9236,7 @@
         }
       },
       "RuntimeStateResultDTO": {
+        "type": "object",
         "description": "This class holds various information items of the server which serves this request.",
         "properties": {
           "isStateOK": {
@@ -8512,6 +9268,7 @@
         "description": "This class contains parameter about asking the server about its runtime state."
       },
       "AFExecuteProcessParmsDTO": {
+        "type": "object",
         "description": "Parameters of UI API invocation when this is to be done via create process: The client has to invoke the process as specified by the properties of this object.",
         "properties": {
           "executableFile": {
@@ -8529,6 +9286,7 @@
         }
       },
       "AFShellExecuteParmsDTO": {
+        "type": "object",
         "description": "Parameters of application UI API when this is to be done via shellexecute: The client has to create a file with the given name in a temporary directory, the contents of the file is given in the variable 'contents'. Then \"shellExecute\" has to be invoked which assumes that the file type as given by filename is registered on client's machine",
         "properties": {
           "fileName": {
@@ -8536,16 +9294,14 @@
             "description": "This is the name of the file that has to be created in some temporary directory and filled with what contents contains"
           },
           "contents": {
-            "type": "array",
-            "description": "This is the contents that has to be written to the file",
-            "items": {
-              "type": "string",
-              "format": "byte"
-            }
+            "type": "string",
+            "format": "byte",
+            "description": "This is the contents that has to be written to the file"
           }
         }
       },
       "ApplicationFacadeDTO": {
+        "type": "object",
         "description": "A data transfer object which describes an UI API. There are various techniques possible how to \"open\" the \"application\" on the client; typically only one of the fields is filled, but when more than one possibility is not null the client may choose the type most suitable. Supported types include <ul><li>HTTP</li> - use when field 'httpUrl' is not null. Open a browser and navigate to the url given. When urlCloseToken is given, you can monitor the browsers pages and when you find that it navigates to an url equal to urlCloseToken, the browser can be closed by the application. <li>Start executable</li> - use when field 'executeProcess' is not null. Create a process as defined in the field 'executable', with the current directory as workDir (if specified). <li>Shell execute</li> - use when field 'shellExecute' is not null. Create a file in a temporary directory with name equal to that given in 'fileName', and fill it with the bytes given in 'contents', and then invoke \"ShellExecute\" to let the shell open the application corresponding to the file type. </ul>",
         "properties": {
           "sessionid": {
@@ -8574,6 +9330,7 @@
         }
       },
       "ApplicationFacadeParmsDTO": {
+        "type": "object",
         "description": "A data transfer object to be the parameter of the method IFoundationBF.getNewApplicationFacade()",
         "properties": {
           "client": {
@@ -8654,6 +9411,7 @@
         }
       },
       "CommerceControlListRequestDTO": {
+        "type": "object",
         "description": "Request object for Commerce Control List application.",
         "properties": {
           "generalParms": {
@@ -8667,6 +9425,7 @@
         }
       },
       "EccnListParmsDTO": {
+        "type": "object",
         "description": "Parameters for the Commerce Control List application.",
         "properties": {
           "eccnPattern": {
@@ -8677,6 +9436,7 @@
         }
       },
       "ECTransactionParmsDTO": {
+        "type": "object",
         "description": "Parameters for the export control transaction application.",
         "properties": {
           "clientSystemId": {
@@ -8697,6 +9457,7 @@
         ]
       },
       "ECTransactionRequestDTO": {
+        "type": "object",
         "description": "Request object for opening the export control transaction application.",
         "properties": {
           "generalParms": {
@@ -8714,6 +9475,7 @@
         ]
       },
       "EUExpCtrlListParmsDTO": {
+        "type": "object",
         "description": "Parameters for the EU export control list application",
         "properties": {
           "euExpCtrlListPattern": {
@@ -8724,6 +9486,7 @@
         }
       },
       "EUExportControlListRequestDTO": {
+        "type": "object",
         "description": "Request object for the EU export control list application.",
         "properties": {
           "generalParms": {
@@ -8737,6 +9500,7 @@
         }
       },
       "ExpCtrlLogsAFParmsDTO": {
+        "type": "object",
         "description": "Data transfer object with filter options for the export control logs application.",
         "properties": {
           "title": {
@@ -8762,6 +9526,7 @@
         }
       },
       "ExpCtrlLogsRequestDTO": {
+        "type": "object",
         "description": "Request object for the export control logs application.",
         "properties": {
           "generalParms": {
@@ -8775,6 +9540,7 @@
         }
       },
       "GoodsAttributeValuesListRequestDTO": {
+        "type": "object",
         "description": "Request object for the list of goods attribute values application.",
         "properties": {
           "generalParms": {
@@ -8788,6 +9554,7 @@
         }
       },
       "GoodsAttributeValuesParmsDTO": {
+        "type": "object",
         "description": "Parameters for the goods attribute application.",
         "properties": {
           "goodsAttributeIdentCode": {
@@ -8798,6 +9565,7 @@
         }
       },
       "ECClassificationDTO": {
+        "type": "object",
         "description": "An attribute with a value for a transaction item.",
         "properties": {
           "classificationIdentCode": {
@@ -8813,6 +9581,7 @@
         }
       },
       "QuickCheckParmsDTO": {
+        "type": "object",
         "description": "Parameters for the Quick check application.",
         "properties": {
           "sellerCountryISO": {
@@ -8875,6 +9644,7 @@
         }
       },
       "QuickCheckRequestDTO": {
+        "type": "object",
         "description": "Request object for the Quick check application.",
         "properties": {
           "generalParms": {
@@ -8888,6 +9658,7 @@
         }
       },
       "SetFinalLabelRequestDTO": {
+        "type": "object",
         "description": "Request DTO for <code>/ExportControlInternal/setFinalTransactionLabelHost</code> containing identifying data for the entries to be updated as well as the new transaction label.",
         "properties": {
           "clientSystemId": {
@@ -8933,6 +9704,7 @@
         ]
       },
       "SetFinalLabelResponseDTO": {
+        "type": "object",
         "description": "On success this response will be empty. In case of failure see <code>messages</code> for error details.",
         "properties": {
           "hasErrors": {
@@ -8960,6 +9732,7 @@
         }
       },
       "AcknowledgeGetChangedTransactionsResponseDTO": {
+        "type": "object",
         "description": "Response for <code>/ExportControl/v2/acknowledgeGetChangedTransactions</code>.",
         "properties": {
           "hasErrors": {
@@ -8987,6 +9760,7 @@
         }
       },
       "AcknowledgeGetChangedTransactionsRequestDTO": {
+        "type": "object",
         "description": "Request to acknowledge changed results of EC check transactions.",
         "properties": {
           "clientSystemId": {
@@ -9022,6 +9796,7 @@
         }
       },
       "CheckTransactionResponseDTO": {
+        "type": "object",
         "description": "Represents a response of checking a transaction in Export Controls.",
         "properties": {
           "hasErrors": {
@@ -9061,6 +9836,7 @@
         }
       },
       "ECApprovalInfoDTO": {
+        "type": "object",
         "description": "DTO representing an approval used in the current item to release a restriction or a required license.",
         "properties": {
           "licenseReference": {
@@ -9104,6 +9880,7 @@
         }
       },
       "ECItemCheckResultDTO": {
+        "type": "object",
         "description": "The export control result for one item of the transaction.",
         "properties": {
           "itemIdHost": {
@@ -9112,7 +9889,11 @@
             "example": "item-1"
           },
           "bomItemResults": {
-            "description": "The results for BOM items belonging to this item.<br>The results of these BOM items will <em>not</em> be accumulated into this item result."
+            "type": "array",
+            "description": "The results for BOM items belonging to this item.<br>The results of these BOM items will <em>not</em> be accumulated into this item result.",
+            "items": {
+              "$ref": "#/components/schemas/ECItemCheckResultDTO"
+            }
           },
           "resultType": {
             "type": "string",
@@ -9129,6 +9910,7 @@
         }
       },
       "ECLicenseReferenceDTO": {
+        "type": "object",
         "description": "DTO used for referencing a real license and license item.",
         "properties": {
           "licenseId": {
@@ -9144,6 +9926,7 @@
         }
       },
       "ECLocalizedTextDTO": {
+        "type": "object",
         "description": "Encapsulates a text in one language.",
         "properties": {
           "language": {
@@ -9161,6 +9944,7 @@
         }
       },
       "ECPluginCheckResultDTO": {
+        "type": "object",
         "description": "The export control result of a jurisdiction checked for a transaction item.",
         "properties": {
           "pluginIdentCode": {
@@ -9183,6 +9967,7 @@
         }
       },
       "CheckTransactionRAParmsDTO": {
+        "type": "object",
         "description": "Parameters to integrate Risk Assessment in an export control check.",
         "properties": {
           "templateId": {
@@ -9192,13 +9977,13 @@
           },
           "isRiskAssessmentRequested": {
             "type": "boolean",
-            "default": "false",
+            "default": false,
             "description": "Indicates that Risk Assessment rules should be evaluated in an export control check.<br><br>If set and enabled in the profile, questionnaires for Risk Assessment are evaluated as part of the export control check. This involves possibly the creation of a questionnaire and may cause restrictions in the Risk Assessment jurisdiction, depending on status and outcome of the questionnaire.",
             "example": true
           },
           "isDataForRAComplete": {
             "type": "boolean",
-            "default": "true",
+            "default": true,
             "description": "Indicates that Risk Assessment should be considered in the export control check, but not allrelevant data is available yet.<br><br>If this flag is set to <code>false</code>, no questionnaire will be created. This will cause a restriction in the Risk Assessment jurisdiction if Risk Assessment functionality is requested (due to <code>isRiskAssessmentRequested</code> and due to configuration in the profile the Risk Assessment integration is relevant for the transaction.<br>",
             "example": true
           },
@@ -9209,6 +9994,7 @@
         }
       },
       "CheckTransactionRequestDTO": {
+        "type": "object",
         "description": "Represents a request to check a transaction in Export Controls.<br><code>clientIdentCode</code> and <code>clientSystemId</code> are mandatory fields.<br>Client system ID <code>\"COMPLIANCE SERVER\"</code> is reserved for internal usage and therefore it is not allowed to use it as <code>clientSystemId</code> in a request.",
         "properties": {
           "clientSystemId": {
@@ -9254,7 +10040,7 @@
           },
           "isAutoCreateClearings": {
             "type": "boolean",
-            "default": "false",
+            "default": false,
             "description": "Defines that the transaction can be automatically approved, if an applicable license is found. If the transaction can be approved automatically, an approval is automatically created per jurisdiction and the transaction is no longer blocked.<br>An automatic approval of the transaction is only performed if exactly one suitable license is found with exactly one matching item for one transaction per jurisdiction. Furthermore, a transaction can be approved automatically only if there are no applicable general licenses from the AEB data service.",
             "example": false
           },
@@ -9269,6 +10055,7 @@
         ]
       },
       "CreateRAQuestionnaireDataDTO": {
+        "type": "object",
         "description": "Initial data for a new questionnaire.",
         "properties": {
           "userName": {
@@ -9299,6 +10086,7 @@
         }
       },
       "ECAmountDTO": {
+        "type": "object",
         "description": "A pair of a value with a currency.",
         "properties": {
           "value": {
@@ -9317,6 +10105,7 @@
         }
       },
       "ECCompletionStatusDTO": {
+        "type": "object",
         "description": "The completion status of the product data for a specific jurisdiction.",
         "properties": {
           "pluginIdentCode": {
@@ -9332,6 +10121,7 @@
         }
       },
       "ECIdentityOfGoodsDTO": {
+        "type": "object",
         "description": "Specifies the identity of goods.",
         "properties": {
           "typeOfIdentity": {
@@ -9347,6 +10137,7 @@
         }
       },
       "ECItemDTO": {
+        "type": "object",
         "description": "One item of a transaction to be checked for export control restrictions.",
         "properties": {
           "itemIdHost": {
@@ -9370,13 +10161,17 @@
             "maxLength": 255
           },
           "bomItems": {
+            "type": "array",
             "description": "The BOM (=bill of materials) sub items belonging to this item.<br/>Note that only two-level item hierarchies are allowed, i.e. the bomItems may only contain items that have no bomItems themselves",
             "example": [
               {
                 "itemIdHost": "4711_1",
                 "itemLabelHost": "Positionsnr. = 4711-1"
               }
-            ]
+            ],
+            "items": {
+              "$ref": "#/components/schemas/ECItemDTO"
+            }
           },
           "partners": {
             "type": "array",
@@ -9489,6 +10284,7 @@
         ]
       },
       "ECJurisdictionFilterDTO": {
+        "type": "object",
         "description": "Allows to filter (, i.e., restrict) the jurisdictions to consider in export control checks. This is possible in the following ways:<ul><li>Limiting filter mode (value <code>LIMITING</code>): only the intersection of the enabled jurisdictions (according to the used profile) and the specified jurisdictions is checked, i.e., an enabled jurisdiction is only checked if it is part of the specified jurisdictions of  this filter.</li><li>Excluding filter mode (value <code>EXCLUDING</code>): the specified jurisdictions are not checked although they are enabled (according to the used profile).</li></ul>",
         "properties": {
           "filterMode": {
@@ -9512,6 +10308,7 @@
         ]
       },
       "ECPartnerDTO": {
+        "type": "object",
         "description": "DTO for a partner (typically a company) related to this export process. A partner can be the seller, the buyer, the receiver the final user, ...",
         "properties": {
           "roleIdentCode": {
@@ -9632,6 +10429,7 @@
         ]
       },
       "ECTransactionDTO": {
+        "type": "object",
         "description": "Data about the transaction.",
         "properties": {
           "transactionIdHost": {
@@ -9674,6 +10472,7 @@
         ]
       },
       "GenericDataFieldDTO": {
+        "type": "object",
         "description": "A field of a generic data record.",
         "properties": {
           "name": {
@@ -9691,6 +10490,7 @@
         }
       },
       "GenericDataRecordDTO": {
+        "type": "object",
         "description": "A generic record of data.<br>Each field is qualified by name and type and has a value.",
         "properties": {
           "fields": {
@@ -9719,6 +10519,7 @@
         }
       },
       "NamedGenericDataRecordDTO": {
+        "type": "object",
         "description": "A generic data record with a name.<br> Wrapper class to encapsulate subrecords with their name and with the ability to have explicit null records.",
         "properties": {
           "name": {
@@ -9726,11 +10527,13 @@
             "description": "The name of this record, i.e. the role the record plays in the enclosing record.<br> When the same name is repeated in the context of the same parent record,  it is assumed that the parent defines this element as a repeatable (array) element."
           },
           "record": {
+            "$ref": "#/components/schemas/GenericDataRecordDTO",
             "description": "The record associated with the name.<br> Especially in case, where the name is repeated in the context of the same parent record, this field may be null to indicate a null in a list of records."
           }
         }
       },
       "CreateQuestionnaireForTransactionResponseDTO": {
+        "type": "object",
         "description": "The response to a request to explicitly create a questionnaire. Empty on success.",
         "properties": {
           "hasErrors": {
@@ -9758,6 +10561,7 @@
         }
       },
       "CreateQuestionnaireForTransactionRequestDTO": {
+        "type": "object",
         "description": "A request to explicitly create a questionnaire for an EC check transaction.",
         "properties": {
           "clientSystemId": {
@@ -9812,6 +10616,7 @@
         ]
       },
       "DeleteTransactionResponseDTO": {
+        "type": "object",
         "description": "Response of <code>/ExportControl/v2/deleteTransaction</code>.",
         "properties": {
           "hasErrors": {
@@ -9839,6 +10644,7 @@
         }
       },
       "DeleteTransactionRequestDTO": {
+        "type": "object",
         "description": "Represents a request to delete a check transaction in Export Controls.<br><code>clientIdentCode</code> and <code>clientSystemId</code> are mandatory fields.<br>Client system ID <code>\"COMPLIANCE SERVER\"</code> is reserved for internal usage and therefore it is not allowed to use it as <code>clientSystemId</code> in a request.",
         "properties": {
           "clientSystemId": {
@@ -9878,6 +10684,7 @@
         ]
       },
       "GetChangedTransactionsRequestDTO": {
+        "type": "object",
         "description": "Request to get the changed results of EC check transactions.",
         "properties": {
           "clientSystemId": {
@@ -9909,6 +10716,7 @@
         }
       },
       "ECApprovalInfoV2DTO": {
+        "type": "object",
         "description": "DTO representing an approval used to release a restriction or a required license in a jurisdiction for a transaction item.",
         "properties": {
           "uniqueApprovalId": {
@@ -9940,6 +10748,7 @@
         }
       },
       "ECItemCheckResultV2DTO": {
+        "type": "object",
         "description": "The export control result for one item of the transaction.",
         "properties": {
           "itemIdHost": {
@@ -9959,11 +10768,16 @@
             }
           },
           "bomItemResults": {
-            "description": "The results for BOM items belonging to this item.<br>The results of these BOM items will *not* be accumulated into this item result."
+            "type": "array",
+            "description": "The results for BOM items belonging to this item.<br>The results of these BOM items will *not* be accumulated into this item result.",
+            "items": {
+              "$ref": "#/components/schemas/ECItemCheckResultV2DTO"
+            }
           }
         }
       },
       "ECPluginCheckResultV2DTO": {
+        "type": "object",
         "description": "The export control result of a jurisdiction checked for a transaction item.",
         "properties": {
           "jurisdiction": {
@@ -9983,6 +10797,7 @@
         }
       },
       "ECTransactionCheckResultV2DTO": {
+        "type": "object",
         "description": "The export control result for a whole transaction. Note that this DTO is inspired by *ECTotalCheckResultDTO* and *CheckTransactionResponseDTO*. There is no explicit previous version called *ECTransactionCheckResultDTO*.",
         "properties": {
           "transactionIdHost": {
@@ -9991,7 +10806,7 @@
           },
           "isDeleted": {
             "type": "boolean",
-            "default": "false",
+            "default": false,
             "description": "Indicates whether the EC check transaction has been deleted.<br>This is only relevant for the <code>/ExportControl/v2/getChangedTransactions</code> call."
           },
           "totalResultType": {
@@ -10009,6 +10824,7 @@
         }
       },
       "GetChangedTransactionsResponseDTO": {
+        "type": "object",
         "description": "Response when getting the changed results of EC check transactions.",
         "properties": {
           "hasErrors": {
@@ -10051,6 +10867,7 @@
         }
       },
       "GetTransactionCheckResultResponseDTO": {
+        "type": "object",
         "description": "Response when getting the check result of a certain EC check transaction.",
         "properties": {
           "hasErrors": {
@@ -10086,6 +10903,7 @@
         }
       },
       "GetTransactionCheckResultRequestDTO": {
+        "type": "object",
         "description": "Request to get the check result of a certain EC check transaction.",
         "properties": {
           "clientSystemId": {
@@ -10125,6 +10943,7 @@
         ]
       },
       "LogonResponse": {
+        "type": "object",
         "properties": {
           "token": {
             "type": "string"
@@ -10147,6 +10966,7 @@
         }
       },
       "LogonArgument": {
+        "type": "object",
         "properties": {
           "userName": {
             "type": "string"
@@ -10163,6 +10983,7 @@
         }
       },
       "AcknowledgePublishedDataFeedPartsResponseDTO": {
+        "type": "object",
         "description": "Response (result) for IDataFeedBF#acknowledgePublishedDataFeedParts(AcknowledgePublishedDataFeedPartsRequestDTO.",
         "properties": {
           "hasErrors": {
@@ -10190,6 +11011,7 @@
         }
       },
       "AcknowledgePublishedDataFeedPartsRequestDTO": {
+        "type": "object",
         "description": "Request parameter for Response (result) for IDataFeedBF#acknowledgePublishedDataFeedParts(AcknowledgePublishedDataFeedPartsRequestDTO.",
         "properties": {
           "clientSystemId": {
@@ -10225,6 +11047,7 @@
         }
       },
       "GetPublishedDataFeedPartsResponseDTO": {
+        "type": "object",
         "description": "Response (result) for IDataFeedBF#getPublishedDataFeedParts(GetPublishedDataFeedPartsRequestDTO).",
         "properties": {
           "hasErrors": {
@@ -10267,6 +11090,7 @@
         }
       },
       "PublishedDataFeedPartDTO": {
+        "type": "object",
         "description": "DTO to hold the data of a published data feed part.",
         "properties": {
           "dataFeedDefinitionIdentCode": {
@@ -10312,6 +11136,7 @@
         }
       },
       "GetPublishedDataFeedPartsRequestDTO": {
+        "type": "object",
         "description": "Request parameter for IDataFeedBF#getPublishedDataFeedParts(GetPublishedDataFeedPartsRequestDTO).",
         "properties": {
           "clientSystemId": {
@@ -10343,6 +11168,7 @@
         }
       },
       "ExternalTMStatusResponseDTO": {
+        "type": "object",
         "description": "Response DTO for ExternalTelemetryBFBean/getStatus & ExternalTelemetryBFBean/status.",
         "properties": {
           "hasErrors": {
@@ -10386,6 +11212,7 @@
         }
       },
       "ExternalTMIdentificationRequestDTO": {
+        "type": "object",
         "description": "Request DTO for registering, unregistering third party telemetry reporters, also to be used for obtaining informations on reporting status.",
         "properties": {
           "clientSystemId": {
@@ -10425,6 +11252,7 @@
         }
       },
       "DateAndZoneDTO": {
+        "type": "object",
         "description": "Date and timezone.",
         "properties": {
           "dateInTimezone": {
@@ -10438,6 +11266,7 @@
         }
       },
       "ExternalTMResponseDTO": {
+        "type": "object",
         "description": "Response DTO for all calls to ExternalTelemetryBFBean.",
         "properties": {
           "hasErrors": {
@@ -10489,6 +11318,7 @@
         }
       },
       "ExternalTMRDateEntryDTO": {
+        "type": "object",
         "description": "telemetry report entry for date values",
         "properties": {
           "key": {
@@ -10506,6 +11336,7 @@
         }
       },
       "ExternalTMRDoubleEntryDTO": {
+        "type": "object",
         "description": "telemetry report entry for string double",
         "properties": {
           "key": {
@@ -10524,6 +11355,7 @@
         }
       },
       "ExternalTMRIntegerEntryDTO": {
+        "type": "object",
         "description": "telemetry report entry for integer values",
         "properties": {
           "key": {
@@ -10542,6 +11374,7 @@
         }
       },
       "ExternalTMRLongEntryDTO": {
+        "type": "object",
         "description": "telemetry report entry for long values",
         "properties": {
           "key": {
@@ -10560,6 +11393,7 @@
         }
       },
       "ExternalTMRStringArrayEntryDTO": {
+        "type": "object",
         "description": "telemetry report entry for string array values",
         "properties": {
           "key": {
@@ -10580,6 +11414,7 @@
         }
       },
       "ExternalTMRStringEntryDTO": {
+        "type": "object",
         "description": "telemetry report entry for string values",
         "properties": {
           "key": {
@@ -10597,6 +11432,7 @@
         }
       },
       "ExternalTMReportRequestDTO": {
+        "type": "object",
         "description": "Request DTO for registering, unregistering third party telemetry reporters, also to be used for obtaining informations on reporting status.",
         "properties": {
           "clientSystemId": {
@@ -10644,6 +11480,7 @@
         }
       },
       "ExternalTelemetryReportDTO": {
+        "type": "object",
         "description": "report dto to ship the telemetry data to an XNSG engine",
         "properties": {
           "dateEntries": {
@@ -10691,6 +11528,7 @@
         }
       },
       "AcknowledgeFileResponseDTO": {
+        "type": "object",
         "description": "Contains the result for an acknowledge file request.",
         "properties": {
           "errorCode": {
@@ -10704,6 +11542,7 @@
         }
       },
       "AcknowledgeFileRequestDTO": {
+        "type": "object",
         "description": "Contains information about the result of a file transfer",
         "properties": {
           "channelID": {
@@ -10721,6 +11560,7 @@
         }
       },
       "SimpleFileDTO": {
+        "type": "object",
         "description": "Meta-data for a transfer file",
         "properties": {
           "name": {
@@ -10738,6 +11578,7 @@
         "description": "the result of the announce stop API"
       },
       "AnnounceStopParmDTO": {
+        "type": "object",
         "description": "parameter necessary to announce a stop of the server",
         "properties": {
           "utcStopAtYYYYMMDDHHMMSS": {
@@ -10763,6 +11604,7 @@
         "description": "parameter necessary to cancel an announced stop"
       },
       "ChangeAdminPasswordResultDTO": {
+        "type": "object",
         "description": "Contains the result information of the change admin password bf",
         "properties": {
           "success": {
@@ -10772,6 +11614,7 @@
         }
       },
       "ChangeAdminPasswordParmDTO": {
+        "type": "object",
         "description": "This class contains the old and the new admin password",
         "properties": {
           "oldPassword": {
@@ -10785,6 +11628,7 @@
         }
       },
       "CreateClientResponseDTO": {
+        "type": "object",
         "description": "encapsulates the response parameters",
         "properties": {
           "resultState": {
@@ -10794,6 +11638,7 @@
         }
       },
       "CreateClientRequestDTO": {
+        "type": "object",
         "description": "encapsulates the request parameters",
         "properties": {
           "clientIdentCode": {
@@ -10811,6 +11656,7 @@
         }
       },
       "ActivationDataFlavor": {
+        "type": "object",
         "properties": {
           "mimeType": {
             "type": "string"
@@ -10821,6 +11667,7 @@
         }
       },
       "CommandInfo": {
+        "type": "object",
         "properties": {
           "commandClass": {
             "type": "string"
@@ -10831,6 +11678,7 @@
         }
       },
       "CommandMap": {
+        "type": "object",
         "properties": {
           "mimeTypes": {
             "type": "array",
@@ -10841,6 +11689,7 @@
         }
       },
       "DataHandler": {
+        "type": "object",
         "properties": {
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
@@ -10866,19 +11715,20 @@
               "$ref": "#/components/schemas/CommandInfo"
             }
           },
+          "commandMap": {
+            "$ref": "#/components/schemas/CommandMap",
+            "writeOnly": true
+          },
           "allCommands": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/CommandInfo"
             }
-          },
-          "commandMap": {
-            "$ref": "#/components/schemas/CommandMap",
-            "writeOnly": true
           }
         }
       },
       "DataSource": {
+        "type": "object",
         "properties": {
           "name": {
             "type": "string"
@@ -10891,6 +11741,7 @@
         }
       },
       "DownloadFileResponseDTO": {
+        "type": "object",
         "description": "Contains the result for a download file request",
         "properties": {
           "errorCode": {
@@ -10908,6 +11759,7 @@
         }
       },
       "FileDTO": {
+        "type": "object",
         "description": "Data Transfer Object for a file.",
         "properties": {
           "name": {
@@ -10924,12 +11776,9 @@
             "description": "The content of a file"
           },
           "checksum": {
-            "type": "array",
-            "description": "MD5-hash of a file",
-            "items": {
-              "type": "string",
-              "format": "byte"
-            }
+            "type": "string",
+            "format": "byte",
+            "description": "MD5-hash of a file"
           },
           "creationTimeMillis": {
             "type": "integer",
@@ -10949,6 +11798,7 @@
         }
       },
       "DownloadFileRequestDTO": {
+        "type": "object",
         "description": "Contains information on how to select a file for transferring",
         "properties": {
           "channelID": {
@@ -10973,6 +11823,7 @@
         }
       },
       "TransferFileParameterDTO": {
+        "type": "object",
         "description": "A generic parameter for use-case specific information",
         "properties": {
           "key": {
@@ -10986,6 +11837,7 @@
         }
       },
       "GenerateClientIdentCodeRequestDTO": {
+        "type": "object",
         "description": "encapsulates the request parameters",
         "properties": {
           "clientIdentCode": {
@@ -10999,6 +11851,7 @@
         }
       },
       "ClientDTO": {
+        "type": "object",
         "description": "DTO representing an XNSG Client.",
         "properties": {
           "identCode": {
@@ -11028,6 +11881,7 @@
         }
       },
       "DLFilesRefsResponseDTO": {
+        "type": "object",
         "description": "Contains the result for a request to get the number of files available for download",
         "properties": {
           "errorCode": {
@@ -11048,6 +11902,7 @@
         }
       },
       "DLFilesRefsRequestDTO": {
+        "type": "object",
         "description": "Contains information on how to select files for transferring",
         "properties": {
           "channelID": {
@@ -11068,6 +11923,7 @@
         }
       },
       "ScriptExecutionRowDTO": {
+        "type": "object",
         "description": "This dto contains the data of a single line in script result",
         "properties": {
           "columns": {
@@ -11084,6 +11940,7 @@
         }
       },
       "ScriptExecutionStateResultDTO": {
+        "type": "object",
         "description": "Contains the result information of the script execution bf",
         "properties": {
           "content": {
@@ -11108,6 +11965,7 @@
         }
       },
       "ScriptExecutionStateParmDTO": {
+        "type": "object",
         "description": "parameters necessary to ask the server for the current state of the script execution",
         "properties": {
           "uuid": {
@@ -11117,6 +11975,7 @@
         }
       },
       "TableUpdateStateResultDTO": {
+        "type": "object",
         "description": "Contains the result information of the get table update state bf",
         "properties": {
           "percentage": {
@@ -11146,6 +12005,7 @@
         "description": "the parameter necessary to ask the server for the current state of the table update"
       },
       "UploadSettingsResponseDTO": {
+        "type": "object",
         "description": "retrieves the server settings for uploading files via SFT interface",
         "properties": {
           "errorCode": {
@@ -11164,6 +12024,7 @@
         }
       },
       "UploadSettingsRequestDTO": {
+        "type": "object",
         "description": "retrieves the server settings for uploading files via SFT interface",
         "properties": {
           "channelID": {
@@ -11176,7 +12037,153 @@
           }
         }
       },
+      "MessageDataDTO": {
+        "type": "object",
+        "description": "resulting user tip for one locale",
+        "properties": {
+          "locale": {
+            "type": "string",
+            "description": "locale of user tip whose results are given here"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "the uuid of the tip (only filled when no error) - should be stored if later tip should be updated"
+          },
+          "error": {
+            "type": "string",
+            "description": "error message, if any error occurred during processing"
+          }
+        }
+      },
+      "PublishMessageResponseDTO": {
+        "type": "object",
+        "description": "Contains ids of user tips that were created, or error messages",
+        "properties": {
+          "messageResultPerLocale": {
+            "type": "array",
+            "description": "the data per locale, as supplied in request",
+            "items": {
+              "$ref": "#/components/schemas/MessageDataDTO"
+            }
+          }
+        }
+      },
+      "LinkDTO": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "url of the link"
+          },
+          "name": {
+            "type": "string",
+            "description": "text to be shown for the link"
+          }
+        }
+      },
+      "MessageTextsDTO": {
+        "type": "object",
+        "properties": {
+          "locale": {
+            "type": "string",
+            "description": "locale for the texts - must be a language supported by the system"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of user tip - should only be filled when updating existing tip"
+          },
+          "title": {
+            "type": "string",
+            "description": "title of the user tip"
+          },
+          "text": {
+            "type": "string",
+            "description": "text of the user tip"
+          },
+          "titlePopup": {
+            "type": "string",
+            "description": "title of the popup, when shown as popup"
+          },
+          "textPopup": {
+            "type": "string",
+            "description": "text of the popup, when shown as popup"
+          },
+          "links": {
+            "type": "array",
+            "description": "links associated with the tip",
+            "items": {
+              "$ref": "#/components/schemas/LinkDTO"
+            }
+          }
+        }
+      },
+      "PublishMessageRequestDTO": {
+        "type": "object",
+        "description": "the for user tip, possibly in several locales",
+        "properties": {
+          "contentPerLocale": {
+            "type": "array",
+            "description": "locale specific data of the user tip. key is the language iso code.This language must be defined, or tip is not created.",
+            "items": {
+              "$ref": "#/components/schemas/MessageTextsDTO"
+            }
+          },
+          "clientIdentCode": {
+            "type": "string",
+            "description": "ident code of client - when call is not done with administrative rights, this must match the client of authentication"
+          },
+          "showAsPopup": {
+            "type": "boolean",
+            "description": "true when tip is to be shown as popup"
+          },
+          "clientGroup": {
+            "type": "string",
+            "description": "client group for which this tip is valid - can only be used when call is authenticated with administrative rights"
+          },
+          "validFrom": {
+            "type": "string",
+            "description": "timestamp from which on the tip is valid, format yyyy-MM-dd or yyyy-MM-ddThh-mm-ss - when null, no restriction is assumed"
+          },
+          "validTo": {
+            "type": "string",
+            "description": "timestamp until which tip is valid, format yyyy-MM-dd or yyyy-MM-ddThh-mm-ss - when null tip is valid indefinitely"
+          },
+          "isReleased": {
+            "type": "boolean",
+            "description": "when true tip is shown - empty means true"
+          },
+          "roleAccessType": {
+            "type": "string",
+            "description": "one of the subclasses of CRoleAccessType, namely REVOK, NECCE, GRANT"
+          },
+          "role": {
+            "type": "string",
+            "description": "role of a user that determines if tip is shown - see roleAccessType which decides if tip is shown to users having this role, not shown to users not having this role"
+          },
+          "isImportantMessage": {
+            "type": "boolean",
+            "description": "when true tip is shown as important message"
+          },
+          "clientLicenceRoles": {
+            "type": "string",
+            "description": "when filled, tip is only shown for clients that have licenced the roles specified here"
+          },
+          "visibilityProperties": {
+            "type": "string",
+            "description": "other properties that define if tip is shown"
+          },
+          "isMailToAdmin": {
+            "type": "boolean",
+            "description": "when true an email is sent to admin to inform about new tip"
+          },
+          "isRealUserTip": {
+            "type": "boolean",
+            "description": "when true tip is considered as real user tip"
+          }
+        }
+      },
       "RoleInfoDTO": {
+        "type": "object",
         "description": "dto for roles",
         "properties": {
           "identCode": {
@@ -11221,6 +12228,7 @@
         }
       },
       "SendMailResultDTO": {
+        "type": "object",
         "description": "Contains the result of the sendMail method.",
         "properties": {
           "success": {
@@ -11234,15 +12242,13 @@
         }
       },
       "SendMailAttachmentParmDTO": {
+        "type": "object",
         "description": "Contains an attachment for an email.",
         "properties": {
           "fileContent": {
-            "type": "array",
-            "description": "Content of the attachment file",
-            "items": {
-              "type": "string",
-              "format": "byte"
-            }
+            "type": "string",
+            "format": "byte",
+            "description": "Content of the attachment file"
           },
           "fileContentType": {
             "type": "string",
@@ -11255,6 +12261,7 @@
         }
       },
       "SendMailParmDTO": {
+        "type": "object",
         "description": "Parameter necessary for sending a mail",
         "properties": {
           "receivers": {
@@ -11311,6 +12318,7 @@
         }
       },
       "StartScriptExecutionResultDTO": {
+        "type": "object",
         "description": "result of start script execution",
         "properties": {
           "uuid": {
@@ -11328,6 +12336,7 @@
         }
       },
       "StartScriptExecutionParmDTO": {
+        "type": "object",
         "description": "parameters for start script execution",
         "properties": {
           "scriptContent": {
@@ -11356,6 +12365,7 @@
         "description": "parameter necessary for the table update"
       },
       "SystemSearchResultDTO": {
+        "type": "object",
         "description": "DTO contained in the result array of systemSearch function",
         "properties": {
           "category": {
@@ -11391,6 +12401,7 @@
         }
       },
       "SystemSearchParameterDTO": {
+        "type": "object",
         "description": "DTO used as argument to systemSearch function",
         "properties": {
           "category": {
@@ -11408,6 +12419,7 @@
         }
       },
       "UploadFileResponseDTO": {
+        "type": "object",
         "description": "Contains the result for a upload file request.",
         "properties": {
           "errorCode": {
@@ -11421,6 +12433,7 @@
         }
       },
       "UploadFileMultiPartRequestDTO": {
+        "type": "object",
         "description": "Contains information on how a transmitted file should be processed",
         "properties": {
           "channelID": {
@@ -11469,6 +12482,7 @@
         }
       },
       "ClientRolesDTO": {
+        "type": "object",
         "description": "Response DTO for listing client specific roles in GetRolesResponseDTO.",
         "properties": {
           "client": {
@@ -11485,6 +12499,7 @@
         }
       },
       "GetRolesResponseDTO": {
+        "type": "object",
         "description": "DTO for GetRoles response",
         "properties": {
           "hasErrors": {
@@ -11529,6 +12544,7 @@
         }
       },
       "AcknowledgeEventsResponseDTO": {
+        "type": "object",
         "description": "Response DTO for acknowledging events.",
         "properties": {
           "hasErrors": {
@@ -11556,6 +12572,7 @@
         }
       },
       "AcknowledgeEventsRequestDTO": {
+        "type": "object",
         "description": "Request DTO for acknowledging events.",
         "properties": {
           "clientSystemId": {
@@ -11595,6 +12612,7 @@
         }
       },
       "SyncEventDTO": {
+        "type": "object",
         "description": "DTO to hold data of one synchronized event.",
         "properties": {
           "businessObjectType": {
@@ -11633,6 +12651,7 @@
         }
       },
       "SyncEventsResponseDTO": {
+        "type": "object",
         "description": "Response DTO for synchronizing events.",
         "properties": {
           "hasErrors": {
@@ -11679,6 +12698,7 @@
         }
       },
       "SyncEventsRequestDTO": {
+        "type": "object",
         "description": "Request DTO for synchronizing events.",
         "properties": {
           "clientSystemId": {
@@ -11732,6 +12752,7 @@
         }
       },
       "GetPartnerSystemSubscriptionsResponseDTO": {
+        "type": "object",
         "description": "Response parameter with fetched partner system subscriptions to sync events.",
         "properties": {
           "hasErrors": {
@@ -11766,6 +12787,7 @@
         }
       },
       "SyncPartnerSystemDTO": {
+        "type": "object",
         "description": "Identification and other data of a single partner system subscription.",
         "properties": {
           "clientSystemId": {
@@ -11790,6 +12812,7 @@
         ]
       },
       "GetPartnerSystemSubscriptionsRequestDTO": {
+        "type": "object",
         "description": "Request parameter to fetch all or filtered partner system subscriptions to sync events.",
         "properties": {
           "clientSystemId": {
@@ -11826,6 +12849,7 @@
         }
       },
       "SubscribePartnerSystemResponseDTO": {
+        "type": "object",
         "description": "Response parameter of a partner system subscription to sync events.",
         "properties": {
           "hasErrors": {
@@ -11857,6 +12881,7 @@
         }
       },
       "SubscribePartnerSystemRequestDTO": {
+        "type": "object",
         "description": "Request parameter to subscribe a partner system to sync events.",
         "properties": {
           "clientSystemId": {
@@ -11901,6 +12926,7 @@
         ]
       },
       "UnsubscribePartnerSystemResponseDTO": {
+        "type": "object",
         "description": "Response parameter of a partner system unsubscription from sync events.",
         "properties": {
           "hasErrors": {
@@ -11932,6 +12958,7 @@
         }
       },
       "UnsubscribePartnerSystemRequestDTO": {
+        "type": "object",
         "description": "Request parameter to unsubscribe a partner system from sync events.",
         "properties": {
           "clientSystemId": {
@@ -11971,6 +12998,7 @@
         ]
       },
       "ApprovalCustomsDataDTO": {
+        "type": "object",
         "description": "For every jurisdiction there may be zero or 1 approval for a transaction item.<br>For every approval, at least one <code>ApprovalCustomsDataDTO</code> is returned.<br>For approvals which may be declared to customs in more than one country (which especially may be true for countries in the EU), one <code>ApprovalCustomsDataDTO</code> per country may be returned.",
         "properties": {
           "customsProcessCountry": {
@@ -12034,6 +13062,7 @@
         }
       },
       "ApprovalCustomsDataExtensionDTO": {
+        "type": "object",
         "description": "Country specific property (field and value) in a <code>ApprovalCustomsDataDTO</code>.",
         "properties": {
           "fieldName": {
@@ -12049,6 +13078,7 @@
         }
       },
       "TransactionApprovalsCustomsDataDTO": {
+        "type": "object",
         "description": "Provides the customs data (based on approvals) of the transaction with the specified <code>transactionIdHost</code>.",
         "properties": {
           "transactionIdHost": {
@@ -12066,6 +13096,7 @@
         }
       },
       "TransactionApprovalsCustomsDataResponseDTO": {
+        "type": "object",
         "description": "Response DTO for <code>/LicenseManagementBF/getTransactionApprovalsCustomsData</code>",
         "properties": {
           "hasErrors": {
@@ -12100,6 +13131,7 @@
         }
       },
       "TransactionItemApprovalsCustomsDataDTO": {
+        "type": "object",
         "description": "Provides the customs data (based on approvals) of the item with the specified <code>itemIdHost</code>.",
         "properties": {
           "itemIdHost": {
@@ -12117,6 +13149,7 @@
         }
       },
       "TransactionApprovalsCustomsDataRequestDTO": {
+        "type": "object",
         "description": "Request DTO for <code>/LicenseManagementBF/getTransactionApprovalsCustomsData</code>",
         "properties": {
           "clientSystemId": {
@@ -12158,6 +13191,7 @@
         ]
       },
       "Company": {
+        "type": "object",
         "description": "A complete address of a company.",
         "properties": {
           "companyNumber": {
@@ -12328,6 +13362,7 @@
         ]
       },
       "CompanyRole": {
+        "type": "object",
         "description": "A role of a company. Company roles are domain specific characteristics and can differ between the different AEB services.",
         "properties": {
           "identCode": {
@@ -12351,6 +13386,7 @@
         ]
       },
       "CompanyPage": {
+        "type": "object",
         "properties": {
           "totalElements": {
             "type": "integer",
@@ -12372,6 +13408,7 @@
         ]
       },
       "CompanyRoleList": {
+        "type": "object",
         "properties": {
           "roles": {
             "type": "array",
@@ -12385,6 +13422,7 @@
         ]
       },
       "ManualAddressScreeningParmsDTO": {
+        "type": "object",
         "description": "Application specific parameters for manual address screening.",
         "properties": {
           "profileIdentCode": {
@@ -12396,6 +13434,7 @@
         }
       },
       "ManualAddressScreeningRequestDTO": {
+        "type": "object",
         "description": "Request object to get the URL of the manual address screening application.",
         "properties": {
           "generalParms": {
@@ -12409,6 +13448,7 @@
         }
       },
       "ManualLogEntryRequestDTO": {
+        "type": "object",
         "description": "Request object to get the URL for creating a manual log entry.",
         "properties": {
           "generalParms": {
@@ -12422,6 +13462,7 @@
         }
       },
       "ManualProtocolEntryAFParmsDTO": {
+        "type": "object",
         "description": "Application parameters for creating manual log entries.",
         "properties": {
           "module": {
@@ -12460,6 +13501,7 @@
         }
       },
       "MatchHandlingOverviewParmsDTO": {
+        "type": "object",
         "description": "Application specific parameters for viewing the match handling overview. If omitted, the default view is used.",
         "properties": {
           "storedViewName": {
@@ -12470,6 +13512,7 @@
         }
       },
       "MatchHandlingOverviewRequestDTO": {
+        "type": "object",
         "description": "Request object to get the URL for viewing the match handling overview.",
         "properties": {
           "generalParms": {
@@ -12483,6 +13526,7 @@
         }
       },
       "RestrictedPartyAddressParmsDTO": {
+        "type": "object",
         "description": "Application specific parameters for viewing a restricted party address.",
         "properties": {
           "internalAddressId": {
@@ -12494,6 +13538,7 @@
         }
       },
       "RestrictedPartyAddressRequestDTO": {
+        "type": "object",
         "description": "Request object to get the URL for viewing a restricted party address.",
         "properties": {
           "generalParms": {
@@ -12507,6 +13552,7 @@
         }
       },
       "RestrictedPartyListParmsDTO": {
+        "type": "object",
         "description": "Application specific parameters for viewing a restricted party list.",
         "properties": {
           "groupName": {
@@ -12518,6 +13564,7 @@
         }
       },
       "RestrictedPartyListRequestDTO": {
+        "type": "object",
         "description": "Request object to get the URL for viewing a restricted party list.",
         "properties": {
           "generalParms": {
@@ -12531,6 +13578,7 @@
         }
       },
       "ScreeningProtocolEntryParmsDTO": {
+        "type": "object",
         "description": "Application specific parameters for viewing a specific screening log entry.",
         "properties": {
           "title": {
@@ -12561,6 +13609,7 @@
         }
       },
       "ScreeningProtocolEntryRequestDTO": {
+        "type": "object",
         "description": "Request object to get the URL to view the screening log entry.",
         "properties": {
           "generalParms": {
@@ -12574,6 +13623,7 @@
         }
       },
       "ScreeningLogsParmsDTO": {
+        "type": "object",
         "description": "Application specific parameters for viewing screening logs.",
         "properties": {
           "title": {
@@ -12599,6 +13649,7 @@
         }
       },
       "ScreeningLogsRequestDTO": {
+        "type": "object",
         "description": "Request object to get the URL to view screening logs.",
         "properties": {
           "generalParms": {
@@ -12612,6 +13663,7 @@
         }
       },
       "StatisticalDataParmsDTO": {
+        "type": "object",
         "description": "Application specific parameters for the viewing statistical data.",
         "properties": {
           "searchDateFromPattern": {
@@ -12647,6 +13699,7 @@
         }
       },
       "StatisticalDataRequestDTO": {
+        "type": "object",
         "description": "Request object to get the URL to view statistical data.",
         "properties": {
           "generalParms": {
@@ -12660,6 +13713,7 @@
         }
       },
       "StatisticalKeyFiguresParmsDTO": {
+        "type": "object",
         "description": "Application specific parameters for the viewing statistical key figures.",
         "properties": {
           "searchDateFromPattern": {
@@ -12695,6 +13749,7 @@
         }
       },
       "StatisticalKeyFiguresRequestDTO": {
+        "type": "object",
         "description": "Request object to get the URL to view statistical key figures.",
         "properties": {
           "generalParms": {
@@ -12708,6 +13763,7 @@
         }
       },
       "SetFinalCommentRequestDTO": {
+        "type": "object",
         "description": "Request DTO for <code>/ComplianceScreeningInternal/setFinalReferenceComment</code> containing identifying data for the entries to be updated as well as the new reference comment.",
         "properties": {
           "clientSystemId": {
@@ -12753,6 +13809,7 @@
         ]
       },
       "SetFinalCommentResponseDTO": {
+        "type": "object",
         "description": "On success this response will be empty. In case of failure see <code>messages</code> for error details.",
         "properties": {
           "hasErrors": {
@@ -12780,6 +13837,7 @@
         }
       },
       "AddressIdDTO": {
+        "type": "object",
         "description": "Data transfer object for encoding of IDs of addresses, e.g. like DUNS number or passport number.",
         "properties": {
           "idType": {
@@ -12806,6 +13864,7 @@
         ]
       },
       "RestrictedPartyAddressDTO": {
+        "type": "object",
         "description": "Data transfer object for addresses found in a restricted party list which match a given address.",
         "properties": {
           "addressType": {
@@ -13131,7 +14190,82 @@
           }
         }
       },
+      "AebProblem": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A URI reference that uniquely identifies the problem type in the\ncontext of the provided API. Opposed to the specification in RFC-7807,\nit neither points to a human-readable documentation nor globally\nunique for the problem type."
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "description": "The HTTP status code generated by the origin server for this occurrence of the problem.",
+            "example": 404
+          },
+          "title": {
+            "type": "string",
+            "description": "Title",
+            "example": "Not found"
+          },
+          "detail": {
+            "type": "string",
+            "description": "Detail info",
+            "example": "Item not found"
+          },
+          "instance": {
+            "type": "string",
+            "format": "uri",
+            "description": "A URI reference that identifies the specific occurrence of the problem.",
+            "example": "item/12345"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of the error",
+            "example": "2024-03-28T12:45:31.7857371Z"
+          },
+          "xRequestId": {
+            "type": "string",
+            "description": "ID of the request that is associated with the problem."
+          },
+          "errors": {
+            "type": "array",
+            "description": "Array of related errors",
+            "items": {
+              "$ref": "#/components/schemas/AebProblemError"
+            }
+          }
+        }
+      },
+      "AebProblemError": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code identifying the type of the error.",
+            "example": "INVALID_VALUE"
+          },
+          "message": {
+            "type": "string",
+            "description": "Description of the error.",
+            "example": "Item number invalid"
+          },
+          "field": {
+            "type": "string",
+            "description": "JSON pointer to a data field that contains the erroneous value.",
+            "example": "items/2/itemNumber"
+          },
+          "value": {
+            "type": "string",
+            "description": "Textual representation of the erroneous value.",
+            "example": "7411A"
+          }
+        }
+      },
       "MatchHandlingCountResponseDTO": {
+        "type": "object",
         "description": "Represents the response of counting matches.",
         "properties": {
           "hasErrors": {
@@ -13165,6 +14299,7 @@
         }
       },
       "MatchHandlingCountFilterParmsDTO": {
+        "type": "object",
         "description": "Parameters to configure the match handling view when counting the matches.",
         "properties": {
           "storedViewName": {
@@ -13175,6 +14310,7 @@
         }
       },
       "MatchHandlingCountRequestDTO": {
+        "type": "object",
         "description": "Represents the request for counting matches in the match handling overview.",
         "properties": {
           "clientSystemId": {
@@ -13210,6 +14346,7 @@
         }
       },
       "AddressScreeningConditionDTO": {
+        "type": "object",
         "description": "Data transfer object for a condition for an address check.",
         "properties": {
           "value": {
@@ -13230,6 +14367,7 @@
         ]
       },
       "AddressScreeningParametersDTO": {
+        "type": "object",
         "description": "Data transfer object for parameters of the address screening.",
         "properties": {
           "clientIdentCode": {
@@ -13285,13 +14423,13 @@
           },
           "suppressLogging": {
             "type": "boolean",
-            "default": "false",
+            "default": false,
             "description": "If <code>true</code>, the address screening operation will not be logged, thus match handling in Trade Compliance Management will not be possible.<br>If omitted or <code>false</code>, the address screening operation will be logged.",
             "example": false
           },
           "considerGoodGuys": {
             "type": "boolean",
-            "default": "true",
+            "default": true,
             "description": "If <code>false</code> Good Guys will be ignored. If omitted or <code>true</code>, Good Guys will be considered. Should only be used if Good Guys should be ignored specifically, i.e. to specifically check a Good Guy similar to the Good Guy screening batch.",
             "example": true
           },
@@ -13318,6 +14456,7 @@
         ]
       },
       "AddressToCheckDTO": {
+        "type": "object",
         "description": "Data transfer object for an address to be screened against restricted party lists.",
         "properties": {
           "addressType": {
@@ -13575,6 +14714,7 @@
         }
       },
       "FindMatchingAddressesRequestDTO": {
+        "type": "object",
         "description": "Request object to find restricted party addresses matching a given address.",
         "properties": {
           "address": {
@@ -13588,6 +14728,7 @@
         }
       },
       "GoodGuyDefinitionResultDTO": {
+        "type": "object",
         "description": "The result of a Good Guy definition request.",
         "properties": {
           "definitionResult": {
@@ -13604,6 +14745,7 @@
         }
       },
       "GoodGuyAddressDTO": {
+        "type": "object",
         "description": "Data transfer object for a Good Guy address.",
         "properties": {
           "addressType": {
@@ -13874,7 +15016,7 @@
           },
           "isActive": {
             "type": "boolean",
-            "default": "true",
+            "default": true,
             "description": "Defines whether the Good Guy is active or not. Inactive Good Guys are not considered during address screening. If omitted, the Good Guy is active by default.<br> Only used when a new Good Guy is created.",
             "example": true
           },
@@ -13895,6 +15037,7 @@
         ]
       },
       "GoodGuyConditionDTO": {
+        "type": "object",
         "description": "Condition of a Good Guy. Allows to define that a Good Guy is only valid in a certain context like a specific order or transaction.",
         "properties": {
           "value": {
@@ -13915,6 +15058,7 @@
         ]
       },
       "LastRestrictedPartyListUpdateResponseDTO": {
+        "type": "object",
         "description": "DTO for wrapping the a \"simple\" Date result of a function to something, which is JSON-able.",
         "properties": {
           "lastUpdate": {
@@ -13926,6 +15070,7 @@
         }
       },
       "ClientSystemComplianceEventDTO": {
+        "type": "object",
         "description": "Data transfer object describing a log event of the client system.",
         "properties": {
           "level": {
@@ -14009,6 +15154,7 @@
         ]
       },
       "ProfileDTO": {
+        "type": "object",
         "description": "Data transfer object for a Compliance profile.",
         "properties": {
           "identCode": {
@@ -14026,6 +15172,7 @@
         }
       },
       "AddressScreeningResultDTO": {
+        "type": "object",
         "description": "Data transfer object for the results of address screening.",
         "properties": {
           "matchFound": {
@@ -14053,6 +15200,7 @@
         }
       },
       "ScreenAddressesRequestDTO": {
+        "type": "object",
         "description": "Request object for screening addresses against restricted party lists.",
         "properties": {
           "addresses": {
@@ -14069,6 +15217,7 @@
         }
       },
       "GetScreeningStatisticDataResponseDTO": {
+        "type": "object",
         "description": "Data transfer object for statistic data in Compliance Screening.",
         "properties": {
           "hasErrors": {
@@ -14103,6 +15252,7 @@
         }
       },
       "ScreeningStatisticDataDTO": {
+        "type": "object",
         "description": "Data transfer object for statistic data in Compliance Screening.",
         "properties": {
           "clientIdentCode": {
@@ -14208,6 +15358,7 @@
         }
       },
       "GetScreeningStatisticDataRequestDTO": {
+        "type": "object",
         "description": "Data transfer object for requesting statistic data in Compliance Screening.",
         "properties": {
           "clientSystemId": {
@@ -14256,7 +15407,7 @@
           },
           "getDataOfAllClientSystems": {
             "type": "boolean",
-            "default": "false",
+            "default": false,
             "description": "If <code>true</code>, statistic data will be returned for each client system.",
             "example": true
           }
@@ -14267,6 +15418,7 @@
         ]
       },
       "QuestionnaireParmsDTO": {
+        "type": "object",
         "description": "Passing the parameters to identify the questionnaire.<br>The fields <code>questTemplId</code>, <code>clientSystemId</code>, and <code>referenceIdHost</code> are mandatory.",
         "properties": {
           "questTemplId": {
@@ -14289,7 +15441,7 @@
           },
           "isReadOnly": {
             "type": "boolean",
-            "default": "false",
+            "default": false,
             "description": "If <code>true</code>, the questionnaire is opened in read-only mode.",
             "example": false
           }
@@ -14301,6 +15453,7 @@
         ]
       },
       "QuestionnaireRequestDTO": {
+        "type": "object",
         "description": "Request for the application open questionnaire.",
         "properties": {
           "generalParms": {
@@ -14314,6 +15467,7 @@
         }
       },
       "AbsoluteIntervalFilterDTO": {
+        "type": "object",
         "description": "Initializes the filter with a fix interval between two dates.",
         "properties": {
           "from": {
@@ -14327,6 +15481,7 @@
         }
       },
       "DateTimeIntervalRangeFilterDTO": {
+        "type": "object",
         "description": "Represents a possibility to pass a date time interval range filter. Use one of the given attributes to pass the filter. If more than one attribute is filledthe attributes will be used in the following order: relativeInterval, absoluteInterval",
         "properties": {
           "relativeInterval": {
@@ -14340,6 +15495,7 @@
         }
       },
       "IntervalFromNowFilterDTO": {
+        "type": "object",
         "description": "Initializes the filter with a time interval relative to 'today'.",
         "properties": {
           "unit": {
@@ -14354,6 +15510,7 @@
         }
       },
       "QuestionnairesFilterParmsDTO": {
+        "type": "object",
         "description": "Passing the filters of the questionaires.",
         "properties": {
           "partnerName": {
@@ -14431,6 +15588,7 @@
         }
       },
       "RelativeIntervalFilterDTO": {
+        "type": "object",
         "description": "Initializes the filter with a relative time range.<p>If only one attribute is filled, the interval is relative to 'today'.",
         "properties": {
           "from": {
@@ -14444,6 +15602,7 @@
         }
       },
       "SearchQuestionnairesRequestDTO": {
+        "type": "object",
         "description": "Request for the application search questionnaires.",
         "properties": {
           "generalParms": {
@@ -14457,6 +15616,7 @@
         }
       },
       "RAQuestionnairesCountResponseDTO": {
+        "type": "object",
         "description": "Represents the response of counting questionnaires.",
         "properties": {
           "hasErrors": {
@@ -14490,6 +15650,7 @@
         }
       },
       "RAQuestionnairesCountRequestDTO": {
+        "type": "object",
         "description": "Represents the request for a count of questionnaires.",
         "properties": {
           "clientSystemId": {
@@ -14525,6 +15686,7 @@
         }
       },
       "QuestionnaireCriticalResultDTO": {
+        "type": "object",
         "description": "Data about a critical result of a questionnaire.",
         "properties": {
           "identCode": {
@@ -14535,6 +15697,7 @@
         }
       },
       "QuestionnaireSummaryDTO": {
+        "type": "object",
         "description": "Summary data of a single questionnaire.",
         "properties": {
           "questTemplId": {
@@ -14579,6 +15742,7 @@
         }
       },
       "QuestionnaireSummaryResponseDTO": {
+        "type": "object",
         "description": "Represents the response of questionnaire summary.",
         "properties": {
           "hasErrors": {
@@ -14613,6 +15777,7 @@
         }
       },
       "QuestionnaireSummaryRequestDTO": {
+        "type": "object",
         "description": "Represents a request for a summary of the most recent valid questionnaire(s). The fields <code>clientIdentCode</code>, <code>referenceIdHost</code>, and <code>transactionIdHost</code> are mandatory.",
         "properties": {
           "clientSystemId": {
@@ -14659,6 +15824,7 @@
         ]
       },
       "InvalidateQuestionnairesResponseDTO": {
+        "type": "object",
         "description": "Represents the response of invalidating questionnaires. The response is empty, unless an error occurs.",
         "properties": {
           "hasErrors": {
@@ -14686,6 +15852,7 @@
         }
       },
       "InvalidateQuestionnairesRequestDTO": {
+        "type": "object",
         "description": "Represents a request for invalidating questionnaires.<br>The fields <code>clientIdentCode</code>, <code>clientSystemId</code>, and <code>referenceIdHost</code> are mandatory.",
         "properties": {
           "clientSystemId": {
@@ -14732,6 +15899,7 @@
         ]
       },
       "DesktopAgentInfo": {
+        "type": "object",
         "properties": {
           "id": {
             "type": "string"
@@ -14783,6 +15951,7 @@
         }
       },
       "LauncherInfo": {
+        "type": "object",
         "properties": {
           "version": {
             "type": "string"
@@ -14793,6 +15962,7 @@
         }
       },
       "ProcessInfo": {
+        "type": "object",
         "properties": {
           "host": {
             "type": "string"
@@ -14815,6 +15985,7 @@
         }
       },
       "SessionInfo": {
+        "type": "object",
         "properties": {
           "userName": {
             "type": "string"
@@ -14822,6 +15993,7 @@
         }
       },
       "TracingInfo": {
+        "type": "object",
         "properties": {
           "enabled": {
             "type": "boolean"
@@ -14848,6 +16020,7 @@
         }
       },
       "WorkstationSessionInfoDTO": {
+        "type": "object",
         "properties": {
           "id": {
             "type": "string"
@@ -14867,6 +16040,7 @@
         }
       },
       "WorkstationAgentConnectionTimeouts": {
+        "type": "object",
         "properties": {
           "registerTimeoutMS": {
             "type": "integer",
@@ -14887,6 +16061,7 @@
         }
       },
       "ApplicationInfoDTO": {
+        "type": "object",
         "description": "Contains information about an application, that can be accessed via GenericAF#open",
         "properties": {
           "name": {
@@ -14903,6 +16078,7 @@
         }
       },
       "GenericApplicationFacadeInfoDTO": {
+        "type": "object",
         "description": "The result DTO for #getGenericApplicationFacadeInfo().",
         "properties": {
           "hasErrors": {
@@ -14937,6 +16113,7 @@
         }
       },
       "GenericParameterInfoDTO": {
+        "type": "object",
         "description": "Information about a specific parameter for an application.",
         "properties": {
           "parameterName": {
@@ -14980,6 +16157,7 @@
         }
       },
       "GenericApplicationFacadeParmsDTO": {
+        "type": "object",
         "description": "A generic request for an application facade.",
         "properties": {
           "client": {
@@ -15059,7 +16237,7 @@
           },
           "readOnly": {
             "type": "boolean",
-            "default": "false",
+            "default": false,
             "description": "Defines whether or not the application shall be opened in read-only mode."
           },
           "parameters": {
@@ -15072,6 +16250,7 @@
         }
       },
       "GenericParameterDTO": {
+        "type": "object",
         "description": "A name-value pair representing a single parameter.",
         "properties": {
           "name": {
@@ -15085,6 +16264,7 @@
         }
       },
       "TCAESCertificateTypeDTO": {
+        "type": "object",
         "description": "DTO containing the extended field of a aes certificate.",
         "properties": {
           "atlasCode": {
@@ -15142,6 +16322,7 @@
         }
       },
       "TCDateDTO": {
+        "type": "object",
         "description": "Contains a date as string.",
         "properties": {
           "date": {
@@ -15151,6 +16332,7 @@
         }
       },
       "TCGetAESCertificateTypesResultDTO": {
+        "type": "object",
         "description": "Result DTO to hold all certificates for a given country.",
         "properties": {
           "resultMessages": {
@@ -15170,6 +16352,7 @@
         }
       },
       "TCUserMessageDTO": {
+        "type": "object",
         "description": "DTO encapsulates problem and information messages.",
         "properties": {
           "messageType": {
@@ -15183,6 +16366,7 @@
         }
       },
       "TCGetAESCertificateTypesRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get all certificates of a specific country",
         "properties": {
           "clientIdentCode": {
@@ -15196,6 +16380,7 @@
         }
       },
       "TCCommodityCodeAdditionalCodeDTO": {
+        "type": "object",
         "description": "Result DTO to hold code and description of an additional code",
         "properties": {
           "code": {
@@ -15205,6 +16390,7 @@
         }
       },
       "TCCommodityCodeMeasureAdditionalCodeDTO": {
+        "type": "object",
         "description": "Result DTO to hold information of a measure with additional code.",
         "properties": {
           "measureType": {
@@ -15218,6 +16404,7 @@
         }
       },
       "TCCommodityCodeMeasureTypeDTO": {
+        "type": "object",
         "description": "Result DTO to hold code and description of a measure.",
         "properties": {
           "measureId": {
@@ -15231,6 +16418,7 @@
         }
       },
       "TCGetAdditionalCodeProposalsResultDTO": {
+        "type": "object",
         "description": "Result DTO to hold measures with additional codes.",
         "properties": {
           "resultMessages": {
@@ -15250,6 +16438,7 @@
         }
       },
       "TCGetAdditionalCodeProposalsRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get additional codes.",
         "properties": {
           "clientIdentCode": {
@@ -15279,6 +16468,7 @@
         }
       },
       "TCCommodityCodeCertificateDTO": {
+        "type": "object",
         "description": "Result DTO to hold the information of a certificate/produced document",
         "properties": {
           "code": {
@@ -15292,6 +16482,7 @@
         }
       },
       "TCCommodityCodeMeasureCertificatesDTO": {
+        "type": "object",
         "description": "Result DTO to hold information of a measure with certificates.",
         "properties": {
           "measureType": {
@@ -15316,6 +16507,7 @@
         }
       },
       "TCGetCertificateProposalsResultDTO": {
+        "type": "object",
         "description": "Result DTO to hold the proposals for certificates/documents. <p> There will be a <code>TCCommodityCodeMeasureCertificatesDTO</code> for each measure that needs to be applied for materials with the commodity code that was passed in in the request, see <code>TCGetCertificateProposalsRequestDTO</code>. Additionally a list of national certificates will be returned. </p>",
         "properties": {
           "resultMessages": {
@@ -15342,6 +16534,7 @@
         }
       },
       "TCGetCertificateProposalsRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get certificate/document proposals.",
         "properties": {
           "clientIdentCode": {
@@ -15378,6 +16571,7 @@
         }
       },
       "TCCommodityCodeDTO": {
+        "type": "object",
         "description": "DTO to hold data of a valid commodity code.",
         "properties": {
           "commodityCode": {
@@ -15410,6 +16604,7 @@
         }
       },
       "TCGetCommodityCodeResultDTO": {
+        "type": "object",
         "description": "Result DTO to hold exactly one commodity code",
         "properties": {
           "resultMessages": {
@@ -15426,6 +16621,7 @@
         }
       },
       "TCGetCommodityCodeRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get exactly one commodity codes.",
         "properties": {
           "clientIdentCode": {
@@ -15462,6 +16658,7 @@
         }
       },
       "TCCommodityCodeSubstitutionDTO": {
+        "type": "object",
         "description": "DTO to hold data of one commodity code substitution.",
         "properties": {
           "validFrom": {
@@ -15493,6 +16690,7 @@
         }
       },
       "TCGetCommodityCodeSubstitutionsResultDTO": {
+        "type": "object",
         "description": "DTO to hold a list of commodity code substitutions.",
         "properties": {
           "resultMessages": {
@@ -15512,6 +16710,7 @@
         }
       },
       "TCGetCommodityCodeSubstitutionsRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get a list of commodity code substitutions.",
         "properties": {
           "clientIdentCode": {
@@ -15540,6 +16739,7 @@
         }
       },
       "TCGetCommodityCodesResultDTO": {
+        "type": "object",
         "description": "Result DTO to hold list of <code>TCCommodityCodeDTO</code>",
         "properties": {
           "resultMessages": {
@@ -15559,6 +16759,7 @@
         }
       },
       "TCGetCommodityCodesRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get a list of all valid commodity codes.",
         "properties": {
           "clientIdentCode": {
@@ -15591,6 +16792,7 @@
         }
       },
       "TCContentDTO": {
+        "type": "object",
         "description": "DTO to hold meta data of a content.",
         "properties": {
           "contentIdentCode": {
@@ -15607,6 +16809,7 @@
         }
       },
       "TCGetContentsResultDTO": {
+        "type": "object",
         "description": "Result DTO to hold a list of licensed contents.",
         "properties": {
           "resultMessages": {
@@ -15626,6 +16829,7 @@
         }
       },
       "TCGetContentsRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get all licensed contents for the given client.",
         "properties": {
           "clientIdentCode": {
@@ -15635,6 +16839,7 @@
         }
       },
       "TCCountryInGroupDTO": {
+        "type": "object",
         "description": "DTO to hold data of a country referenced in a country group.",
         "properties": {
           "countryISOCode": {
@@ -15652,6 +16857,7 @@
         }
       },
       "TCGetCountriesForGroupResultDTO": {
+        "type": "object",
         "description": "DTO to hold result data of countries referenced in a country group.",
         "properties": {
           "resultMessages": {
@@ -15671,6 +16877,7 @@
         }
       },
       "TCGetCountriesForGroupRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get all countries which belong to a given group.",
         "properties": {
           "clientIdentCode": {
@@ -15692,6 +16899,7 @@
         }
       },
       "TCCountryGroupDTO": {
+        "type": "object",
         "description": "DTO to hold data of a country group",
         "properties": {
           "identCode": {
@@ -15708,6 +16916,7 @@
         }
       },
       "TCCountryGroupTTDTO": {
+        "type": "object",
         "description": "DTO to hold language specific data of a country group.",
         "properties": {
           "languageISOCode": {
@@ -15725,6 +16934,7 @@
         }
       },
       "TCGetCountryGroupsResultDTO": {
+        "type": "object",
         "description": "DTO to hold result data of country groups related in the tariff content.",
         "properties": {
           "resultMessages": {
@@ -15744,6 +16954,7 @@
         }
       },
       "TCGetCountryGroupsRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get all country groups related in the tariff content.",
         "properties": {
           "clientIdentCode": {
@@ -15757,6 +16968,7 @@
         }
       },
       "TCExportControlNumberDTO": {
+        "type": "object",
         "description": "DTO to hold data of a valid export control number.",
         "properties": {
           "exportControlNumber": {
@@ -15781,6 +16993,7 @@
         }
       },
       "TCGetExportControlNumberResultDTO": {
+        "type": "object",
         "description": "Result DTO to hold exactly one export control number.",
         "properties": {
           "resultMessages": {
@@ -15797,6 +17010,7 @@
         }
       },
       "TCGetExportControlNumberRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get exactly one export control number.",
         "properties": {
           "clientIdentCode": {
@@ -15825,6 +17039,7 @@
         }
       },
       "TCGetExportControlNumberMappingResultDTO": {
+        "type": "object",
         "description": "Result DTO to hold export control number mappings of a given commodity code",
         "properties": {
           "resultMessages": {
@@ -15844,6 +17059,7 @@
         }
       },
       "TCGetExportControlNumberMappingRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get all proposed AL numbers for a KN codes.",
         "properties": {
           "clientIdentCode": {
@@ -15872,6 +17088,7 @@
         }
       },
       "TCGetExportControlNumbersResultDTO": {
+        "type": "object",
         "description": "Result DTO to hold list of <code>TCExportControlNumberDTO</code>",
         "properties": {
           "resultMessages": {
@@ -15891,6 +17108,7 @@
         }
       },
       "TCGetExportControlNumbersRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get a list of all valid export control numbers.",
         "properties": {
           "clientIdentCode": {
@@ -15915,6 +17133,7 @@
         }
       },
       "TCDateRangeDTO": {
+        "type": "object",
         "description": "Describes a date range, spanning all days between a pair of <code>TCDateDTO</code>.",
         "properties": {
           "from": {
@@ -15928,6 +17147,7 @@
         }
       },
       "TCGetImportMeasuresResultDTO": {
+        "type": "object",
         "description": "Result DTO to hold a list of import measures matching the request criteria. <p> A <code>TCImportMeasureDTO</code> is returned for each matching import measure </p>",
         "properties": {
           "resultMessages": {
@@ -15947,6 +17167,7 @@
         }
       },
       "TCImportMeasureAdditionalCodeDTO": {
+        "type": "object",
         "description": "Represents additional code information within a <code>TCImportMeasureDTO</code>.",
         "properties": {
           "type": {
@@ -15960,6 +17181,7 @@
         }
       },
       "TCImportMeasureCertificateDTO": {
+        "type": "object",
         "description": "Represents a certificate within a <code>TCImportMeasureConditionDTO</code>.",
         "properties": {
           "certificateType": {
@@ -15969,6 +17191,7 @@
         }
       },
       "TCImportMeasureConditionDTO": {
+        "type": "object",
         "description": "Describes a conditional rate within a <code>TCImportMeasureDTO</code>.",
         "properties": {
           "typeCode": {
@@ -16001,6 +17224,7 @@
         }
       },
       "TCImportMeasureDTO": {
+        "type": "object",
         "description": "Result DTO representing a single import measure.",
         "properties": {
           "measureId": {
@@ -16070,6 +17294,7 @@
         }
       },
       "TCImportMeasureFootnoteDTO": {
+        "type": "object",
         "description": "Describes a footnote within a <code>TCImportMeasureDTO</code>.",
         "properties": {
           "typeCode": {
@@ -16087,6 +17312,7 @@
         }
       },
       "TCImportMeasureRateComponentDTO": {
+        "type": "object",
         "description": "Result DTO representing one rate component of an import measure.",
         "properties": {
           "calculationType": {
@@ -16160,6 +17386,7 @@
         }
       },
       "TCGetImportMeasuresRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data for import measure requests",
         "properties": {
           "clientIdentCode": {
@@ -16189,6 +17416,7 @@
         }
       },
       "TCKnCodeCertProposalResultDTO": {
+        "type": "object",
         "description": "Result DTO to hold the proposals for certificates/documents. <p> There will be a <code>TCKnCodeMeasureInfoDTO</code> for each measure that needs to be applied for materials with the commodity code that was passed in in the request, see <code>TCKnCodeCertProposalRequestDTO</code>. Additionally a list of national certificates will be returned. </p>",
         "properties": {
           "resultMessages": {
@@ -16215,6 +17443,7 @@
         }
       },
       "TCKnCodeMeasureCertificateDTO": {
+        "type": "object",
         "description": "Result DTO to hold the information about a certificate.",
         "properties": {
           "atlasCode": {
@@ -16224,6 +17453,7 @@
         }
       },
       "TCKnCodeMeasureInfoDTO": {
+        "type": "object",
         "description": "Result DTO to hold the certificate proposal for exactly one measure.",
         "properties": {
           "maId": {
@@ -16252,6 +17482,7 @@
         }
       },
       "TCKnCodeNationalCertificateDTO": {
+        "type": "object",
         "description": "Result DTO to hold the information of a national certificate.",
         "properties": {
           "atlasCode": {
@@ -16265,6 +17496,7 @@
         }
       },
       "TCKnCodeCertProposalRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get certificate/document proposals.",
         "properties": {
           "clientIdentCode": {
@@ -16290,6 +17522,7 @@
         }
       },
       "TCAESCertificateTypeSimpleDTO": {
+        "type": "object",
         "description": "DTO containing the basic fields of a certificate.",
         "properties": {
           "atlasCode": {
@@ -16315,6 +17548,7 @@
         }
       },
       "TCGetKnCodeCertificateTypesResultDTO": {
+        "type": "object",
         "description": "Result DTO to hold all certificates for a given kn code.",
         "properties": {
           "resultMessages": {
@@ -16334,6 +17568,7 @@
         }
       },
       "TCGetKnCodeCertificateTypesRequestDTO": {
+        "type": "object",
         "description": "DTO to hold request data to get all certificates for a specific kn code.",
         "properties": {
           "clientIdentCode": {
@@ -16359,6 +17594,7 @@
         }
       },
       "CodeElementDTO": {
+        "type": "object",
         "description": "DTO to hold data of one code element of a nomenclature resp. an export control list.",
         "properties": {
           "code": {
@@ -16395,6 +17631,7 @@
         }
       },
       "GetCodeResultDTO": {
+        "type": "object",
         "description": "DTO to hold a request result containing one code element of the nomenclature resp. the export control list.",
         "properties": {
           "hasErrors": {
@@ -16426,6 +17663,7 @@
         }
       },
       "SupplementaryCodeElementInfoDTO": {
+        "type": "object",
         "description": "DTO to hold one type-casted supplementary information about a code element.",
         "properties": {
           "type": {
@@ -16446,6 +17684,7 @@
         }
       },
       "GetFinalCodesResultDTO": {
+        "type": "object",
         "description": "DTO to hold a request result containing all final code elements of the nomenclature resp. the export control list.",
         "properties": {
           "hasErrors": {
@@ -16480,6 +17719,7 @@
         }
       },
       "SearchCodesResultDTO": {
+        "type": "object",
         "description": "DTO to hold a search result containing all matching code elements of the nomenclature resp. the export control list.",
         "properties": {
           "hasErrors": {
