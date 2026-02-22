@@ -11694,15 +11694,16 @@
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
           },
-          "name": {
-            "type": "string"
+          "commandMap": {
+            "$ref": "#/components/schemas/CommandMap",
+            "writeOnly": true
           },
-          "inputStream": {},
-          "content": {},
-          "contentType": {
-            "type": "string"
+          "allCommands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommandInfo"
+            }
           },
-          "outputStream": {},
           "transferDataFlavors": {
             "type": "array",
             "items": {
@@ -11715,16 +11716,15 @@
               "$ref": "#/components/schemas/CommandInfo"
             }
           },
-          "commandMap": {
-            "$ref": "#/components/schemas/CommandMap",
-            "writeOnly": true
+          "name": {
+            "type": "string"
           },
-          "allCommands": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CommandInfo"
-            }
-          }
+          "inputStream": {},
+          "content": {},
+          "contentType": {
+            "type": "string"
+          },
+          "outputStream": {}
         }
       },
       "DataSource": {
