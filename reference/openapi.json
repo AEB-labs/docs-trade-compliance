@@ -11694,6 +11694,15 @@
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
           },
+          "name": {
+            "type": "string"
+          },
+          "inputStream": {},
+          "content": {},
+          "contentType": {
+            "type": "string"
+          },
+          "outputStream": {},
           "commandMap": {
             "$ref": "#/components/schemas/CommandMap",
             "writeOnly": true
@@ -11715,16 +11724,7 @@
             "items": {
               "$ref": "#/components/schemas/CommandInfo"
             }
-          },
-          "name": {
-            "type": "string"
-          },
-          "inputStream": {},
-          "content": {},
-          "contentType": {
-            "type": "string"
-          },
-          "outputStream": {}
+          }
         }
       },
       "DataSource": {
