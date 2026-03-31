@@ -1,5 +1,5 @@
 ---
-title: Integration with Synchronization
+title: Integration with API-synchronization for match handling
 excerpt: ''
 deprecated: false
 hidden: false
@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-In this scenario the partner system integration will be tighter and more automated therefore the effort to implement it will be higher.
+In this scenario, the partner system integration will be tighter and more automated. Therefore, the effort to implement it will be higher.
 
 To enable the synchronization for changes in Compliance Screening *match handling*, a partner system should subscribe to synchronization events of Compliance Screening *MatchHandlingSyncDigest*. This could be done directly in the Compliance Screening web application (*Office – Administration – Synchronization – Partner system subscriptions*) or via the [synchronization API](doc:sync-bf-calls-overview).
 
@@ -28,9 +28,9 @@ The user will then evaluate all address matches in AEB Compliance Screening.
 This is usually done through AEBs Compliance Screening GUI. 
 For address matches that are found to be false positives, “Good Guys” can be created.
 
- If the export control officer processes the transaction in a way that affects the check results (e.g., because of approvals), a synchronization event (*journal entry*) is generated and stored in Trade Compliance Management. The synchronization events are created only if the partner system has subscribed to synchronization events for match handling and contain information about the changed type of processing.
+ Once an address matches has been handled, a synchronization event (*journal entry*) is generated and stored in Trade Compliance Management. The synchronization events are created only if the partner system has subscribed to synchronization events for match handling and contain information about the changed match handling results.
 
-A batch job on the partner system should periodically call [getMatchHandlingChanges()](ref:getmatchhandlingchanges) to get the new results of the match handling. The matches in the partner system corresponding to the changed match handling results can  be re-checked (if a good guy was created) or remain blocked.
+A batch job on the partner system should periodically call [getMatchHandlingChanges()](ref:getmatchhandlingchanges) to get the new results of the match handling. The addresses in the partner system corresponding to the changed match handling results can be re-checked (if a good guy was created) or remain blocked.
 
 After the changed match handling results are processed and the corresponding matches are updated, the partner system should call [acknowledgeGetMatchHandlingChanges()](ref:acknowledgegetmatchhandlingchanges) to mark the synchronization events, identified by the syncId returned in the response from [getMatchHandlingChanges()](ref:getmatchhandlingchanges), as processed.
 
