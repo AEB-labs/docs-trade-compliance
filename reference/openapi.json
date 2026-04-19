@@ -11694,6 +11694,15 @@
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
           },
+          "name": {
+            "type": "string"
+          },
+          "inputStream": {},
+          "content": {},
+          "contentType": {
+            "type": "string"
+          },
+          "outputStream": {},
           "preferredCommands": {
             "type": "array",
             "items": {
@@ -11715,16 +11724,7 @@
             "items": {
               "$ref": "#/components/schemas/CommandInfo"
             }
-          },
-          "name": {
-            "type": "string"
-          },
-          "inputStream": {},
-          "content": {},
-          "contentType": {
-            "type": "string"
-          },
-          "outputStream": {}
+          }
         }
       },
       "DataSource": {
@@ -15944,6 +15944,9 @@
           "tracingInfo": {
             "$ref": "#/components/schemas/TracingInfo"
           },
+          "perfMonitoringInfo": {
+            "$ref": "#/components/schemas/PerfMonitoringInfo"
+          },
           "lastNetworkActivityTime": {
             "type": "string",
             "format": "date-time"
@@ -15958,6 +15961,23 @@
           },
           "zoneName": {
             "type": "string"
+          }
+        }
+      },
+      "PerfMonitoringInfo": {
+        "type": "object",
+        "properties": {
+          "createdToRegisteredDurationMs": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "createdToFirstNetworkActivityDurationMs": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "createdToLaunchRequestedDurationMs": {
+            "type": "integer",
+            "format": "int64"
           }
         }
       },
