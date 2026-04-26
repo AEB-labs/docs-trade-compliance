@@ -1,6 +1,4 @@
 ---
-title: /TariffContent20BFBean/getExportControlNumberMapping
-excerpt: Gets the mapping data of a commodity code to a list of export control numbers.
 api:
   file: openapi.json
   operationId: getExportControlNumberMapping
