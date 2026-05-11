@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-In this scenario the partner system integration will be tighter and more automated therefore the effort to implement it will be higher.
+In this scenario, the partner system integration will be tighter and more automated. Therefore, the effort to implement it will be higher.
 
 To enable the synchronization for changes in Export Controls *check transactions*, a partner system should subscribe to synchronization events of Export Controls *check transactions*. This could be done directly in the Export Controls web application (*Office – Administration – Synchronization – Partner system subscriptions*) or via the [synchronization API](doc:sync-bf-calls-overview).
 

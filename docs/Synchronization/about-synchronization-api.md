@@ -20,6 +20,7 @@ In Trade Compliance Management synchronization is available for the following bu
 
 * Export Controls check transactions (businessObjectType = “ECTransactionSync”)
 * Risk Assessment questionnaires (businessObjectType = “RAQUEST”)
+* Compliance Screening match handling (businessObjectType = "MatchHandlingSyncDigest")
 
 To enable synchronization for one of the supported business objects, the partner system should subscribe to synchronization events of the corresponding type. This can be done directly in the Trade Compliance Management web application (*Office – Administration – Synchronization – Partner system subscriptions*) or via the [synchronization API](doc:sync-bf-calls-overview).
 
