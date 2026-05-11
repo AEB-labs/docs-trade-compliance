@@ -1490,7 +1490,7 @@
           "Export Control"
         ],
         "summary": "Acknowledge changed results of EC check transactions.",
-        "description": "Acknowledge the changed results of EC check transactions. If calling *getChangedTransactions* returns false in *GetChangedTransactionsResponseDTO.isComplete*, there are more changed results available. To get those results, the already retrieved results need to be acknowledged with the *GetChangedTransactionsResponseDTO.syncId* from the *getChangedTransactions* call.",
+        "description": "A call to this endpoint acknowledges that your partner system has processed the changed transaction results retrieved by calling *getChangedTransactions*. Acknowledged events will not be available for retrieval again. Acknowledge the changed results of EC check transactions. If calling *getChangedTransactions* returns false in *GetChangedTransactionsResponseDTO.isComplete*, there are more changed results available. To get those results, the already retrieved results need to be acknowledged with the *GetChangedTransactionsResponseDTO.syncId* from the *getChangedTransactions* call.",
         "operationId": "acknowledgeGetChangedTransactions",
         "requestBody": {
           "content": {
@@ -2008,6 +2008,137 @@
         }
       }
     },
+    "/ExportControl/v2/finalizeApproval": {
+      "post": {
+        "tags": [
+          "Export Control"
+        ],
+        "summary": "Finalize an approval.",
+        "description": "Method to be invoked when an approval should be finalized. Finalizes the approval for the corresponding check transaction in Export Controls if existing.",
+        "operationId": "finalizeApproval",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinalizeApprovalRequestDTO"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/FinalizeApprovalRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK. The operation response. See response schema documentation for details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FinalizeApprovalResponseDTO"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FinalizeApprovalResponseDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. Missing or invalid authorization token.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method not allowed. Use POST.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable. This resource produces application/json or application/xml.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type. This resource accepts application/json or application/xml.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error. See errorMessage for details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/ExportControl/v2/getChangedTransactions": {
       "post": {
         "tags": [
@@ -2173,6 +2304,137 @@
               "application/xml": {
                 "schema": {
                   "$ref": "#/components/schemas/GetTransactionCheckResultResponseDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. Missing or invalid authorization token.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method not allowed. Use POST.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable. This resource produces application/json or application/xml.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type. This resource accepts application/json or application/xml.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error. See errorMessage for details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ExportControl/v2/updateCustomsInfo": {
+      "post": {
+        "tags": [
+          "Export Control"
+        ],
+        "summary": "Update customs info.",
+        "description": "Method to be invoked when customs info is to be updated. Updates the customs info for the corresponding check transaction in Export Controls if existing.",
+        "operationId": "updateCustomsInfo",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCustomsInfoRequestDTO"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCustomsInfoRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK. The operation response. See response schema documentation for details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateCustomsInfoResponseDTO"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateCustomsInfoResponseDTO"
                 }
               }
             }
@@ -3463,6 +3725,46 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/RemoteAdminBFBean/clientRoles/{clientId}": {
+      "get": {
+        "tags": [
+          "RemoteAdminBFBean"
+        ],
+        "summary": "getRoles",
+        "description": "Returns a list of roles",
+        "operationId": "getRolesForClient",
+        "parameters": [
+          {
+            "name": "clientId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The roles of the specified client.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolesOfClientDTO"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolesOfClientDTO"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "returned when client with given ident code is not found"
           }
         }
       }
@@ -4859,6 +5161,137 @@
         }
       }
     },
+    "/ComplianceScreeningApplications/matchHandlingViewEntry": {
+      "post": {
+        "tags": [
+          "Compliance Screening Applications"
+        ],
+        "summary": "Match handling entry",
+        "description": "Returns a URL that allows you to embed a match handling entry into another application.",
+        "operationId": "matchHandlingViewEntry",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MatchHandlingEntryRequestDTO"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/MatchHandlingEntryRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK. URL to embed a match handling entry into another application.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationFacadeDTO"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationFacadeDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. Missing or invalid authorization token.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method not allowed. Use POST.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable. This resource produces application/json or application/xml.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type. This resource accepts application/json or application/xml.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error. See errorMessage for details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/ComplianceScreeningApplications/restrictedPartyAddress": {
       "post": {
         "tags": [
@@ -5127,7 +5560,7 @@
           "Compliance Screening Applications"
         ],
         "summary": "Screening log entry editor",
-        "description": "Returns a URL that allows you to embed the screening match handling into another application.",
+        "description": "Returns a URL that allows you to embed the screening log entry for an address match, Good Guy alarm or non match into another application.",
         "operationId": "screeningLogEntry",
         "requestBody": {
           "content": {
@@ -5145,7 +5578,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. URL to embed screening match handling into another application.",
+            "description": "OK. URL to embed screening log entry for an address match, Good Guy alarm or non match into another application.",
             "content": {
               "application/json": {
                 "schema": {
@@ -5389,7 +5822,7 @@
           "Compliance Screening Applications"
         ],
         "summary": "Screening log entry editor",
-        "description": "Returns a URL that allows you to embed the screening match handling into another application.",
+        "description": "Returns a URL that allows you to embed the screening log entry for an address match, Good Guy alarm or non match into another application.",
         "operationId": "screeningProtocolEntry",
         "requestBody": {
           "content": {
@@ -5407,7 +5840,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. URL to embed screening match handling into another application.",
+            "description": "OK. URL to embed screening log entry for an address match, Good Guy alarm or non match into another application.",
             "content": {
               "application/json": {
                 "schema": {
@@ -5520,8 +5953,8 @@
         "tags": [
           "Compliance Screening Applications"
         ],
-        "summary": "Statistical data application",
-        "description": "Returns a URL that allows you to embed statistical data into another application.",
+        "summary": "Statistical overview application",
+        "description": "Returns a URL that allows you to embed the statistical overview into another application.",
         "operationId": "statisticalData",
         "requestBody": {
           "content": {
@@ -5539,7 +5972,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. URL to embed statistical data into another application.",
+            "description": "OK. URL to embed the statistical overview into another application.",
             "content": {
               "application/json": {
                 "schema": {
@@ -5811,6 +6244,137 @@
               "application/xml": {
                 "schema": {
                   "$ref": "#/components/schemas/SetFinalCommentRequestDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. Missing or invalid authorization token.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method not allowed. Use POST.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable. This resource produces application/json or application/xml.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type. This resource accepts application/json or application/xml.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error. See errorMessage for details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ComplianceScreening/acknowledgeMatchHandlingChanges": {
+      "post": {
+        "tags": [
+          "Compliance Screening"
+        ],
+        "summary": "Acknowledge changed match handling results.",
+        "description": "A call to this endpoint acknowledges that your partner system has processed the changed match handling results retrieved by *matchHandlingChanges*. Acknowledged events will not be available for retrieval againAcknowledge changed match handling results. If calling *matchHandlingChanges* returns false in *GetMatchHandlingChangesResponseDTO.isComplete*, there are more changed results available. To get those results, the already retrieved results need to be acknoledged with the *GetMatchHandlingChangesResponseDTO.syncId* from the *matchHandlingChanges* call.",
+        "operationId": "acknowledgeMatchHandlingChanges",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AcknowledgeGetMatchHandlingChangesRequestDTO"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/AcknowledgeGetMatchHandlingChangesRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK. The operation response. See response schema documentation for details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AcknowledgeGetMatchHandlingChangesResponseDTO"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/AcknowledgeGetMatchHandlingChangesResponseDTO"
                 }
               }
             }
@@ -6693,6 +7257,137 @@
                       "$ref": "#/components/schemas/ErrorData"
                     }
                   ]
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. Missing or invalid authorization token.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method not allowed. Use POST.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Not Acceptable. This resource produces application/json or application/xml.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type. This resource accepts application/json or application/xml.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error. See errorMessage for details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ComplianceScreening/matchHandlingChanges": {
+      "post": {
+        "tags": [
+          "Compliance Screening"
+        ],
+        "summary": "Returns all match handling updates since the last synchronization.",
+        "description": "Returns all match handling updates since the last synchronization. The result of a match handling might change if e.g. a match is set to 'processed' or a good guy was created within Trade Compliance Management.",
+        "operationId": "matchHandlingChanges",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetMatchHandlingChangesRequestDTO"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/GetMatchHandlingChangesRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK. The changed results of handled matches.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetMatchHandlingChangesResponseDTO"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetMatchHandlingChangesResponseDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorData"
                 }
               }
             }
@@ -9791,7 +10486,8 @@
           },
           "syncId": {
             "type": "string",
-            "description": "Synchronization ID for acknowledging.<br>Use the <code>GetChangedTransactionsResponseDTO.syncId</code> value received with the last call to <code>/ExportControl/v2/getChangedTransactions</code> to acknowledge the processing of the changed results of EC check transactions."
+            "description": "Synchronization ID for acknowledging.<br>Use the <code>GetChangedTransactionsResponseDTO.syncId</code> value received with the last call to <code>/ExportControl/v2/getChangedTransactions</code> to acknowledge the processing of the changed results of EC check transactions.",
+            "example": 1234
           }
         }
       },
@@ -10683,6 +11379,86 @@
           "transactionIdHost"
         ]
       },
+      "FinalizeApprovalResponseDTO": {
+        "type": "object",
+        "description": "Response of <code>/ExportControl/v2/finalizeApproval</code>.",
+        "properties": {
+          "hasErrors": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>An error usually means that the request could not be performed.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": false
+          },
+          "hasOnlyRetryableErrors": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": true
+          },
+          "hasWarnings": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": true
+          },
+          "messages": {
+            "type": "array",
+            "description": "<p>Error or warning messages at the request level.</p><p>There may be additional messages[] arrays at lower data levels as specified in the documentation.</p>",
+            "items": {
+              "$ref": "#/components/schemas/ResponseMessageDTO"
+            }
+          }
+        }
+      },
+      "FinalizeApprovalRequestDTO": {
+        "type": "object",
+        "description": "Represents a request to finalize an approval in Export Controls.<br><code>clientIdentCode</code> is a mandatory field.",
+        "properties": {
+          "clientSystemId": {
+            "type": "string",
+            "description": "<p>Id of the sending client system.</p><p>e.g. Installation ID of the sending host or ERP system.</p><p>Maximum length: 20</p>",
+            "example": "TEST_ID"
+          },
+          "clientIdentCode": {
+            "type": "string",
+            "description": "<p>Client identification code.</p><p>Maximum length: 10</p>",
+            "example": "APITEST"
+          },
+          "userName": {
+            "type": "string",
+            "description": "<p>User who initiated the request from the client system.</p><p>If the user is found either in the system's user management or in a connected LDAP directory, the request runs under this user's roles.</p><p>If the user is not found, the request is only granted the basic 'I_EVERYONE' role. The user name may be used for logging purposes in this case.</p><p>Actual authentication is handled separately via the request's headers, so no password is required in the request's data.</p>",
+            "example": "API_TEST"
+          },
+          "resultLanguageIsoCodes": {
+            "type": "array",
+            "description": "<p>2-letter ISO codes of the languages in which texts will be returned.</p><p>English ('en') and German ('de') are typically supported by default. Other languages may be supported.</p><p>Translations will be looked up in the order of the provided language codes. If a translation is not available in one language, the next language is used instead.</p>",
+            "example": [
+              "en",
+              "de"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "transactionIdHost": {
+            "type": "string",
+            "description": "A human-readable form of the unique id for the transaction.",
+            "example": "Mandant = 001; Auftragsnr. = 80004989"
+          },
+          "itemIdHost": {
+            "type": "string",
+            "description": "Unique id for the item within the transaction.",
+            "example": 4711
+          },
+          "jurisdiction": {
+            "type": "string",
+            "description": "ID of the jurisdiction to which the result belongs.<br>Possible values are:<ul><li><code>DE-EU-Plugin</code></li><li><code>US-EAR-Plugin</code></li><li><code>Custom-Plugin</code></li><li><code>Risk-Assessment-Plugin</code></li></ul>Additionally, further jurisdictions may be configured. The IDs of all available jurisdictions of a client can be queried using <code>/ComplianceFoundation/getMasterdataIdentifiers</code>.",
+            "example": "DE-EU-Plugin"
+          }
+        },
+        "required": [
+          "itemIdHost",
+          "jurisdiction",
+          "transactionIdHost"
+        ]
+      },
       "GetChangedTransactionsRequestDTO": {
         "type": "object",
         "description": "Request to get the changed results of EC check transactions.",
@@ -10939,6 +11715,113 @@
           }
         },
         "required": [
+          "transactionIdHost"
+        ]
+      },
+      "UpdateCustomsInfoResponseDTO": {
+        "type": "object",
+        "description": "Response of <code>/ExportControl/v2/updateCustomsInfo</code>.",
+        "properties": {
+          "hasErrors": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>An error usually means that the request could not be performed.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": false
+          },
+          "hasOnlyRetryableErrors": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": true
+          },
+          "hasWarnings": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": true
+          },
+          "messages": {
+            "type": "array",
+            "description": "<p>Error or warning messages at the request level.</p><p>There may be additional messages[] arrays at lower data levels as specified in the documentation.</p>",
+            "items": {
+              "$ref": "#/components/schemas/ResponseMessageDTO"
+            }
+          }
+        }
+      },
+      "UpdateCustomsInfoRequestDTO": {
+        "type": "object",
+        "description": "Represents a request to update customs information in Export Controls.<br><code>clientIdentCode</code> is a mandatory field.",
+        "properties": {
+          "clientSystemId": {
+            "type": "string",
+            "description": "<p>Id of the sending client system.</p><p>e.g. Installation ID of the sending host or ERP system.</p><p>Maximum length: 20</p>",
+            "example": "TEST_ID"
+          },
+          "clientIdentCode": {
+            "type": "string",
+            "description": "<p>Client identification code.</p><p>Maximum length: 10</p>",
+            "example": "APITEST"
+          },
+          "userName": {
+            "type": "string",
+            "description": "<p>User who initiated the request from the client system.</p><p>If the user is found either in the system's user management or in a connected LDAP directory, the request runs under this user's roles.</p><p>If the user is not found, the request is only granted the basic 'I_EVERYONE' role. The user name may be used for logging purposes in this case.</p><p>Actual authentication is handled separately via the request's headers, so no password is required in the request's data.</p>",
+            "example": "API_TEST"
+          },
+          "resultLanguageIsoCodes": {
+            "type": "array",
+            "description": "<p>2-letter ISO codes of the languages in which texts will be returned.</p><p>English ('en') and German ('de') are typically supported by default. Other languages may be supported.</p><p>Translations will be looked up in the order of the provided language codes. If a translation is not available in one language, the next language is used instead.</p>",
+            "example": [
+              "en",
+              "de"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "transactionIdHost": {
+            "type": "string",
+            "description": "A human-readable form of the unique id for the transaction.",
+            "example": "Mandant = 001; Auftragsnr. = 80004989"
+          },
+          "itemIdHost": {
+            "type": "string",
+            "description": "Unique id for the item within the transaction.",
+            "example": 4711
+          },
+          "jurisdiction": {
+            "type": "string",
+            "description": "ID of the jurisdiction to which the result belongs.<br>Possible values are:<ul><li><code>DE-EU-Plugin</code></li><li><code>US-EAR-Plugin</code></li><li><code>Custom-Plugin</code></li><li><code>Risk-Assessment-Plugin</code></li></ul>Additionally, further jurisdictions may be configured. The IDs of all available jurisdictions of a client can be queried using <code>/ComplianceFoundation/getMasterdataIdentifiers</code>.",
+            "example": "DE-EU-Plugin"
+          },
+          "customsAcceptanceDate": {
+            "type": "string",
+            "format": "date",
+            "description": "Date on which customs office accepts export declaration.",
+            "example": "2015-01-01"
+          },
+          "customsOffice": {
+            "type": "string",
+            "description": "Code of customs office that decrements the license.",
+            "example": "DE12345"
+          },
+          "mrn": {
+            "type": "string",
+            "description": "Movement reference number (MRN) of export declaration.",
+            "example": "20DE1234567890123"
+          },
+          "dateOfExport": {
+            "type": "string",
+            "format": "date",
+            "description": "Date of export.",
+            "example": "2015-01-01"
+          },
+          "customsClientTransactionRef": {
+            "type": "string",
+            "description": "Number of transaction/document from which the export declaration was created.",
+            "example": 80004989
+          }
+        },
+        "required": [
+          "itemIdHost",
+          "jurisdiction",
           "transactionIdHost"
         ]
       },
@@ -11694,6 +12577,18 @@
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
           },
+          "preferredCommands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommandInfo"
+            }
+          },
+          "transferDataFlavors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ActivationDataFlavor"
+            }
+          },
           "name": {
             "type": "string"
           },
@@ -11703,18 +12598,6 @@
             "type": "string"
           },
           "outputStream": {},
-          "transferDataFlavors": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ActivationDataFlavor"
-            }
-          },
-          "preferredCommands": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CommandInfo"
-            }
-          },
           "commandMap": {
             "$ref": "#/components/schemas/CommandMap",
             "writeOnly": true
@@ -12078,6 +12961,11 @@
           "name": {
             "type": "string",
             "description": "text to be shown for the link"
+          },
+          "position": {
+            "type": "integer",
+            "format": "int32",
+            "description": "position of the link"
           }
         }
       },
@@ -12478,6 +13366,73 @@
             "type": "integer",
             "format": "int64",
             "description": "file attribute lastAccessTime as FileTime millis"
+          }
+        }
+      },
+      "RoleDTO": {
+        "type": "object",
+        "description": "data about a role",
+        "properties": {
+          "identCode": {
+            "type": "string",
+            "description": "the role ident code - this value is unique in the system"
+          },
+          "localizedTexts": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/RoleTextDTO"
+            },
+            "description": "localized data of the role - key is language, value is RoleTextDTO with 'name' and 'description'"
+          },
+          "impliedRoles": {
+            "type": "array",
+            "description": "the implied roles - a user having this role also has all the roles that appear in this list",
+            "items": {
+              "type": "string"
+            }
+          },
+          "apiPredefined": {
+            "type": "boolean",
+            "description": "true if role is predefined by code, and not manually created by an administrator"
+          },
+          "systemRole": {
+            "type": "boolean",
+            "description": "true if this is a role which is referenced in code and implies various effects"
+          },
+          "clientDefined": {
+            "type": "boolean",
+            "description": "true if this role is defined specifically for the current client"
+          }
+        }
+      },
+      "RoleTextDTO": {
+        "type": "object",
+        "description": "language dependent values of a role",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "the name of the role, a short word describing the role"
+          },
+          "description": {
+            "type": "string",
+            "description": "a longer description that explains what this role is for"
+          }
+        }
+      },
+      "RolesOfClientDTO": {
+        "type": "object",
+        "description": "Response DTO for listing roles assignable to users of a client.",
+        "properties": {
+          "clientIdentCode": {
+            "type": "string",
+            "description": "the ident code of the client for which the roles are returned"
+          },
+          "roles": {
+            "type": "array",
+            "description": "list of roles which are defined for the specified client",
+            "items": {
+              "$ref": "#/components/schemas/RoleDTO"
+            }
           }
         }
       },
@@ -13423,7 +14378,7 @@
       },
       "ManualAddressScreeningParmsDTO": {
         "type": "object",
-        "description": "Application specific parameters for manual address screening.",
+        "description": "Application specific parameters to display the manual address screening application.",
         "properties": {
           "profileIdentCode": {
             "type": "string",
@@ -13435,7 +14390,7 @@
       },
       "ManualAddressScreeningRequestDTO": {
         "type": "object",
-        "description": "Request object to get the URL of the manual address screening application.",
+        "description": "Request object to get the URL to display the manual address screening application.",
         "properties": {
           "generalParms": {
             "$ref": "#/components/schemas/ApplicationFacadeParmsDTO",
@@ -13449,7 +14404,7 @@
       },
       "ManualLogEntryRequestDTO": {
         "type": "object",
-        "description": "Request object to get the URL for creating a manual log entry.",
+        "description": "Request object to get the URL to display the manual log entry application.",
         "properties": {
           "generalParms": {
             "$ref": "#/components/schemas/ApplicationFacadeParmsDTO",
@@ -13463,7 +14418,7 @@
       },
       "ManualProtocolEntryAFParmsDTO": {
         "type": "object",
-        "description": "Application parameters for creating manual log entries.",
+        "description": "Application specific parameters to display the manual log entry application.",
         "properties": {
           "module": {
             "type": "string",
@@ -13495,14 +14450,14 @@
           "clientSystemId": {
             "type": "string",
             "description": "A unique ID of the host system calling this API for logging.",
-            "example": "SAP_[SAP system]_[SAP client]",
+            "example": "SAP_[sys]_[client]",
             "maxLength": 20
           }
         }
       },
       "MatchHandlingOverviewParmsDTO": {
         "type": "object",
-        "description": "Application specific parameters for viewing the match handling overview. If omitted, the default view is used.",
+        "description": "Application specific parameters to display the match handling overview. If omitted, the default view is used.",
         "properties": {
           "storedViewName": {
             "type": "string",
@@ -13513,7 +14468,7 @@
       },
       "MatchHandlingOverviewRequestDTO": {
         "type": "object",
-        "description": "Request object to get the URL for viewing the match handling overview.",
+        "description": "Request object to get the URL to display the match handling overview.",
         "properties": {
           "generalParms": {
             "$ref": "#/components/schemas/ApplicationFacadeParmsDTO",
@@ -13525,9 +14480,52 @@
           }
         }
       },
+      "MatchHandlingEntryAFParmsDTO": {
+        "type": "object",
+        "description": "Application specific parameters to display a match handling entry.",
+        "properties": {
+          "referenceId": {
+            "type": "string",
+            "description": "Internal reference to identify the match to be displayed. If this field is left empty, clientReferenceComment needs to be filled.",
+            "example": "customer.4711.aeb.123"
+          },
+          "clientReferenceComment": {
+            "type": "string",
+            "description": "Reference comment to identify the match to be displayed. If this field is left empty, referenceId needs to be filled.",
+            "example": "Type: Customer, Id: 4711, Company name: AEB, Order number: 123"
+          },
+          "clientSystemId": {
+            "type": "string",
+            "description": "Partner system to identify the match to be displayed. This field is not required, but should be transmitted if matches created by a partner system are supposed to be found.",
+            "example": "API-TEST"
+          },
+          "clientIdentCode": {
+            "type": "string",
+            "description": "Client to identify the match to be displayed.",
+            "example": "APICLIENT"
+          }
+        },
+        "required": [
+          "clientIdentCode"
+        ]
+      },
+      "MatchHandlingEntryRequestDTO": {
+        "type": "object",
+        "description": "Request object to get the URL to display a match handling entry.",
+        "properties": {
+          "generalParms": {
+            "$ref": "#/components/schemas/ApplicationFacadeParmsDTO",
+            "description": "General technical parameters for the application."
+          },
+          "specificParms": {
+            "$ref": "#/components/schemas/MatchHandlingEntryAFParmsDTO",
+            "description": "Application specific parameters."
+          }
+        }
+      },
       "RestrictedPartyAddressParmsDTO": {
         "type": "object",
-        "description": "Application specific parameters for viewing a restricted party address.",
+        "description": "Application specific parameters to display a restricted party address.",
         "properties": {
           "internalAddressId": {
             "type": "string",
@@ -13539,7 +14537,7 @@
       },
       "RestrictedPartyAddressRequestDTO": {
         "type": "object",
-        "description": "Request object to get the URL for viewing a restricted party address.",
+        "description": "Request object to get the URL to display a restricted party address.",
         "properties": {
           "generalParms": {
             "$ref": "#/components/schemas/ApplicationFacadeParmsDTO",
@@ -13553,7 +14551,7 @@
       },
       "RestrictedPartyListParmsDTO": {
         "type": "object",
-        "description": "Application specific parameters for viewing a restricted party list.",
+        "description": "Application specific parameters to display a restricted party list.",
         "properties": {
           "groupName": {
             "type": "string",
@@ -13565,7 +14563,7 @@
       },
       "RestrictedPartyListRequestDTO": {
         "type": "object",
-        "description": "Request object to get the URL for viewing a restricted party list.",
+        "description": "Request object to get the URL to display a restricted party list.",
         "properties": {
           "generalParms": {
             "$ref": "#/components/schemas/ApplicationFacadeParmsDTO",
@@ -13579,7 +14577,7 @@
       },
       "ScreeningProtocolEntryParmsDTO": {
         "type": "object",
-        "description": "Application specific parameters for viewing a specific screening log entry.",
+        "description": "Application specific parameters to display a screening log entry for an address match, Good Guy alarm or non match.",
         "properties": {
           "title": {
             "type": "string",
@@ -13594,7 +14592,7 @@
           "clientReferenceComment": {
             "type": "string",
             "description": "Value for the search criterion to find the specific log for the given reference comment.",
-            "example": "Type: Customer, Id: 4711, Company-Name: AEB, Order-Number: 123"
+            "example": "Type: Customer, Id: 4711, Company name: AEB, Order number: 123"
           },
           "clientSystemId": {
             "type": "string",
@@ -13610,7 +14608,7 @@
       },
       "ScreeningProtocolEntryRequestDTO": {
         "type": "object",
-        "description": "Request object to get the URL to view the screening log entry.",
+        "description": "Request object to get the URL to display a screening log entry for an address match, Good Guy alarm or non match.",
         "properties": {
           "generalParms": {
             "$ref": "#/components/schemas/ApplicationFacadeParmsDTO",
@@ -13624,7 +14622,7 @@
       },
       "ScreeningLogsParmsDTO": {
         "type": "object",
-        "description": "Application specific parameters for viewing screening logs.",
+        "description": "Application specific parameters to display the screening logs application.",
         "properties": {
           "title": {
             "type": "string",
@@ -13650,7 +14648,7 @@
       },
       "ScreeningLogsRequestDTO": {
         "type": "object",
-        "description": "Request object to get the URL to view screening logs.",
+        "description": "Request object to get the URL to display the screening logs application.",
         "properties": {
           "generalParms": {
             "$ref": "#/components/schemas/ApplicationFacadeParmsDTO",
@@ -13664,7 +14662,7 @@
       },
       "StatisticalDataParmsDTO": {
         "type": "object",
-        "description": "Application specific parameters for the viewing statistical data.",
+        "description": "Application specific parameters to display the statistical overview application.",
         "properties": {
           "searchDateFromPattern": {
             "type": "string",
@@ -13700,7 +14698,7 @@
       },
       "StatisticalDataRequestDTO": {
         "type": "object",
-        "description": "Request object to get the URL to view statistical data.",
+        "description": "Request object to get the URL to display the statistical overview application.",
         "properties": {
           "generalParms": {
             "$ref": "#/components/schemas/ApplicationFacadeParmsDTO",
@@ -13714,7 +14712,7 @@
       },
       "StatisticalKeyFiguresParmsDTO": {
         "type": "object",
-        "description": "Application specific parameters for the viewing statistical key figures.",
+        "description": "Application specific parameters to display the statistical key figures.",
         "properties": {
           "searchDateFromPattern": {
             "type": "string",
@@ -13750,7 +14748,7 @@
       },
       "StatisticalKeyFiguresRequestDTO": {
         "type": "object",
-        "description": "Request object to get the URL to view statistical key figures.",
+        "description": "Request object to get the URL to display the statistical key figures.",
         "properties": {
           "generalParms": {
             "$ref": "#/components/schemas/ApplicationFacadeParmsDTO",
@@ -13833,6 +14831,71 @@
             "items": {
               "$ref": "#/components/schemas/ResponseMessageDTO"
             }
+          }
+        }
+      },
+      "AcknowledgeGetMatchHandlingChangesResponseDTO": {
+        "type": "object",
+        "description": "Response for <code>/ComplianceScreening/matchHandlingChanges</code>.",
+        "properties": {
+          "hasErrors": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>An error usually means that the request could not be performed.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": false
+          },
+          "hasOnlyRetryableErrors": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": true
+          },
+          "hasWarnings": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": true
+          },
+          "messages": {
+            "type": "array",
+            "description": "<p>Error or warning messages at the request level.</p><p>There may be additional messages[] arrays at lower data levels as specified in the documentation.</p>",
+            "items": {
+              "$ref": "#/components/schemas/ResponseMessageDTO"
+            }
+          }
+        }
+      },
+      "AcknowledgeGetMatchHandlingChangesRequestDTO": {
+        "type": "object",
+        "description": "Request to acknoledge changed match handling results.",
+        "properties": {
+          "clientSystemId": {
+            "type": "string",
+            "description": "<p>Id of the sending client system.</p><p>e.g. Installation ID of the sending host or ERP system.</p><p>Maximum length: 20</p>",
+            "example": "TEST_ID"
+          },
+          "clientIdentCode": {
+            "type": "string",
+            "description": "<p>Client identification code.</p><p>Maximum length: 10</p>",
+            "example": "APITEST"
+          },
+          "userName": {
+            "type": "string",
+            "description": "<p>User who initiated the request from the client system.</p><p>If the user is found either in the system's user management or in a connected LDAP directory, the request runs under this user's roles.</p><p>If the user is not found, the request is only granted the basic 'I_EVERYONE' role. The user name may be used for logging purposes in this case.</p><p>Actual authentication is handled separately via the request's headers, so no password is required in the request's data.</p>",
+            "example": "API_TEST"
+          },
+          "resultLanguageIsoCodes": {
+            "type": "array",
+            "description": "<p>2-letter ISO codes of the languages in which texts will be returned.</p><p>English ('en') and German ('de') are typically supported by default. Other languages may be supported.</p><p>Translations will be looked up in the order of the provided language codes. If a translation is not available in one language, the next language is used instead.</p>",
+            "example": [
+              "en",
+              "de"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "syncId": {
+            "type": "string",
+            "description": "Synchronization ID for acknowledging.<br>Use the <code>GetMatchHandlingChangesResponseDTO.syncId</code> value received with the last call to <code>/ComplianceScreening/matchHandlingChanges</code> to acknowledge the processing of the changed match handling results.",
+            "example": 1234
           }
         }
       },
@@ -14373,7 +15436,7 @@
           "clientIdentCode": {
             "type": "string",
             "description": "Ident code of the client to use for screening. The value must be a valid ident code of a client the authorized user has access to (usually the same client used for authentication).",
-            "example": "APITEST",
+            "example": "APICLIENT",
             "maxLength": 10
           },
           "profileIdentCode": {
@@ -14412,7 +15475,7 @@
           "clientSystemId": {
             "type": "string",
             "description": "The unique ID of the host system calling this API. Used when logging the address screening results.",
-            "example": "SAP_[SAP system]_[SAP client]",
+            "example": "API-TEST",
             "maxLength": 20
           },
           "organisationUnitHost": {
@@ -14436,7 +15499,7 @@
           "userIdentification": {
             "type": "string",
             "description": "The user name to be used for logging. Purely informational.",
-            "example": "BEN003",
+            "example": "API_TEST",
             "maxLength": 100
           },
           "addressTypeVersion": {
@@ -14692,13 +15755,13 @@
           "referenceId": {
             "type": "string",
             "description": "Reference key for match results and logs, e.g. current user, client, pc, delivery note number or debitor number.<br> This field is for internal technical use to build references between the compliance logs and the client system.",
-            "example": "CUSNO=4711;CLIENT=800;USER=BEN003;PC=PC-PHILIPP",
+            "example": "customer.4711.aeb.123",
             "maxLength": 255
           },
           "referenceComment": {
             "type": "string",
             "description": "User readable reference comment for logs, e.g. current user, current pc, delivery note number or or debitor number.",
-            "example": "Customer no.: 4711, Client: 800, User: BEN003, Pc: PC-PHILIPP",
+            "example": "Type: Customer, Id: 4711, Company name: AEB, Order number: 123",
             "maxLength": 3000
           },
           "organisationUnitHost": {
@@ -14993,7 +16056,7 @@
           "clientSystemId": {
             "type": "string",
             "description": "The unique ID of the host system calling this API. Used in log entries on any actions performed on the Good Guy.",
-            "example": "SAP_[SAP system]_[SAP client]",
+            "example": "SAP_[sys]_[client]",
             "maxLength": 20
           },
           "organisationUnitHost": {
@@ -15099,7 +16162,7 @@
           "clientSystemId": {
             "type": "string",
             "description": "The unique ID of the host system that creates the log entry. Used to filter log entries by the host system they originate from.",
-            "example": "SAP_[SAP system]_[SAP client]",
+            "example": "SAP_[sys]_[client]",
             "maxLength": 20
           },
           "organisationUnitHost": {
@@ -15152,6 +16215,111 @@
           "clientIdentCode",
           "module"
         ]
+      },
+      "GetMatchHandlingChangesResponseDTO": {
+        "type": "object",
+        "description": "Response when getting changed match handling results.",
+        "properties": {
+          "hasErrors": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>An error usually means that the request could not be performed.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": false
+          },
+          "hasOnlyRetryableErrors": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": true
+          },
+          "hasWarnings": {
+            "type": "boolean",
+            "description": "<p>True, if there are any error messages.</p><p>Error details are provided in the messages[] array.</p>",
+            "example": true
+          },
+          "messages": {
+            "type": "array",
+            "description": "<p>Error or warning messages at the request level.</p><p>There may be additional messages[] arrays at lower data levels as specified in the documentation.</p>",
+            "items": {
+              "$ref": "#/components/schemas/ResponseMessageDTO"
+            }
+          },
+          "isComplete": {
+            "type": "boolean",
+            "description": "<code>true</code>, if the synchronization is complete and currently no further changed match handling results are available. <code>false</code> if not.<br> In this case, after acknowledging with <code>/ComplianceScreening/acknowledgeMatchHandlingChanges</code>, an additional call to <code>/ComplianceScreening/matchHandlingChanges</code> would be needed to get more changes.",
+            "example": true
+          },
+          "syncId": {
+            "type": "string",
+            "description": "Synchronization ID for acknowledging.<br>Use this syncId in subsequent calls to <code>/ComplianceScreening/acknowledgeMatchHandlingResults</code> to acknowledge the processing of the changed match handling results.<br>This syncId may be <code>null</code> if no changed match handling results were found to synchronize.",
+            "example": 1234
+          },
+          "matchHandlingChanges": {
+            "type": "array",
+            "description": "The next changed match handling results.",
+            "items": {
+              "$ref": "#/components/schemas/MatchHandlingSyncDTO"
+            }
+          }
+        }
+      },
+      "MatchHandlingSyncDTO": {
+        "type": "object",
+        "description": "The sync results of one handled match.",
+        "properties": {
+          "clientSystemId": {
+            "type": "string",
+            "description": "ID of the partner system the match was created by.",
+            "example": "API-TEST",
+            "maxLength": 20
+          },
+          "clientReferenceId": {
+            "type": "string",
+            "description": "Internal reference number that serves for internal identification.",
+            "example": "CLIENT=800;USER=BEN003",
+            "maxLength": 20
+          },
+          "typeOfProcessing": {
+            "type": "string",
+            "description": "Represents the accumulated result type of the match result changes.Possible values are: <ul><li><code>'processed'</code></li><li><code>'definedAsGoodGuy'</code></li><li><code>'unprocessed'</code></li></ul>",
+            "example": "processed"
+          },
+          "isDeleted": {
+            "type": "boolean",
+            "default": false,
+            "description": "Indicates whether the match has already been deleted.<br>This is only relevant for the <code>/ComplianceScreening/matchHandlingChanges</code> call."
+          }
+        }
+      },
+      "GetMatchHandlingChangesRequestDTO": {
+        "type": "object",
+        "description": "Request to get changed match handling results.",
+        "properties": {
+          "clientSystemId": {
+            "type": "string",
+            "description": "<p>Id of the sending client system.</p><p>e.g. Installation ID of the sending host or ERP system.</p><p>Maximum length: 20</p>",
+            "example": "TEST_ID"
+          },
+          "clientIdentCode": {
+            "type": "string",
+            "description": "<p>Client identification code.</p><p>Maximum length: 10</p>",
+            "example": "APITEST"
+          },
+          "userName": {
+            "type": "string",
+            "description": "<p>User who initiated the request from the client system.</p><p>If the user is found either in the system's user management or in a connected LDAP directory, the request runs under this user's roles.</p><p>If the user is not found, the request is only granted the basic 'I_EVERYONE' role. The user name may be used for logging purposes in this case.</p><p>Actual authentication is handled separately via the request's headers, so no password is required in the request's data.</p>",
+            "example": "API_TEST"
+          },
+          "resultLanguageIsoCodes": {
+            "type": "array",
+            "description": "<p>2-letter ISO codes of the languages in which texts will be returned.</p><p>English ('en') and German ('de') are typically supported by default. Other languages may be supported.</p><p>Translations will be looked up in the order of the provided language codes. If a translation is not available in one language, the next language is used instead.</p>",
+            "example": [
+              "en",
+              "de"
+            ],
+            "items": {
+              "type": "string"
+            }
+          }
+        }
       },
       "ProfileDTO": {
         "type": "object",
