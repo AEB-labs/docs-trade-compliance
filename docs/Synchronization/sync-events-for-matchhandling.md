@@ -21,6 +21,6 @@ next:
 * businessObjectId:  A unique id for the match handling sync digest, the “referenceId” that was provided by the partner system.
 * eventType: Type of the event (e.g., CREATE or UPDATE).
 * eventDate: Date when the event happened.
-* parameter: Additional parameters of a match handling sync digest. Generic record of MatchHandlingSyncDTO (see more information about parameters mapping in REST and SOAP documentation).
+* parameter: Additional parameters of a match handling sync digest. Generic record of <a href="https://rz3.aeb.de/test4ce/servlet/bf/doc/RexBF/de/aeb/xnsg/rex/bf/sync/MatchHandlingSyncDTO.html" target="_blank">MatchHandlingSyncDTO</a>(see more information about parameters mapping in REST and SOAP documentation).
 
 > 📘 To make the synchronization API easier to use for match handling, some supplementary synchronization calls were added to the Compliance Screening API (see also Compliance Screening API usage scenario [Integration with Synchronization](doc:screening-integration-with-synchronization)).
