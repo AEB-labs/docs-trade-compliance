@@ -12552,10 +12552,10 @@
       "CommandInfo": {
         "type": "object",
         "properties": {
-          "commandName": {
+          "commandClass": {
             "type": "string"
           },
-          "commandClass": {
+          "commandName": {
             "type": "string"
           }
         }
@@ -12577,16 +12577,15 @@
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
           },
-          "allCommands": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CommandInfo"
-            }
+          "name": {
+            "type": "string"
           },
-          "commandMap": {
-            "$ref": "#/components/schemas/CommandMap",
-            "writeOnly": true
+          "inputStream": {},
+          "content": {},
+          "contentType": {
+            "type": "string"
           },
+          "outputStream": {},
           "preferredCommands": {
             "type": "array",
             "items": {
@@ -12599,14 +12598,15 @@
               "$ref": "#/components/schemas/ActivationDataFlavor"
             }
           },
-          "name": {
-            "type": "string"
+          "commandMap": {
+            "$ref": "#/components/schemas/CommandMap",
+            "writeOnly": true
           },
-          "inputStream": {},
-          "content": {},
-          "outputStream": {},
-          "contentType": {
-            "type": "string"
+          "allCommands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommandInfo"
+            }
           }
         }
       },
@@ -12617,10 +12617,10 @@
             "type": "string"
           },
           "inputStream": {},
-          "outputStream": {},
           "contentType": {
             "type": "string"
-          }
+          },
+          "outputStream": {}
         }
       },
       "DownloadFileResponseDTO": {
