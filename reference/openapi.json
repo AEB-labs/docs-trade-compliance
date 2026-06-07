@@ -12552,10 +12552,10 @@
       "CommandInfo": {
         "type": "object",
         "properties": {
-          "commandClass": {
+          "commandName": {
             "type": "string"
           },
-          "commandName": {
+          "commandClass": {
             "type": "string"
           }
         }
@@ -12586,11 +12586,15 @@
             "type": "string"
           },
           "outputStream": {},
-          "preferredCommands": {
+          "allCommands": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/CommandInfo"
             }
+          },
+          "commandMap": {
+            "$ref": "#/components/schemas/CommandMap",
+            "writeOnly": true
           },
           "transferDataFlavors": {
             "type": "array",
@@ -12598,11 +12602,7 @@
               "$ref": "#/components/schemas/ActivationDataFlavor"
             }
           },
-          "commandMap": {
-            "$ref": "#/components/schemas/CommandMap",
-            "writeOnly": true
-          },
-          "allCommands": {
+          "preferredCommands": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/CommandInfo"
