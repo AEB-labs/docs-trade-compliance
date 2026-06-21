@@ -12577,29 +12577,20 @@
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
           },
-          "name": {
-            "type": "string"
-          },
           "inputStream": {},
           "content": {},
           "contentType": {
             "type": "string"
           },
           "outputStream": {},
-          "allCommands": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CommandInfo"
-            }
-          },
           "commandMap": {
             "$ref": "#/components/schemas/CommandMap",
             "writeOnly": true
           },
-          "transferDataFlavors": {
+          "allCommands": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/ActivationDataFlavor"
+              "$ref": "#/components/schemas/CommandInfo"
             }
           },
           "preferredCommands": {
@@ -12607,20 +12598,29 @@
             "items": {
               "$ref": "#/components/schemas/CommandInfo"
             }
+          },
+          "transferDataFlavors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ActivationDataFlavor"
+            }
+          },
+          "name": {
+            "type": "string"
           }
         }
       },
       "DataSource": {
         "type": "object",
         "properties": {
-          "name": {
-            "type": "string"
-          },
           "inputStream": {},
           "contentType": {
             "type": "string"
           },
-          "outputStream": {}
+          "outputStream": {},
+          "name": {
+            "type": "string"
+          }
         }
       },
       "DownloadFileResponseDTO": {
