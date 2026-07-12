@@ -1,6 +1,6 @@
 ---
 title: Compliance Screening Internal
-excerpt: ''
+excerpt: Internal API for compliance screening
 deprecated: false
 hidden: true
 metadata:

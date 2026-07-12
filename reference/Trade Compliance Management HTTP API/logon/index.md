@@ -1,6 +1,6 @@
 ---
 title: Logon
-excerpt: ''
+excerpt: Authentication handler for the XNSGFoundation
 deprecated: false
 hidden: false
 metadata:

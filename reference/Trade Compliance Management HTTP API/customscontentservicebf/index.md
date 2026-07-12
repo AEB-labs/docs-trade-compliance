@@ -1,6 +1,8 @@
 ---
 title: CustomsContentServiceBF
-excerpt: ''
+excerpt: >-
+  API providing services around customs content (nomenclatures, export control
+  lists).
 deprecated: false
 hidden: true
 metadata:

@@ -1,6 +1,6 @@
 ---
 title: Risk Assessment Applications
-excerpt: ''
+excerpt: Get URLs to various parts of the Risk Assessment application.
 deprecated: false
 hidden: false
 metadata:

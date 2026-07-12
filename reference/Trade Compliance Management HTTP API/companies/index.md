@@ -1,6 +1,6 @@
 ---
 title: Companies
-excerpt: ''
+excerpt: Rest API for companies
 deprecated: false
 hidden: false
 metadata:

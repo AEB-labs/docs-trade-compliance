@@ -1,6 +1,6 @@
 ---
 title: TariffContent20BFBean
-excerpt: ''
+excerpt: API for the tariff content solution (version 2.0).
 deprecated: false
 hidden: true
 metadata:

@@ -1,6 +1,6 @@
 ---
 title: GenericAFBean
-excerpt: ''
+excerpt: API to open views that support this generic interface.
 deprecated: false
 hidden: false
 metadata:

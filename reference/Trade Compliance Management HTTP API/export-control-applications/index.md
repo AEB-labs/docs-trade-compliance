@@ -1,6 +1,6 @@
 ---
 title: Export Control Applications
-excerpt: ''
+excerpt: Get URLs to various parts of the Export Controls application.
 deprecated: false
 hidden: false
 metadata:

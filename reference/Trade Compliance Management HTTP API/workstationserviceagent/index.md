@@ -1,6 +1,6 @@
 ---
 title: WorkstationServiceAgent
-excerpt: ''
+excerpt: Connection handler for the Workstation Service Agent
 deprecated: false
 hidden: false
 metadata:

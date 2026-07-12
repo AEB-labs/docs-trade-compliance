@@ -1,6 +1,6 @@
 ---
 title: Risk Assessment
-excerpt: ''
+excerpt: API for Risk Assessment
 deprecated: false
 hidden: false
 metadata:

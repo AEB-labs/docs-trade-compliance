@@ -1,6 +1,6 @@
 ---
 title: Export Control Internal
-excerpt: ''
+excerpt: Internal API for export control
 deprecated: false
 hidden: true
 metadata:

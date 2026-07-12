@@ -1,6 +1,6 @@
 ---
 title: FoundationBFBean
-excerpt: ''
+excerpt: REST endpoint for FoundationBF
 deprecated: false
 hidden: true
 metadata:

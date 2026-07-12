@@ -1,6 +1,6 @@
 ---
 title: Export Control
-excerpt: ''
+excerpt: API for export control
 deprecated: false
 hidden: false
 metadata:

@@ -1,6 +1,6 @@
 ---
 title: Compliance Foundation
-excerpt: ''
+excerpt: API for the compliance foundation.
 deprecated: false
 hidden: false
 metadata:

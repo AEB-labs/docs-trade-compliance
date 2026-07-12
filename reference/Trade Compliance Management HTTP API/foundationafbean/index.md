@@ -1,6 +1,6 @@
 ---
 title: FoundationAFBean
-excerpt: ''
+excerpt: Business facade for the XNSGFoundation UI API
 deprecated: false
 hidden: true
 metadata:

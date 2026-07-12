@@ -1,6 +1,6 @@
 ---
 title: SyncBFBean
-excerpt: ''
+excerpt: API for synchronizing data asynchronous from an engine to a client system.
 deprecated: false
 hidden: false
 metadata:

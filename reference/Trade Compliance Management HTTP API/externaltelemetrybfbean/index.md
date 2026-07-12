@@ -1,6 +1,6 @@
 ---
 title: ExternalTelemetryBFBean
-excerpt: ''
+excerpt: API for sending telemetry data from a third party system.
 deprecated: false
 hidden: true
 metadata:
