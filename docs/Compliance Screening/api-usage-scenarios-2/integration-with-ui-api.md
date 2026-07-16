@@ -1,5 +1,5 @@
 ---
-title: Integration with UI-API
+title: Screening Integration with UI-API
 deprecated: false
 hidden: false
 metadata:
