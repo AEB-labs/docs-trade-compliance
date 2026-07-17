@@ -1,7 +1,7 @@
 ---
 title: Screening Integration with UI-API
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
