@@ -12577,10 +12577,27 @@
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
           },
+          "name": {
+            "type": "string"
+          },
+          "inputStream": {},
+          "content": {},
           "contentType": {
             "type": "string"
           },
           "outputStream": {},
+          "preferredCommands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommandInfo"
+            }
+          },
+          "transferDataFlavors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ActivationDataFlavor"
+            }
+          },
           "allCommands": {
             "type": "array",
             "items": {
@@ -12590,37 +12607,20 @@
           "commandMap": {
             "$ref": "#/components/schemas/CommandMap",
             "writeOnly": true
-          },
-          "transferDataFlavors": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ActivationDataFlavor"
-            }
-          },
-          "preferredCommands": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CommandInfo"
-            }
-          },
-          "name": {
-            "type": "string"
-          },
-          "inputStream": {},
-          "content": {}
+          }
         }
       },
       "DataSource": {
         "type": "object",
         "properties": {
-          "contentType": {
-            "type": "string"
-          },
-          "outputStream": {},
           "name": {
             "type": "string"
           },
-          "inputStream": {}
+          "inputStream": {},
+          "contentType": {
+            "type": "string"
+          },
+          "outputStream": {}
         }
       },
       "DownloadFileResponseDTO": {
