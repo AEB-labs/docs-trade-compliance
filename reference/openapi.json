@@ -14672,11 +14672,14 @@
           },
           "terrorListAbbreviation": {
             "type": "string",
-            "description": "Optional fallback terror list abbreviation. Used together with aliasGroupNo to locate any address of the alias group if the address referenced by internalAddressId cannot be found.",
+            "description": "Optional fallback used together with aliasGroupNo to identify the restricted party address using the restricted party list. Currently only Dow Jones restricted party lists are supported.",
             "example": "EUDU",
             "maxLength": 20
           }
-        }
+        },
+        "required": [
+          "internalAddressId"
+        ]
       },
       "RestrictedPartyAddressRequestDTO": {
         "type": "object",
