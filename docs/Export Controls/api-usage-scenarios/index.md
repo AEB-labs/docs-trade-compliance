@@ -20,4 +20,4 @@ next:
       slug: integration-with-synchronization
       title: Integration with Synchronization
 ---
-The Export Controls API can be used in different scenarios depending on the amount of integration work to be done in the partner system.
+The Export Controls API can be used in several different scenarios, depending on the amount of integration work you would like to undertake in your partner system.
