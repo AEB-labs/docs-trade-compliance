@@ -24,11 +24,11 @@ At a later point, an export control officer uses the Export Controls web applica
 
 A batch job on the partner system should periodically call [getChangedTransactions()](ref:getchangedtransactions) to retrieve the updated results of the changed check transactions. The corresponding orders in the partner system should then be updated with the new Export Controls check results, or re-checked. The partner system must (re-)evaluate the new Export Controls check result for the order and remove any previously created block if the result is now uncritical. Additionally, the partner system may inform the order processor that the order has been released.
 
-Once the changed transactions have been processed and the corresponding orders updated, the partner system should call [acknowledgeGetChangedTransactions()](ref:acknowledgegetchangedtransactions) to mark the synchronization events — identified by the syncId returned in the response from [getChangedTransactions()](ref:getchangedtransactions) — as processed.
+Once the changed transactions have been processed and the corresponding orders updated, the partner system should call [acknowledgeGetChangedTransactions()](ref:acknowledgegetchangedtransactions) to mark the synchronization events identified by the syncId returned in the response from [getChangedTransactions()](ref:getchangedtransactions) as processed.
 
 > 📘 For more information about the synchronization API and about which changes to Export Controls check transactions trigger synchronization events, see [About Synchronization API](doc:about-synchronization-api).
 
-The partner system should re-check the order whenever its data changes or when it reaches a further step in processing (e.g., a status change). It is also worth considering the circumstances under which an order should no longer be subject to Export Controls checks (e.g., once it is fully completed).
+The partner system should re-check the order whenever its data changes or when it reaches a further step in processing. It is also worth considering the circumstances under which an order should no longer be subject to Export Controls checks (e.g., once it is fully completed).
 
 > 🚧 It is also important to regularly re-check all business transactions in the partner system (except those that should be excluded), because synchronization events for Export Controls check transactions do not account for every possible change in the environment that could affect the check result (e.g., changes to licenses that affect their applicability).
 
