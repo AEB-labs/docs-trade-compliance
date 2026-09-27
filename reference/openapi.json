@@ -12683,10 +12683,10 @@
       "CommandInfo": {
         "type": "object",
         "properties": {
-          "commandName": {
+          "commandClass": {
             "type": "string"
           },
-          "commandClass": {
+          "commandName": {
             "type": "string"
           }
         }
@@ -12708,6 +12708,15 @@
           "dataSource": {
             "$ref": "#/components/schemas/DataSource"
           },
+          "name": {
+            "type": "string"
+          },
+          "inputStream": {},
+          "content": {},
+          "contentType": {
+            "type": "string"
+          },
+          "outputStream": {},
           "preferredCommands": {
             "type": "array",
             "items": {
@@ -12729,16 +12738,7 @@
             "items": {
               "$ref": "#/components/schemas/CommandInfo"
             }
-          },
-          "name": {
-            "type": "string"
-          },
-          "inputStream": {},
-          "content": {},
-          "contentType": {
-            "type": "string"
-          },
-          "outputStream": {}
+          }
         }
       },
       "DataSource": {
