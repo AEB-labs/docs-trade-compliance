@@ -14,18 +14,18 @@ next:
       slug: basic-concepts-1
       title: Basic Concepts
 ---
-Thank you for your interest in our Trade Compliance Management Solutions. We would like to make it as easy as possible for you to start using the Trade Compliance Management APIs. Please feel free to contact us if any information is missing or if you find a way to make it even easier.
+Thank you for your interest in our Trade Compliance Management solutions. We want to make it as easy as possible for you to get started with the Trade Compliance Management APIs, so please let us know if any information is missing or if you find a way to make these docs even better.
 
-Trade Compliance Management covers all the main elements of export controls – screening for critical business partners, country embargoes, critical goods, and critical end-use, license management, and risk assessment – and offers end-to-end integration into your processes and system environment. 
+Trade Compliance Management covers all the main elements of export controls – screening critical business partners, country embargoes, critical goods, and critical end-uses, managing licenses, and risk assessment – and offers end-to-end integration into your processes and system environment.
 
-The Trade Compliance Management solution is a platform that consists of four different products, and depending on your license, you might have or not have access to all of them:
+Trade Compliance Management is a platform made up of four products. Depending on your license, you may have access to some or all of them:
 
-* **Compliance Screening**:  Checking business partners against sanctions lists is mandatory for all companies. Compliance Screening from AEB automates the process and delivers daily updates as part of the software solution. 
-* **Export Controls**: Businesses that hope to thrive in the global marketplace need to understand and manage applicable bans and export restrictions. The key to this is checking export transactions against the relevant laws and regulations. This means checking whether a business partner is located in an embargoed country  and whether the type of goods require a license if shipped to the destination country. Also the planned end-use by the customer - if known - can be fed into Export Controls and can result in a license requirement for your shipment.  
-* **License Management**: The lawful use of licenses is a key obligation in export controls. But managing licenses manually takes a lot of work and is error-prone. With License Management from AEB, you can manage all your licenses electronically – for greater efficiency and security. License Management guides you in applying for licenses, suggests the right licenses within a transaction, documents each decrement, and reports usage to the appropriate authorities. Play it safe – with export controls done right!
-* **Risk Assessment**: Risk Assessment is a digital platform for managing information on the risks to which your company is exposed. Risk Assessment lets you collect specific datasets and define custom checklists for use throughout the company. This makes it easy to conduct internal audits for compliance with customs processes or AEO criteria, or to collect information on critical end-use by your customers.
+* **Compliance Screening**: Checking business partners against sanctions lists is mandatory for all companies. Compliance Screening from AEB automates this process and delivers daily list updates as part of the solution.
+* **Export Controls**: Businesses that want to thrive in the global marketplace need to understand and manage applicable bans and export restrictions. This means checking export transactions against the relevant laws and regulations – whether a business partner is located in an embargoed country, whether the goods require a license for the destination country, and, if known, whether the customer's planned end-use triggers a license requirement.
+* **License Management**: Using licenses lawfully is a key obligation in export controls, but managing them manually is time-consuming and error-prone. With License Management from AEB, you can manage all your licenses electronically for greater efficiency and security. It guides you through applying for licenses, suggests the right license for a given transaction, documents every decrement, and reports usage to the relevant authorities – so you can play it safe with export controls done right.
+* **Risk Assessment**: Risk Assessment is a digital platform for managing the risks your company is exposed to. It lets you collect specific datasets and define custom checklists for use across the company, making it easy to run internal audits for compliance with customs processes or AEO criteria, or to gather information on your customers' critical end-uses.
 
-Currently the the following Trade Compliance Management APIs are documented:
+The following Trade Compliance Management APIs are currently documented:
 
 * **Compliance Screening**: [Compliance Screening](doc:getting-started-1)
 * **Export Controls**: [Export Controls](doc:getting-started)
