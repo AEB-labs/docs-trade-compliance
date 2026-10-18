@@ -12717,16 +12717,16 @@
             "type": "string"
           },
           "outputStream": {},
-          "preferredCommands": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CommandInfo"
-            }
-          },
           "transferDataFlavors": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ActivationDataFlavor"
+            }
+          },
+          "preferredCommands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommandInfo"
             }
           },
           "commandMap": {
@@ -16421,7 +16421,19 @@
             "type": "string",
             "description": "Internal reference number that serves for internal identification.",
             "example": "CLIENT=800;USER=BEN003",
-            "maxLength": 36
+            "maxLength": 255
+          },
+          "processingComment": {
+            "type": "string",
+            "description": "Comment on log entry that you can enter in addition to the 'Processed' flag.",
+            "example": "-------- 01.09.2025, 09:00:00 -------- Marked as processed",
+            "maxLength": 1000
+          },
+          "orgUnit": {
+            "type": "string",
+            "description": "Ident code of the organizational unit associated to the checked address of the address match.",
+            "example": "Sales Unit 0711",
+            "maxLength": 255
           },
           "typeOfProcessing": {
             "type": "string",
@@ -16761,7 +16773,19 @@
             "type": "string",
             "description": "Internal reference number that serves for internal identification.",
             "example": "CLIENT=800;USER=BEN003",
-            "maxLength": 36
+            "maxLength": 255
+          },
+          "processingComment": {
+            "type": "string",
+            "description": "Comment on log entry that you can enter in addition to the 'Processed' flag.",
+            "example": "-------- 01.09.2025, 09:00:00 -------- Marked as processed",
+            "maxLength": 1000
+          },
+          "orgUnit": {
+            "type": "string",
+            "description": "Ident code of the organizational unit associated to the checked address of the address match.",
+            "example": "Sales Unit 0711",
+            "maxLength": 255
           },
           "typeOfProcessing": {
             "type": "string",
