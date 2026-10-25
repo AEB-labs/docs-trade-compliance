@@ -12717,18 +12717,6 @@
             "type": "string"
           },
           "outputStream": {},
-          "transferDataFlavors": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ActivationDataFlavor"
-            }
-          },
-          "preferredCommands": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CommandInfo"
-            }
-          },
           "commandMap": {
             "$ref": "#/components/schemas/CommandMap",
             "writeOnly": true
@@ -12737,6 +12725,18 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/CommandInfo"
+            }
+          },
+          "preferredCommands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommandInfo"
+            }
+          },
+          "transferDataFlavors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ActivationDataFlavor"
             }
           }
         }
