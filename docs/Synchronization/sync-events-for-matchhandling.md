@@ -17,7 +17,7 @@ next:
 
 **Parameters of SyncEventDTO in response to request for new synchronization events:**
 
-* businessObjectType = “MatchHandlingSyncDigest”: Code which identifies the business object type the event belongs to. In this case, this is the identifier for a match handling sync digest.
+* businessObjectType = “MatchHandlingSync”: Code which identifies the business object type the event belongs to. In this case, this is the identifier for a match handling sync digest.
 * businessObjectId:  A unique id for the match handling sync digest, the “referenceId” that was provided by the partner system.
 * eventType: Type of the event (e.g., CREATE or UPDATE).
 * eventDate: Date when the event happened.
